@@ -9,7 +9,7 @@ time_started="$(TZ='Asia/Tokyo' date)"
 
 # Main Loop
 for ((i=1;i<=fph;i++)); do
-    bash ./frameposter.sh
+    bash ./frameposter.sh || exit 1
     sleep "$((mins * 60))"
 done
 
