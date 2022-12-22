@@ -145,7 +145,7 @@ ${message_craft}"
 	done <<-EOF
 	${list}
 	EOF
-	message_craft_a="$(grep -E '^【.+】$' <<< "${message_craft}" | sed '1!G;h;$!d')"
+	message_craft_a="$(grep -E '^【.+】$' <<< "${message_craft}")"
 	message_craft_b="$(grep -vE '^【.+】$' <<< "${message_craft}")"
 	message_craft="${message_craft_b}
 ${message_craft_a}"
