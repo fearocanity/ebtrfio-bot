@@ -1,0 +1,27 @@
+name: "Bocchi Bot"
+on:
+  push:
+    branches: [ master ]
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  Nijika-Chan:
+    runs-on: ubuntu-latest    
+    steps:
+      - uses: actions/checkout@v3
+          
+      - name: Run
+        env:
+            tok_fb: ${{ secrets.TOK_FB }}
+            tok_gif: ${{ secrets.TOK_GIF }}
+        run: bash frame_main.sh "${tok_fb}" "${tok_gif}"
+        
+      - name: Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Posted!!"
+          repository: .
+          file_pattern: README.md fb/* frameposter.sh frame_main.sh status/* 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
