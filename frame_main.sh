@@ -14,4 +14,4 @@ for ((i=1;i<=fph;i++)); do
 done
 
 time_ended="$(TZ='Asia/Tokyo' date)"
-convert -fill white -background "darkgreen" -gravity center -pointsize 72 -font "trebuc.ttf" label:"\ [√] Frame ${prev_frame}-$((prev_frame+fph)) was posted " -pointsize 25 label:"Time started: ${time_started}\nTime ended: ${time_ended}" -append -bordercolor "darkgreen" -border 30 status/status.jpg
+convert -fill white -background "darkgreen" -gravity center -pointsize 72 -font "trebuc.ttf" label:"\ [√] Frame ${prev_frame}-$((prev_frame+fph-1)) was posted " -pointsize 25 label:"Time started: ${time_started}\nTime ended: ${time_ended}" -append -bordercolor "darkgreen" -border 30 status/status.jpg
