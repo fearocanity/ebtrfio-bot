@@ -1,5 +1,6 @@
 name: "init banner"
 on:
+   workflow_dispatch:
    schedule:
     - cron: "0 0-21/3 * * *"
     - cron: "30 1-22/3 * * *"
