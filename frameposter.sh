@@ -27,11 +27,11 @@ graph_url_main="https://graph.facebook.com"
 frames_location=./frames
 log=./fb/log.txt
 vidgif_location=./fb/tmp.gif
-season="${season:-1}"
-episode="${episode:-01}"
-total_frame="${total_frame:-4322}"
-vid_fps="${vid_fps:-23.9}"
-img_fps="${img_fps:-3}"
+season="${season}"
+episode="${episode}"
+total_frame="${total_frame}"
+vid_fps="${vid_fps}"
+img_fps="${img_fps}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
 locationsub=./fb/bocchi_ep1.ass
@@ -161,7 +161,7 @@ dep_check bash sed grep curl bc || exit 1
 [[ ! -d ./fb ]] && mkdir ./fb
 [[ ! -e ./fb/frameiterator ]] && printf '%s' "1" > ./fb/frameiterator
 [[ -z "$(<./fb/frameiterator)" ]] && printf '%s' "1" > ./fb/frameiterator
-[[ "${total_frame}" -le "$(<./fb/frameiterator)" ]] && exit 0
+[[ "${total_frame}" -lt "$(<./fb/frameiterator)" ]] && exit 0
 
 # Get the previous frame from a file that acts like an iterator
 prev_frame="$(<./fb/frameiterator)"
@@ -201,7 +201,7 @@ id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
 [[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7 "${graph_url_main}/v15.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null &
 
 # Addons, you can comment this line if you don't want to comment the GIF created on previous 10 frames
-[[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt ${gif_prev_framecount} ]] && [[ "${prev_frame}" -le "$((total_frame - gif_prev_framecount))" ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
+[[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt ${gif_prev_framecount} ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
 
 # This will note that the Post was success, without errors and append it to log file
 printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://facebook.com/${id}" >> "${log}"
