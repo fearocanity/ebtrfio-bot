@@ -13,5 +13,8 @@ for ((i=1;i<=fph;i++)); do
     sleep "$((mins * 60))"
 done
 
+lim_frame="$((prev_frame+fph-1))"
+[[ "${lim_frame}" -gt "${total_frame}" ]] && lim_frame="${total_frame}"
+
 time_ended="$(TZ='Asia/Tokyo' date)"
-bash img_process.sh "success" "${prev_frame}" "$((prev_frame+fph-1))" "${time_started}" "${time_ended}"
+bash img_process.sh "success" "${prev_frame}" "${lim_frame}" "${time_started}" "${time_ended}"
