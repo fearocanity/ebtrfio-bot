@@ -34,7 +34,7 @@ vid_fps="${vid_fps}"
 img_fps="${img_fps}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
-locationsub=./fb/bocchi_ep1.ass
+locationsub=./fb/bocchi_*.ass
 
 # Temp Variables
 is_empty="1"
@@ -99,10 +99,10 @@ nth(){
 	# Formula: {current_frame} * ({2fps}/{frame_rate}) / {frame_rate} = {total_secs}
 	# Ex: 1532 * 7.96666666667 / 23.9 = 510.66
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; (${1} - 31) * 7.96666666667 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	# sec="$(bc -l <<< "scale=2; (${1} - 31) * 7.96666666667 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
-	# sec="$(bc -l <<< "scale=2; ${1} * (${vid_fps} / ${img_fps}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	sec="$(bc -l <<< "scale=2; ${1} * (${vid_fps} / ${img_fps}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	[[ "${secfloat}" =~ ^0[8-9]$ ]] && secfloat="${secfloat#0}"
 	secfloat="${secfloat:-0}"
@@ -167,7 +167,7 @@ dep_check bash sed grep curl bc || exit 1
 prev_frame="$(<./fb/frameiterator)"
 
 # Check if the frame was already posted
-if [[ -e "${log}" ]] && grep -qE "\[√\] Frame: ${prev_frame}" "${log}"; then
+if [[ -e "${log}" ]] && grep -qE "\[√\] Frame: ${prev_frame}, Episode ${episode}" "${log}"; then
 	next_frame="$((prev_frame+=1))"
 	printf '%s' "${next_frame}" > ./fb/frameiterator
 	exit 0
@@ -213,4 +213,4 @@ printf '%s' "${next_frame}" > ./fb/frameiterator
 
 # Note:
 # Please test it with development mode ON first before going to publish it, Publicly or (live mode)
-# And i recommend using crontab as your timer
+# And i recommend using crontab as your scheduler
