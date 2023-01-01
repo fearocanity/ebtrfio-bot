@@ -99,10 +99,10 @@ nth(){
 	# Formula: {current_frame} * ({2fps}/{frame_rate}) / {frame_rate} = {total_secs}
 	# Ex: 1532 * 7.96666666667 / 23.9 = 510.66
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; (${1} + 5) * 7.96666666667 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	# sec="$(bc -l <<< "scale=2; (${1} + 6) * 7.96666666667 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
-	# sec="$(bc -l <<< "scale=2; ${1} * (${vid_fps} / ${img_fps}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	sec="$(bc -l <<< "scale=2; (${1} + 6) * (${vid_fps} / ${img_fps}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	[[ "${secfloat}" =~ ^0[8-9]$ ]] && secfloat="${secfloat#0}"
 	secfloat="${secfloat:-0}"
