@@ -102,7 +102,7 @@ nth(){
 	# sec="$(bc -l <<< "scale=2; (${1} + 6) * 7.96666666667 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
-	sec="$(bc -l <<< "scale=2; (${1} + 6) * (${vid_fps} / ${img_fps}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	sec="$(bc -l <<< "scale=2; (${1} - 1) * 7.98475609756 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	[[ "${secfloat}" =~ ^0[8-9]$ ]] && secfloat="${secfloat#0}"
 	secfloat="${secfloat:-0}"
@@ -118,8 +118,8 @@ scr2(){
 	mins="${1%:??.??}" mins="${mins/*:/}"
 	[[ -z "${list}" ]] && [[ ! "${mins}" =~ ^0*$ ]] && list="$(grep -E "0:$(printf '%s' "${1}" | cut -d':' -f2):[0-9]{2}.[0-9]{2}" <<< "${list:-${subs_content}}")"
 	secs="${1##*:}" milisecs="${secs#*.}" secs="${secs%%.*}"
-	[[ -z "${list}" ]] && [[ ! "${secs}" =~ ^0*$ ]] && list="$(grep -E "0:[0-9]{2}:${secs}.[0-9]{2}" <<< "${list:-${subs_content}}")"
-	[[ -z "${list}" ]] && [[ ! "${milisecs}" =~ ^0*$ ]] && list="$(grep -E "0:[0-9]{2}:[0-9]{2}.${milisecs}" <<< "${list:-${subs_content}}")"
+	# [[ -z "${list}" ]] && [[ ! "${secs}" =~ ^0*$ ]] && list="$(grep -E "0:[0-9]{2}:${secs}.[0-9]{2}" <<< "${list:-${subs_content}}")"
+	# [[ -z "${list}" ]] && [[ ! "${milisecs}" =~ ^0*$ ]] && list="$(grep -E "0:[0-9]{2}:[0-9]{2}.${milisecs}" <<< "${list:-${subs_content}}")"
 	[[ -z "${list}" ]] && list="${subs_content}"
 	while read -r b; do
 		start="$(toepoch "$([[ "${b}" =~ ^([^\,]*), ]] && printf '%s' "${BASH_REMATCH[1]}")")"
