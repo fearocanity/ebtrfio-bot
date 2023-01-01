@@ -4,6 +4,7 @@
 # Author: EBTRFIO
 # Date: Dec. 10 2022
 # Licence: None
+# Version: v1.1.1.2
 # ############# #
 
 # --- Dependencies --- #
@@ -27,11 +28,11 @@ graph_url_main="https://graph.facebook.com"
 frames_location=./frames
 log=./fb/log.txt
 vidgif_location=./fb/tmp.gif
-season="${season}"
-episode="${episode}"
-total_frame="${total_frame}"
-vid_fps="${vid_fps}"
-img_fps="${img_fps}"
+: "${season:=}"
+: "${episode:=}"
+: "${total_frame:=}"
+: "${vid_fps:=}"
+: "${vid_totalfrm:=}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
 locationsub=./fb/bocchi_ep2.ass
@@ -71,7 +72,7 @@ dep_check(){
 create_gif(){
 	dep_check convert | tee -a "${log}" || return 1
 	[[ -e "${vidgif_location}" ]] && rm "${vidgif_location}"
-	convert -resize "50%" -delay 20 -loop 1 $(eval "echo ${frames_location}/frame_$(echo {"${1}".."${2}"}).jpg") "${vidgif_location}"
+	convert -resize "50%" -delay 20 -loop 1 $(eval "echo ${frames_location}/frame_{""${1}""..""${2}""}.jpg") "${vidgif_location}"
 	
 	# GIPHY API is Required when using this code
 	url_gif="$(curl -sLfX POST --retry 3 --retry-connrefused --retry-delay 7 -F "api_key=${giphy_token}" -F "tags= ${giphy_tags}" -F "file=@${vidgif_location}" "https://upload.giphy.com/v1/gifs" | sed -nE 's_.*"id":"([^\"]*)"\}.*_\1_p')"
@@ -96,13 +97,16 @@ nth(){
 	# This function aims to convert current frame to time (in seconds)
 	#
 	# You need to get the exact Frame Rate of a video
-	# Formula: {current_frame} * ({2fps}/{frame_rate}) / {frame_rate} = {total_secs}
-	# Ex: 1532 * 7.96666666667 / 23.9 = 510.66
+	# Old Formula: {current_frame} * ({2fps}/{frame_rate}) / {frame_rate} = {total_secs}
+	# Note: Old formula is innaccurate
+	#
+	# New Formula: {current_frame} * ({vid_totalframe} / {total_frame}) / {frame_rate} = {total_secs}
+	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	# sec="$(bc -l <<< "scale=2; (${1} + 6) * 7.96666666667 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	sec="$(bc -l <<< "scale=2; (${1} - 1) * 7.98475609756 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
-	sec="$(bc -l <<< "scale=2; (${1} - 1) * 7.98475609756 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	# sec="$(bc -l <<< "scale=2; (${1} - 1) * (${vid_totalfrm} / ${total_frame}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	[[ "${secfloat}" =~ ^0[8-9]$ ]] && secfloat="${secfloat#0}"
 	secfloat="${secfloat:-0}"
@@ -118,8 +122,6 @@ scr2(){
 	mins="${1%:??.??}" mins="${mins/*:/}"
 	[[ -z "${list}" ]] && [[ ! "${mins}" =~ ^0*$ ]] && list="$(grep -E "0:$(printf '%s' "${1}" | cut -d':' -f2):[0-9]{2}.[0-9]{2}" <<< "${list:-${subs_content}}")"
 	secs="${1##*:}" milisecs="${secs#*.}" secs="${secs%%.*}"
-	# [[ -z "${list}" ]] && [[ ! "${secs}" =~ ^0*$ ]] && list="$(grep -E "0:[0-9]{2}:${secs}.[0-9]{2}" <<< "${list:-${subs_content}}")"
-	# [[ -z "${list}" ]] && [[ ! "${milisecs}" =~ ^0*$ ]] && list="$(grep -E "0:[0-9]{2}:[0-9]{2}.${milisecs}" <<< "${list:-${subs_content}}")"
 	[[ -z "${list}" ]] && list="${subs_content}"
 	while read -r b; do
 		start="$(toepoch "$([[ "${b}" =~ ^([^\,]*), ]] && printf '%s' "${BASH_REMATCH[1]}")")"
@@ -201,7 +203,7 @@ id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
 [[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7 "${graph_url_main}/v15.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null &
 
 # Addons, you can comment this line if you don't want to comment the GIF created on previous 10 frames
-[[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt ${gif_prev_framecount} ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
+[[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt "${gif_prev_framecount}" ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
 
 # This will note that the Post was success, without errors and append it to log file
 printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://facebook.com/${id}" >> "${log}"
