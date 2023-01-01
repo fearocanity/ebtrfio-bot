@@ -34,7 +34,7 @@ vid_fps="${vid_fps}"
 img_fps="${img_fps}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
-locationsub=./fb/bocchi_*.ass
+locationsub=./fb/bocchi_ep2.ass
 
 # Temp Variables
 is_empty="1"
