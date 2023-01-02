@@ -6,6 +6,15 @@ on:
        - completed
 
 jobs:
+  Pre-run:
+   runs-on: ubuntu-latest
+   outputs:
+     should_skip: ${{ steps.skip_check.outputs.should_skip }}
+   steps:
+     - id: skip_check
+       uses: fkirc/skip-duplicate-actions@v3.4.0
+       with:
+         skip_after_successful_duplicate: 'true'
   Nijika-Chan:
     runs-on: ubuntu-latest    
     steps:
