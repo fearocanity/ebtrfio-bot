@@ -4,7 +4,7 @@
 # Author: EBTRFIO
 # Date: Dec. 10 2022
 # Licence: None
-# Version: v1.1.1.2
+# Version: v1.2.1.2
 # ############# #
 
 # --- Dependencies --- #
@@ -84,15 +84,6 @@ create_gif(){
 	curl -sfLX POST "${graph_url_main}/v15.0/${id}/comments?access_token=${token}" -d "message=GIF created from last 10 frames (${1}-${2})" -d "attachment_share_url=${url_gif}" -o /dev/null
 }
 
-toepoch(){
-	# This function aims to compute 00:00:00.00 (time) to seconds
-	hrs="${1%%:*}"
-	mins="${1%:??.??}" mins="${mins/*:/}" mins="${mins##0}"
-	secs="${1##*:}" milisecs="${secs#*.}" secs="${secs%%.*}" secs="${secs##0}"
-	printf '%s' "$((hrs * 3600 + mins * 60 + secs)).${milisecs}"
-	unset hrs mins secs milisecs
-}
-
 nth(){
 	# This function aims to convert current frame to time (in seconds)
 	#
@@ -114,47 +105,54 @@ nth(){
 	unset sec secfloat
 }
 
-scr2(){
+scrv3(){
 	# This function solves the timings of Subs
-	a="$(toepoch "${1}")"
-	subs_content="$(sed -E 's_Dialogue: [0-9],([0-9\:\,.]*),(.*),0000,0000,0000,,_\1€\2()_g;/\(\)/!d;s_(\\N\{\\c\&H727571\&\}|\{\\c\&HB2B5B2\&\})_, _g;s_\{([^\x7d]*)\}__g;/[[:graph:]]\\N/ s_\\N_ _g;s_\\N__g;s_\\h__g' "${locationsub}" | tr -d '\r')"
-	[[ ! "${1%%:*}" =~ ^0*$ ]] && list="$(grep -E "${1%%:*}:[0-9]{2}:[0-9]{2}.[0-9]{2}" <<< "${subs_content}")"
-	mins="${1%:??.??}" mins="${mins/*:/}"
-	[[ -z "${list}" ]] && [[ ! "${mins}" =~ ^0*$ ]] && list="$(grep -E "0:$(printf '%s' "${1}" | cut -d':' -f2):[0-9]{2}.[0-9]{2}" <<< "${list:-${subs_content}}")"
-	secs="${1##*:}" milisecs="${secs#*.}" secs="${secs%%.*}"
-	[[ -z "${list}" ]] && list="${subs_content}"
-	while read -r b; do
-		start="$(toepoch "$([[ "${b}" =~ ^([^\,]*), ]] && printf '%s' "${BASH_REMATCH[1]}")")"
-		end="$(toepoch "$([[ "${b}" =~ ,([^\€]*)€ ]] && printf '%s' "${BASH_REMATCH[1]}")")"
-		if (( $(bc -l <<< "${a} >= ${start}") )) && (( $(bc -l <<< "${a} <= ${end}") )); then
-			if [[ "${b}" =~ [^\,]*\,sign ]]; then
-				message_craft="【$(sed -nE 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g;s_.*\(\)(.*)_\1_p' <<< "${b}")】
+	# Set the current time variable
+	current_time="${1}"
+	hrs="${current_time%%:*}"
+	mins="${current_time%:??.??}"
+	mins="${mins/*:/}"
+
+	# Convert the current time to seconds
+	IFS=':.' read -r h m s ms <<< "$current_time"
+	current_time_seconds="$((10#$h * 3600 + 10#$m * 60 + 10#$s + 10#$ms / 100)).$ms"
+
+	# Scrape the time of the subtitle
+	while IFS='×' read -r start_time end_time speaker subtitle; do
+	    IFS=':.' read -r h m s ms <<< "$start_time"
+	    start_time_seconds="$((10#$h * 3600 + 10#$m * 60 + 10#$s + 10#$ms / 100)).$ms"
+	    IFS=':.' read -r h m s ms <<< "$end_time"
+	    end_time_seconds="$((10#$h * 3600 + 10#$m * 60 + 10#$s + 10#$ms / 100)).$ms"
+	    # Check if the current time is between the start and end time
+	    if awk -v a="$current_time_seconds" -v b="$start_time_seconds" 'BEGIN{{if(a>=b) exit 0;exit 1}}' && awk -v a="$current_time_seconds" -v b="$end_time_seconds" 'BEGIN{{if(a<=b) exit 0;exit 1}}'; then
+	        # Strip the stylings and display the subtitle
+	        subtitle="${subtitle/\{*\}/}"
+	        subtitle="${subtitle/\\N/}"
+	        if [[ "${speaker}" =~ [^\,]*\,sign ]]; then
+	            message_craft="【$(sed -E 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g' <<< "${subtitle}")】
 ${message_craft}"
-			elif [[ "${b}" =~ Signs\,\, ]]; then
-				message_craft="$(sed -nE 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g;s_.*\(\)(.*)_"\1"_p' <<< "${b}")
+	        elif [[ "${speaker}" =~ Signs\,\, ]]; then
+	            message_craft="\"$(sed -E 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g' <<< "${subtitle}")\"
 ${message_craft}"
-			elif [[ "${b}" =~ Songs_OP\,OP ]]; then
-				is_opsong="1"
-				message_craft="『$(sed -nE 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g;s_.*\(\)(.*)_\1_p' <<< "${b}")』
+	        elif [[ "${speaker}" =~ Songs_OP\,OP ]]; then
+	            is_opsong="1"
+	            message_craft="『$(sed -E 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g' <<< "${subtitle}")』
 ${message_craft}"
-			else
-				message_craft="${b/*\(\)/}
+	        else
+	            message_craft="${subtitle}
 ${message_craft}"
-			fi
-			continue
-		fi
-		(( $(bc -l <<< "${a} <= ${end}") )) && break
-	done <<-EOF
-	${list}
-	EOF
+	        fi
+	    fi
+	done < <(sed -nE "/Dialogue:.*0,${hrs}:${mins}:??.??/"' s_.*\,([^\,]*),([^\,]*),(.*,[^\,]*,)0000,0000,0000,,(.*)_\1×\2×\3×\4_p' subtitle.ass)
 	message_craft_a="$(grep -E '^【.+】$' <<< "${message_craft}")"
 	message_craft_b="$(grep -vE '^【.+】$' <<< "${message_craft}")"
 	message_craft="${message_craft_b}
 ${message_craft_a}"
-	message_craft="$(sed '/^$/d' <<< "${message_craft}" | sed '1!G;h;$!d' | uniq)"
+	message_craft="$(sed '/^[[:blank:]]*$/d;/^$/d' <<< "${message_craft}" | sed '1!G;h;$!d' | uniq)"
 	[[ -z "${message_craft}" ]] && is_empty="1" || is_empty="0"
-	unset list start end a b secs milisecs mins subs_content
+	unset current_time_seconds start_time_seconds end_time_seconds start_time end_time speaker subtitle message_craft_a message_craft_b
 }
+
 
 # Check all the dependencies if installed
 dep_check bash sed grep curl bc || exit 1
@@ -179,7 +177,7 @@ fi
 message="Season ${season}, Episode ${episode}, Frame ${prev_frame} out of ${total_frame}"
 
 # Call the Scraper of Subs
-scr2 "$(nth "${prev_frame}")"
+scrv3 "$(nth "${prev_frame}")"
 
 # Compare if the Subs are OP Songs or Not
 if [[ "${is_opsong}" = "1" ]]; then
