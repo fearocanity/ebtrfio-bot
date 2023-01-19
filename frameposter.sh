@@ -39,7 +39,7 @@ locationsub=./fb/bocchi_ep2.ass
 
 # Temp Variables
 is_empty="1"
-is_opsong="0"
+is_opedsong="0"
 
 # These token variables are required when making request and auths in APIs
 # Create secret.sh file to assign the token variable
@@ -109,48 +109,51 @@ scrv3(){
 	# This function solves the timings of Subs
 	# Set the current time variable
 	current_time="${1}"
-	hrs="${current_time%%:*}"
-	mins="${current_time%:??.??}"
-	mins="${mins/*:/}"
-
-	# Convert the current time to seconds
-	IFS=':.' read -r h m s ms <<< "$current_time"
-	current_time_seconds="$((10#$h * 3600 + 10#$m * 60 + 10#$s + 10#$ms / 100)).$ms"
-
-	# Scrape the time of the subtitle
-	while IFS='×' read -r start_time end_time speaker subtitle; do
-	    IFS=':.' read -r h m s ms <<< "$start_time"
-	    start_time_seconds="$((10#$h * 3600 + 10#$m * 60 + 10#$s + 10#$ms / 100)).$ms"
-	    IFS=':.' read -r h m s ms <<< "$end_time"
-	    end_time_seconds="$((10#$h * 3600 + 10#$m * 60 + 10#$s + 10#$ms / 100)).$ms"
-	    # Check if the current time is between the start and end time
-	    if awk -v a="$current_time_seconds" -v b="$start_time_seconds" 'BEGIN{{if(a>=b) exit 0;exit 1}}' && awk -v a="$current_time_seconds" -v b="$end_time_seconds" 'BEGIN{{if(a<=b) exit 0;exit 1}}'; then
-	        # Strip the stylings and display the subtitle
-	        subtitle="${subtitle/\{*\}/}"
-	        subtitle="${subtitle/\\N/}"
-	        if [[ "${speaker}" =~ [^\,]*\,sign ]]; then
-	            message_craft="【$(sed -E 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g' <<< "${subtitle}")】
-${message_craft}"
-	        elif [[ "${speaker}" =~ Signs\,\, ]]; then
-	            message_craft="\"$(sed -E 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g' <<< "${subtitle}")\"
-${message_craft}"
-	        elif [[ "${speaker}" =~ Songs_OP\,OP ]]; then
-	            is_opsong="1"
-	            message_craft="『$(sed -E 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g' <<< "${subtitle}")』
-${message_craft}"
-	        else
-	            message_craft="${subtitle}
-${message_craft}"
-	        fi
-	    fi
-	done < <(sed -nE "/Dialogue:.*0,${hrs}:${mins}:??.??/"' s_.*\,([^\,]*),([^\,]*),(.*,[^\,]*,)0000,0000,0000,,(.*)_\1×\2×\3×\4_p' subtitle.ass)
-	message_craft_a="$(grep -E '^【.+】$' <<< "${message_craft}")"
-	message_craft_b="$(grep -vE '^【.+】$' <<< "${message_craft}")"
-	message_craft="${message_craft_b}
-${message_craft_a}"
-	message_craft="$(sed '/^[[:blank:]]*$/d;/^$/d' <<< "${message_craft}" | sed '1!G;h;$!d' | uniq)"
+	# Scrape the Subtitles
+	# This awk syntax is pretty much hardcoded but quite genius because all this scrapings are happening in only 2 awk commands, thats why the scrapings are 100x faster than the previous versions
+	message_craft="$(
+	awk -F ',' -v curr_time_sc="${current_time}" '/Dialogue:/ {
+			split(curr_time_sc, aa, ":");
+			curr_time = aa[1]*3600 + aa[2]*60 + aa[3];
+			split($2, a, ":");
+			start_time = a[1]*3600 + a[2]*60 + a[3];
+			split($3, b, ":");
+			end_time = b[1]*3600 + b[2]*60 + b[3];
+			if (curr_time>=start_time && curr_time<=end_time) {
+				c = $0;
+				split(c, d, ",");
+				split(c, e, ",,");
+				g = e[2];
+				f = d[4]","d[5];
+				gsub(/\r/,"",g);
+				gsub(/   /," ",g);
+				gsub(/!([a-zA-Z0-9])/,"! \\1",g);
+				gsub(/(\\N{\\c&H727571&}|{\\c&HB2B5B2&})/,", ",g);
+				gsub(/{([^\x7d]*)}/,"",g);
+				if(g ~ /[[:graph:]]\\N/) gsub(/\\N/," ",g);
+				gsub(/\\N/,"",g);
+				gsub(/\\h/,"",g);
+				if (f ~ /[^,]*,sign/) {
+					print "【"g"】"
+				} else if (f ~ /Signs,,/) {
+					print "\""g"\""
+				} else if (f ~ /Songs_OP,OP/ || f ~ /Songs_ED,ED/) {
+					print "『"g"』"
+				} else {
+					print g
+				}
+			}
+		}' "${locationsub}" | \
+	awk '!a[$0]++{
+			if ($0 ~ /^【.+】$/) aa=aa $0 "\n"; else bb=bb $0 "\n"
+		} END {
+		print aa bb
+		}' | \
+	sed '/^[[:blank:]]*$/d;/^$/d'
+	)"
+	[[ "${message_craft}" =~ ^『.*』$ ]] && is_opedsong="1"
 	[[ -z "${message_craft}" ]] && is_empty="1" || is_empty="0"
-	unset current_time_seconds start_time_seconds end_time_seconds start_time end_time speaker subtitle message_craft_a message_craft_b
+	unset current_time
 }
 
 
@@ -179,8 +182,8 @@ message="Season ${season}, Episode ${episode}, Frame ${prev_frame} out of ${tota
 # Call the Scraper of Subs
 scrv3 "$(nth "${prev_frame}")"
 
-# Compare if the Subs are OP Songs or Not
-if [[ "${is_opsong}" = "1" ]]; then
+# Compare if the Subs are OP/ED Songs or Not
+if [[ "${is_opedsong}" = "1" ]]; then
 	message_comment="Lyrics:
 ${message_craft}"
 else
@@ -206,7 +209,7 @@ id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
 # This will note that the Post was success, without errors and append it to log file
 printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://facebook.com/${id}" >> "${log}"
 
-# Lastly, This will add + 1 to prev_frame variable and redirect it to file
+# Lastly, This will increment prev_frame variable and redirect it to file
 next_frame="$((prev_frame+=1))"
 printf '%s' "${next_frame}" > ./fb/frameiterator
 
