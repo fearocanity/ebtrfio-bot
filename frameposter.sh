@@ -88,16 +88,17 @@ nth(){
 	# This function aims to convert current frame to time (in seconds)
 	#
 	# You need to get the exact Frame Rate of a video
+	t="${1/[!0-9]/}"
 	# Old Formula: {current_frame} * ({2fps}/{frame_rate}) / {frame_rate} = {total_secs}
 	# Note: Old formula is innaccurate
 	#
 	# New Formula: {current_frame} * ({vid_totalframe} / {total_frame}) / {frame_rate} = {total_secs}
 	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; (${1} - 2) * 7.98475609756 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	sec="$(bc -l <<< "scale=2; (${t:-1} - 2) * 7.98475609756 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
-	# sec="$(bc -l <<< "scale=2; (${1} - 1) * (${vid_totalfrm} / ${total_frame}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	# sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * (${vid_totalfrm} / ${total_frame}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	[[ "${secfloat}" =~ ^0[8-9]$ ]] && secfloat="${secfloat#0}"
 	secfloat="${secfloat:-0}"
