@@ -4,7 +4,7 @@
 # Author: EBTRFIO
 # Date: Dec. 10 2022
 # Licence: None
-# Version: v1.1.1.2
+# Version: v1.2.1.2
 # ############# #
 
 # --- Dependencies --- #
@@ -39,7 +39,7 @@ locationsub=./fb/bocchi_ep2.ass
 
 # Temp Variables
 is_empty="1"
-is_opsong="0"
+is_opedsong="0"
 
 # These token variables are required when making request and auths in APIs
 # Create secret.sh file to assign the token variable
@@ -84,29 +84,21 @@ create_gif(){
 	curl -sfLX POST "${graph_url_main}/v15.0/${id}/comments?access_token=${token}" -d "message=GIF created from last 10 frames (${1}-${2})" -d "attachment_share_url=${url_gif}" -o /dev/null
 }
 
-toepoch(){
-	# This function aims to compute 00:00:00.00 (time) to seconds
-	hrs="${1%%:*}"
-	mins="${1%:??.??}" mins="${mins/*:/}" mins="${mins##0}"
-	secs="${1##*:}" milisecs="${secs#*.}" secs="${secs%%.*}" secs="${secs##0}"
-	printf '%s' "$((hrs * 3600 + mins * 60 + secs)).${milisecs}"
-	unset hrs mins secs milisecs
-}
-
 nth(){
 	# This function aims to convert current frame to time (in seconds)
 	#
 	# You need to get the exact Frame Rate of a video
+	t="${1/[!0-9]/}"
 	# Old Formula: {current_frame} * ({2fps}/{frame_rate}) / {frame_rate} = {total_secs}
 	# Note: Old formula is innaccurate
 	#
 	# New Formula: {current_frame} * ({vid_totalframe} / {total_frame}) / {frame_rate} = {total_secs}
 	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; (${1} - 2) * 7.98475609756 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	sec="$(bc -l <<< "scale=2; (${t:-1} - 2) * 7.98475609756 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
-	# sec="$(bc -l <<< "scale=2; (${1} - 1) * (${vid_totalfrm} / ${total_frame}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	# sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * (${vid_totalfrm} / ${total_frame}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	[[ "${secfloat}" =~ ^0[8-9]$ ]] && secfloat="${secfloat#0}"
 	secfloat="${secfloat:-0}"
@@ -114,47 +106,57 @@ nth(){
 	unset sec secfloat
 }
 
-scr2(){
+scrv3(){
 	# This function solves the timings of Subs
-	a="$(toepoch "${1}")"
-	subs_content="$(sed -E 's_Dialogue: [0-9],([0-9\:\,.]*),(.*),0000,0000,0000,,_\1€\2()_g;/\(\)/!d;s_(\\N\{\\c\&H727571\&\}|\{\\c\&HB2B5B2\&\})_, _g;s_\{([^\x7d]*)\}__g;/[[:graph:]]\\N/ s_\\N_ _g;s_\\N__g;s_\\h__g' "${locationsub}" | tr -d '\r')"
-	[[ ! "${1%%:*}" =~ ^0*$ ]] && list="$(grep -E "${1%%:*}:[0-9]{2}:[0-9]{2}.[0-9]{2}" <<< "${subs_content}")"
-	mins="${1%:??.??}" mins="${mins/*:/}"
-	[[ -z "${list}" ]] && [[ ! "${mins}" =~ ^0*$ ]] && list="$(grep -E "0:$(printf '%s' "${1}" | cut -d':' -f2):[0-9]{2}.[0-9]{2}" <<< "${list:-${subs_content}}")"
-	secs="${1##*:}" milisecs="${secs#*.}" secs="${secs%%.*}"
-	[[ -z "${list}" ]] && list="${subs_content}"
-	while read -r b; do
-		start="$(toepoch "$([[ "${b}" =~ ^([^\,]*), ]] && printf '%s' "${BASH_REMATCH[1]}")")"
-		end="$(toepoch "$([[ "${b}" =~ ,([^\€]*)€ ]] && printf '%s' "${BASH_REMATCH[1]}")")"
-		if (( $(bc -l <<< "${a} >= ${start}") )) && (( $(bc -l <<< "${a} <= ${end}") )); then
-			if [[ "${b}" =~ [^\,]*\,sign ]]; then
-				message_craft="【$(sed -nE 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g;s_.*\(\)(.*)_\1_p' <<< "${b}")】
-${message_craft}"
-			elif [[ "${b}" =~ Signs\,\, ]]; then
-				message_craft="$(sed -nE 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g;s_.*\(\)(.*)_"\1"_p' <<< "${b}")
-${message_craft}"
-			elif [[ "${b}" =~ Songs_OP\,OP ]]; then
-				is_opsong="1"
-				message_craft="『$(sed -nE 's_[[:blank:]]{3}_ _g;s_\!([a-zA-Z0-9])_\! \1_g;s_.*\(\)(.*)_\1_p' <<< "${b}")』
-${message_craft}"
-			else
-				message_craft="${b/*\(\)/}
-${message_craft}"
-			fi
-			continue
-		fi
-		(( $(bc -l <<< "${a} <= ${end}") )) && break
-	done <<-EOF
-	${list}
-	EOF
-	message_craft_a="$(grep -E '^【.+】$' <<< "${message_craft}")"
-	message_craft_b="$(grep -vE '^【.+】$' <<< "${message_craft}")"
-	message_craft="${message_craft_b}
-${message_craft_a}"
-	message_craft="$(sed '/^$/d' <<< "${message_craft}" | sed '1!G;h;$!d' | uniq)"
+	# Set the current time variable
+	current_time="${1}"
+	# Scrape the Subtitles
+	# This awk syntax is pretty much hardcoded but quite genius because all this scrapings are happening in only 2 awk commands, thats why the scrapings are 100x faster than the previous versions
+	message_craft="$(
+	awk -F ',' -v curr_time_sc="${current_time}" '/Dialogue:/ {
+			split(curr_time_sc, aa, ":");
+			curr_time = aa[1]*3600 + aa[2]*60 + aa[3];
+			split($2, a, ":");
+			start_time = a[1]*3600 + a[2]*60 + a[3];
+			split($3, b, ":");
+			end_time = b[1]*3600 + b[2]*60 + b[3];
+			if (curr_time>=start_time && curr_time<=end_time) {
+				c = $0;
+				split(c, d, ",");
+				split(c, e, ",,");
+				f = d[4]","d[5]",";
+				g = (f ~ /Signs,,/) ? e[3] : e[2];
+				gsub(/\r/,"",g);
+				gsub(/   /," ",g);
+				gsub(/!([a-zA-Z0-9])/,"! \\1",g);
+				gsub(/(\\N{\\c&H727571&}|{\\c&HB2B5B2&})/,", ",g);
+				gsub(/{([^\x7d]*)}/,"",g);
+				if(g ~ /[[:graph:]]\\N/) gsub(/\\N/," ",g);
+				gsub(/\\N/,"",g);
+				gsub(/\\h/,"",g);
+				if (f ~ /[^,]*,sign/) {
+					print "【"g"】"
+				} else if (f ~ /Signs,,/) {
+					print "\""g"\""
+				} else if (f ~ /Songs_OP,OP/ || f ~ /Songs_ED,ED/) {
+					print "『"g"』"
+				} else {
+					print g
+				}
+			}
+		}' "${locationsub}" | \
+	awk '!a[$0]++{
+			if ($0 ~ /^【.+】$/) aa=aa $0 "\n"; else bb=bb $0 "\n"
+		} END {
+		print aa bb
+		}' | \
+	sed '/^[[:blank:]]*$/d;/^$/d'
+	)"
+	[[ "${message_craft}" =~ ^『.*』$ ]] && is_opedsong="1"
 	[[ -z "${message_craft}" ]] && is_empty="1" || is_empty="0"
-	unset list start end a b secs milisecs mins subs_content
+	unset current_time
 }
+
 
 # Check all the dependencies if installed
 dep_check bash sed grep curl bc || exit 1
@@ -179,10 +181,10 @@ fi
 message="Season ${season}, Episode ${episode}, Frame ${prev_frame} out of ${total_frame}"
 
 # Call the Scraper of Subs
-scr2 "$(nth "${prev_frame}")"
+scrv3 "$(nth "${prev_frame}")"
 
-# Compare if the Subs are OP Songs or Not
-if [[ "${is_opsong}" = "1" ]]; then
+# Compare if the Subs are OP/ED Songs or Not
+if [[ "${is_opedsong}" = "1" ]]; then
 	message_comment="Lyrics:
 ${message_craft}"
 else
@@ -208,7 +210,7 @@ id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
 # This will note that the Post was success, without errors and append it to log file
 printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://facebook.com/${id}" >> "${log}"
 
-# Lastly, This will add + 1 to prev_frame variable and redirect it to file
+# Lastly, This will increment prev_frame variable and redirect it to file
 next_frame="$((prev_frame+=1))"
 printf '%s' "${next_frame}" > ./fb/frameiterator
 
