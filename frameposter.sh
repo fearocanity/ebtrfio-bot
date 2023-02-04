@@ -35,7 +35,7 @@ vidgif_location=./fb/tmp.gif
 : "${vid_totalfrm:=}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
-locationsub=./fb/bocchi_ep2.ass
+locationsub=./fb/bocchi_ep3.ass
 
 # Temp Variables
 is_empty="1"
@@ -81,7 +81,7 @@ create_gif(){
 	# This line below can be uncommented if you don't have GIPHY Token
 	# url_gif="$(curl -sLfX POST -F "expires=1" -F "file=@${vidgif_location}" "https://0x0.st")"
 	
-	curl -sfLX POST "${graph_url_main}/v15.0/${id}/comments?access_token=${token}" -d "message=GIF created from last 10 frames (${1}-${2})" -d "attachment_share_url=${url_gif}" -o /dev/null
+	curl -sfLX POST "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" -d "message=GIF created from last 10 frames (${1}-${2})" -d "attachment_share_url=${url_gif}" -o /dev/null
 }
 
 nth(){
@@ -95,7 +95,7 @@ nth(){
 	# New Formula: {current_frame} * ({vid_totalframe} / {total_frame}) / {frame_rate} = {total_secs}
 	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; (${t:-1} + 2) * 7.98475609756 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	sec="$(bc -l <<< "scale=2; (${t:-1} + 2) * 6.84872259103 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 	
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
 	# sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * (${vid_totalfrm} / ${total_frame}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
@@ -199,10 +199,10 @@ response="$(curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7 "${gra
 id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
 
 # Post images in Albums
-[[ -z "${album}" ]] || curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7  "${graph_url_main}/${album}/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg" -o /dev/null &
+[[ -z "${album}" ]] || curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7 "${graph_url_main}/${album}/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg" -o /dev/null &
 
 # Comment the Subtitles on a post created on timeline
-[[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7 "${graph_url_main}/v15.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null &
+[[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7 "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null &
 
 # Addons, you can comment this line if you don't want to comment the GIF created on previous 10 frames
 # [[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt "${gif_prev_framecount}" ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
