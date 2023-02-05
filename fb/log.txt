@@ -8614,3 +8614,4 @@
 [X] Frame: 4263, Episode 02
 [X] Frame: 4263, Episode 02
 [X] Frame: 4263, Episode 02
+[X] Frame: 1, Episode 03
