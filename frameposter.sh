@@ -54,7 +54,7 @@ token="${1:-${fb_api_key}}"
 giphy_token="${2:-${giphy_api_key}}"
 
 failed(){
-	printf '%s\n' "[X] Frame: ${1}, Episode ${2}" >> "${log}"
+	[[ "$#" -gt 0 ]] && printf '%s\n' "[X] Frame: ${1}, Episode ${2}" >> "${log}"
 	exit 1
 }
 
@@ -73,14 +73,14 @@ create_gif(){
 	dep_check convert | tee -a "${log}" || return 1
 	[[ -e "${vidgif_location}" ]] && rm "${vidgif_location}"
 	convert -resize "50%" -delay 20 -loop 1 $(eval "echo ${frames_location}/frame_{""${1}""..""${2}""}.jpg") "${vidgif_location}"
-	
+
 	# GIPHY API is Required when using this code
 	url_gif="$(curl -sLfX POST --retry 3 --retry-connrefused --retry-delay 7 -F "api_key=${giphy_token}" -F "tags= ${giphy_tags}" -F "file=@${vidgif_location}" "https://upload.giphy.com/v1/gifs" | sed -nE 's_.*"id":"([^\"]*)"\}.*_\1_p')"
 	[[ -z "${url_gif}" ]] && return 1 || url_gif="https://giphy.com/gifs/${url_gif}"
-	
+
 	# This line below can be uncommented if you don't have GIPHY Token
 	# url_gif="$(curl -sLfX POST -F "expires=1" -F "file=@${vidgif_location}" "https://0x0.st")"
-	
+
 	curl -sfLX POST "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" -d "message=GIF created from last 10 frames (${1}-${2})" -d "attachment_share_url=${url_gif}" -o /dev/null
 }
 
@@ -96,10 +96,10 @@ nth(){
 	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
 	sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * 6.84872259103 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
-	
+
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
 	# sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * (${vid_totalfrm} / ${total_frame}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
-	
+
 	[[ "${secfloat}" =~ ^0[8-9]$ ]] && secfloat="${secfloat#0}"
 	secfloat="${secfloat:-0}"
 	printf '%01d:%02d:%02d.%02d' "$((sec / 60 / 60 % 60))" "$((sec / 60 % 60))" "$((sec % 60))" "${secfloat}"
@@ -159,7 +159,7 @@ scrv3(){
 
 
 # Check all the dependencies if installed
-dep_check bash sed grep curl bc || exit 1
+dep_check bash sed grep curl bc || failed
 
 # Create DIRs and files for iterator and temps/logs
 [[ ! -d ./fb ]] && mkdir ./fb
@@ -193,16 +193,16 @@ ${message_craft}"
 fi
 
 # Post images to Timeline of Page
-response="$(curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7 "${graph_url_main}/me/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg")" || failed "${prev_frame}" "${episode}"
+response="$(curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/me/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg")" || failed "${prev_frame}" "${episode}"
 
 # Get the ID of Image Post
 id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
 
 # Post images in Albums
-[[ -z "${album}" ]] || curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7 "${graph_url_main}/${album}/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg" -o /dev/null &
+[[ -z "${album}" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/${album}/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg" -o /dev/null
 
 # Comment the Subtitles on a post created on timeline
-[[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 3 --retry-connrefused --retry-delay 7 "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null &
+[[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null
 
 # Addons, you can comment this line if you don't want to comment the GIF created on previous 10 frames
 # [[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt "${gif_prev_framecount}" ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
