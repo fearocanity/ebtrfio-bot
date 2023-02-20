@@ -4,7 +4,7 @@
 # Author: EBTRFIO
 # Date: Dec. 10 2022
 # Licence: None
-# Version: v1.2.1.3
+# Version: v1.3.1.3
 # ############# #
 
 # --- Dependencies --- #
@@ -28,6 +28,7 @@ graph_url_main="https://graph.facebook.com"
 frames_location=./frames
 log=./fb/log.txt
 vidgif_location=./fb/tmp.gif
+rc_location=./fb/tmprc.jpg
 : "${season:=}"
 : "${episode:=}"
 : "${total_frame:=}"
@@ -82,6 +83,22 @@ create_gif(){
 	# url_gif="$(curl -sLfX POST -F "expires=1" -F "file=@${vidgif_location}" "https://0x0.st")"
 
 	curl -sfLX POST "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" -d "message=GIF created from last 10 frames (${1}-${2})" -d "attachment_share_url=${url_gif}" -o /dev/null
+}
+
+rand_func(){ od -vAn -N2 -tu2 < /dev/urandom | tr -dc '0-9' ;}
+rand_range(){ awk -v "a=100" -v "b=350" -v "c=$(rand_func)" 'BEGIN{srand();print int(a+(rand() - c % c)*(b-a+1))}' ;}
+
+random_crop(){
+	[[ -e "${rc_location}" ]] && rm "${rc_location}"
+	crop_width="$(rand_range)"
+	crop_height="$(rand_range)"
+	image_width="$(identify -format '%w' "${1}")"
+	image_height="$(identify -format '%h' "${1}")"
+	crop_x="$(($(rand_func) % (image_width - crop_width)))"
+	crop_y="$(($(rand_func) % (image_height - crop_height)))"
+	convert "${1}" -crop "${crop_width}x${crop_height}+${crop_x}+${crop_y}" "${rc_location}"
+	msg_rc="Random Crop. [${crop_width}x${crop_height} ~ X: ${crop_x}, Y: ${crop_y}]"
+	curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" -F "message=${msg_rc}" -F "source=@${rc_location}" -o /dev/null
 }
 
 nth(){
@@ -198,8 +215,17 @@ response="$(curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${gra
 # Get the ID of Image Post
 id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
 
+sleep 3 # Delay
+
 # Post images in Albums
 [[ -z "${album}" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/${album}/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg" -o /dev/null
+
+sleep 3 # Delay
+
+# Addons, Random Crop from frame
+random_crop "${frames_location}/frame_${prev_frame}.jpg"
+
+sleep 3 # Delay
 
 # Comment the Subtitles on a post created on timeline
 [[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null
