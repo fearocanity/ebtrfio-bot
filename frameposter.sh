@@ -86,7 +86,7 @@ create_gif(){
 }
 
 rand_func(){ od -vAn -N2 -tu2 < /dev/urandom | tr -dc '0-9' ;}
-rand_range(){ awk -v "a=100" -v "b=350" -v "c=$(rand_func)" 'BEGIN{srand();print int(a+(rand() - c % c)*(b-a+1))}' ;}
+rand_range(){ awk -v "a=100" -v "b=400" -v "c=$(rand_func)" 'BEGIN{srand();print int(a+(rand() - c % c)*(b-a+1))}' ;}
 
 random_crop(){
 	[[ -e "${rc_location}" ]] && rm "${rc_location}"
