@@ -13582,3 +13582,9 @@
 [√] Frame: 4963, Episode 03 https://facebook.com/182805638017090
 [√] Frame: 4964, Episode 03 https://facebook.com/182808401350147
 [√] Frame: 4965, Episode 03 https://facebook.com/182811778016476
+[√] Frame: 4966, Episode 03 https://facebook.com/182941868003467
+[√] Frame: 4967, Episode 03 https://facebook.com/182946091336378
+[√] Frame: 4968, Episode 03 https://facebook.com/182950221335965
+[√] Frame: 4969, Episode 03 https://facebook.com/182954221335565
+[√] Frame: 4970, Episode 03 https://facebook.com/182957608001893
+[√] Frame: 4971, Episode 03 https://facebook.com/182960641334923
