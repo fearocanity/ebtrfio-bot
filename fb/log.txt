@@ -13589,3 +13589,18 @@
 [√] Frame: 4970, Episode 03 https://facebook.com/182957608001893
 [√] Frame: 4971, Episode 03 https://facebook.com/182960641334923
 [X] Frame: 0, Episode 04
+[√] Frame: 1, Episode 04 https://facebook.com/191721143792206
+[√] Frame: 2, Episode 04 https://facebook.com/191722497125404
+[√] Frame: 3, Episode 04 https://facebook.com/191723743791946
+[√] Frame: 4, Episode 04 https://facebook.com/191725023791818
+[√] Frame: 5, Episode 04 https://facebook.com/191726127125041
+[√] Frame: 6, Episode 04 https://facebook.com/191727413791579
+[√] Frame: 7, Episode 04 https://facebook.com/191729213791399
+[√] Frame: 8, Episode 04 https://facebook.com/191730360457951
+[√] Frame: 9, Episode 04 https://facebook.com/191731603791160
+[√] Frame: 10, Episode 04 https://facebook.com/191732707124383
+[√] Frame: 11, Episode 04 https://facebook.com/191733863790934
+[√] Frame: 12, Episode 04 https://facebook.com/191735087124145
+[√] Frame: 13, Episode 04 https://facebook.com/191736183790702
+[√] Frame: 14, Episode 04 https://facebook.com/191737580457229
+[√] Frame: 15, Episode 04 https://facebook.com/191739093790411
