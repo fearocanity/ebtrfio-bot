@@ -4,7 +4,7 @@
 # Author: EBTRFIO
 # Date: Dec. 10 2022
 # Licence: None
-# Version: v1.3.1.3
+# Version: v1.3.1.4
 # ############# #
 
 # --- Dependencies --- #
@@ -36,7 +36,7 @@ rc_location=./fb/tmprc.jpg
 : "${vid_totalfrm:=}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
-locationsub=./fb/bocchi_ep3.ass
+locationsub=./fb/bocchi_ep4.ass
 
 # Temp Variables
 is_empty="1"
