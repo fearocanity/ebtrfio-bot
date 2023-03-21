@@ -14295,3 +14295,18 @@
 [√] Frame: 704, Episode 04 https://facebook.com/199671589663828
 [√] Frame: 705, Episode 04 https://facebook.com/199675749663412
 [X] Frame: 706, Episode 04
+[√] Frame: 706, Episode 04 https://facebook.com/199860099644977
+[√] Frame: 707, Episode 04 https://facebook.com/199864646311189
+[√] Frame: 708, Episode 04 https://facebook.com/199869816310672
+[√] Frame: 709, Episode 04 https://facebook.com/199874312976889
+[√] Frame: 710, Episode 04 https://facebook.com/199878049643182
+[√] Frame: 711, Episode 04 https://facebook.com/199881956309458
+[√] Frame: 712, Episode 04 https://facebook.com/199885776309076
+[√] Frame: 713, Episode 04 https://facebook.com/199889082975412
+[√] Frame: 714, Episode 04 https://facebook.com/199892892975031
+[√] Frame: 715, Episode 04 https://facebook.com/199896419641345
+[√] Frame: 716, Episode 04 https://facebook.com/199900136307640
+[√] Frame: 717, Episode 04 https://facebook.com/199903442973976
+[√] Frame: 718, Episode 04 https://facebook.com/199907086306945
+[√] Frame: 719, Episode 04 https://facebook.com/199910396306614
+[√] Frame: 720, Episode 04 https://facebook.com/199913539639633
