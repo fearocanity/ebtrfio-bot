@@ -19,6 +19,6 @@ lim_frame="$((prev_frame+fph-1))"
 
 time_ended="$(TZ='Asia/Tokyo' date)"
 ovr_all="$(sed -E ':L;s=\b([0-9]+)([0-9]{3})\b=\1,\2=g;t L' counter_n.txt)"
-abt_txt="$(printf '%s\n%s' "Chopped 3.5 FPS, Posting 15 Frames every 2 hours." "Total of \"${ovr_all}\" frame was successfully posted!!")"
+abt_txt="$(printf '%s\n\n%s' "Chopped 3.5 FPS, Posting 15 Frames every 2 hours." "Total of ${ovr_all} frames was successfully posted!!")"
 bash img_process.sh "success" "${prev_frame}" "${lim_frame}" "${time_started}" "${time_ended}"
 curl -sLk -X POST "https://graph.facebook.com/me/?access_token=${1}" --data-urlencode "about=${abt_txt}" -o /dev/null || true

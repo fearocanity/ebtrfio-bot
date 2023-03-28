@@ -25,6 +25,6 @@ jobs:
         with:
           commit_message: "Posted!!"
           repository: .
-          file_pattern: README.md fb/* frameposter.sh frame_main.sh status/* 
+          file_pattern: README.md fb/* counter*.txt frameposter.sh frame_main.sh status/* 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

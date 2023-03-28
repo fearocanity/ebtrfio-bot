@@ -1,5 +1,7 @@
 on:
   push:
+    paths:
+      - '**.sh'
   pull_request:
 
 name: 'Boccheck'
