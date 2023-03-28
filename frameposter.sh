@@ -239,7 +239,7 @@ printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://faceb
 
 # Lastly, This will increment prev_frame variable and redirect it to file
 next_frame="$((prev_frame+=1))"
-incmnt_cnt="$(($(<./counter_n.txt)+1))"
+incmnt_cnt="$(($(<./counter_n.txt)+${fph}))"
 printf '%s' "${next_frame}" > ./fb/frameiterator
 printf '%s' "${incmnt_cnt}" > ./counter_n.txt
 
