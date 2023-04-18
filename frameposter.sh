@@ -4,7 +4,7 @@
 # Author: EBTRFIO
 # Date: Dec. 10 2022
 # Licence: None
-# Version: v1.3.1.4
+# Version: v1.4.1.5
 # ############# #
 
 # --- Dependencies --- #
@@ -142,7 +142,7 @@ scrv3(){
 				split(c, d, ",");
 				split(c, e, ",,");
 				f = d[4]","d[5]",";
-				g = (f ~ /[a-zA-Z],,/) ? e[3] : e[2];
+				g = (f ~ /[a-zA-Z0-9],,/) ? e[3] : e[2];
 				gsub(/\r/,"",g);
 				gsub(/   /," ",g);
 				gsub(/!([a-zA-Z0-9])/,"! \\1",g);
@@ -155,7 +155,7 @@ scrv3(){
 					print "【"g"】"
 				} else if (f ~ /Signs,,/) {
 					print "\""g"\""
-				} else if (f ~ /Songs_OP,OP/ || f ~ /Songs_ED,ED/) {
+				} else if (f ~ /Songs[^,]*,[^,]*,/) {
 					print "『"g"』"
 				} else {
 					print g
