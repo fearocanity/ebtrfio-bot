@@ -18555,3 +18555,9 @@
 [√] Frame: 4963, Episode 04 https://facebook.com/245690175061969
 [√] Frame: 4964, Episode 04 https://facebook.com/245691831728470
 [√] Frame: 4965, Episode 04 https://facebook.com/245693758394944
+[√] Frame: 4966, Episode 04 https://facebook.com/245744958389824
+[√] Frame: 4967, Episode 04 https://facebook.com/245746345056352
+[√] Frame: 4968, Episode 04 https://facebook.com/245747618389558
+[√] Frame: 4969, Episode 04 https://facebook.com/245748771722776
+[√] Frame: 4970, Episode 04 https://facebook.com/245750328389287
+[√] Frame: 4971, Episode 04 https://facebook.com/245751665055820
