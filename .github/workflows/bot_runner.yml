@@ -12,7 +12,7 @@ concurrency:
 jobs:
   Nijika-Chan:
     runs-on: ubuntu-latest
-    if: ${{ github.triggering_actor == github.repository_owner }} 
+    if: ${{ github.triggering_actor == github.repository_owner }}
     steps:
       - name: "checkout"
         uses: actions/checkout@v3
