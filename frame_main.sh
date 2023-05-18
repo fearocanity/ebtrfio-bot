@@ -5,6 +5,10 @@
 [[ -e status/status.jpg ]] && : > status/status.jpg
 
 prev_frame="$(<./fb/frameiterator)"
+if [[ "${prev_frame}" =~ [0-9]*\.[0-9] ]]; then
+	is_bonus=1
+	prev_frame="${prev_frame%.*}"
+fi
 time_started="$(TZ='Asia/Tokyo' date)"
 
 # Main Loop
