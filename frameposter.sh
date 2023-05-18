@@ -185,6 +185,7 @@ dep_check bash sed grep curl bc || failed
 
 # Get the previous frame from a file that acts like an iterator
 prev_frame="$(<./fb/frameiterator)"
+frame_filename="frame_${prev_frame}.jpg"
 
 # added checks for bonuses
 if [[ "${prev_frame}" =~ [0-9]*\.[0-9] ]]; then
@@ -222,7 +223,7 @@ ${message_craft}"
 fi
 
 # Post images to Timeline of Page
-response="$(curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/me/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg")" || failed "${prev_frame}" "${episode}"
+response="$(curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/me/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/${frame_filename}")" || failed "${prev_frame}" "${episode}"
 
 # Get the ID of Image Post
 id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
@@ -230,12 +231,12 @@ id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
 sleep 3 # Delay
 
 # Post images in Albums
-[[ -z "${album}" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/${album}/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg" -o /dev/null
+[[ -z "${album}" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/${album}/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/${frame_filename}" -o /dev/null
 
 sleep 3 # Delay
 
 # Addons, Random Crop from frame
-random_crop "${frames_location}/frame_${prev_frame}.jpg"
+random_crop "${frames_location}/${frame_filename}"
 
 sleep 3 # Delay
 
