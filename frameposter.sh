@@ -41,6 +41,7 @@ locationsub=./fb/bocchi_ep5.ass
 # Temp Variables
 is_empty="1"
 is_opedsong="0"
+is_bonus="0"
 
 # These token variables are required when making request and auths in APIs
 # Create secret.sh file to assign the token variable
@@ -76,7 +77,7 @@ create_gif(){
 	convert -resize "50%" -delay 20 -loop 1 $(eval "echo ${frames_location}/frame_{""${1}""..""${2}""}.jpg") "${vidgif_location}"
 
 	# GIPHY API is Required when using this code
-	url_gif="$(curl -sLfX POST --retry 3 --retry-connrefused --retry-delay 7 -F "api_key=${giphy_token}" -F "tags= ${giphy_tags}" -F "file=@${vidgif_location}" "https://upload.giphy.com/v1/gifs" | sed -nE 's_.*"id":"([^\"]*)"\}.*_\1_p')"
+	url_gif="$(curl -sLfX POST --retry 3 --retry-connrefused --retry-delay 7 -F "api_key=${giphy_token}" -F "tags=${giphy_tags}" -F "file=@${vidgif_location}" "https://upload.giphy.com/v1/gifs" | sed -nE 's_.*"id":"([^\"]*)"\}.*_\1_p')"
 	[[ -z "${url_gif}" ]] && return 1 || url_gif="https://giphy.com/gifs/${url_gif}"
 
 	# This line below can be uncommented if you don't have GIPHY Token
@@ -181,22 +182,33 @@ dep_check bash sed grep curl bc || failed
 # Create DIRs and files for iterator and temps/logs
 [[ ! -d ./fb ]] && mkdir ./fb
 [[ ! -e ./fb/frameiterator ]] && printf '%s' "1" > ./fb/frameiterator
-{ [[ -z "$(<./fb/frameiterator)" ]] || [[ "$(<./fb/frameiterator)" -lt 1 ]] ;} && printf '%s' "1" > ./fb/frameiterator
-
-[[ "${total_frame}" -lt "$(<./fb/frameiterator)" ]] && exit 0
 
 # Get the previous frame from a file that acts like an iterator
 prev_frame="$(<./fb/frameiterator)"
+frame_filename="frame_${prev_frame}.jpg"
 
 # Check if the frame was already posted
-if [[ -e "${log}" ]] && grep -qE "\[√\] Frame: ${prev_frame}, Episode ${episode}" "${log}"; then
-	next_frame="$((prev_frame+=1))"
+if [[ -e "${log}" ]] && grep -qE "\[√\] Frame: ${prev_frame}, Episode ${episode}" "${log}" 2>/dev/null; then
+	next_frame="$((${prev_frame%.*}+1))"
 	printf '%s' "${next_frame}" > ./fb/frameiterator
 	exit 0
 fi
 
+# added checks for bonuses
+if [[ "${prev_frame}" =~ [0-9]*\.[0-9] ]]; then
+	is_bonus=1
+	prev_frame="${prev_frame%.*}"
+fi
+
+{ [[ -z "${prev_frame}" ]] || [[ "${prev_frame}" -lt 1 ]] ;} && printf '%s' "1" > ./fb/frameiterator
+[[ "${total_frame}" -lt "${prev_frame}" ]] && exit 0
+
 # This is where you can change your post captions and own format (that one below is the default)
-message="Season ${season}, Episode ${episode}, Frame ${prev_frame} out of ${total_frame}"
+if [[ "${is_bonus}" == "1" ]]; then
+	message="Season ${season}, Episode ${episode}, Frame ${prev_frame} out of ${total_frame}"
+else
+	message="Season ${season}, Episode ${episode}, Frame ${prev_frame} [Bonus] out of ${total_frame}"
+fi
 
 # Call the Scraper of Subs
 scrv3 "$(nth "${prev_frame}")"
@@ -211,7 +223,7 @@ ${message_craft}"
 fi
 
 # Post images to Timeline of Page
-response="$(curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/me/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg")" || failed "${prev_frame}" "${episode}"
+response="$(curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/me/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/${frame_filename}")" || failed "${prev_frame}" "${episode}"
 
 # Get the ID of Image Post
 id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
@@ -219,12 +231,12 @@ id="$(printf '%s' "${response}" | grep -Po '(?=[0-9])(.*)(?=\",\")')"
 sleep 3 # Delay
 
 # Post images in Albums
-[[ -z "${album}" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/${album}/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/frame_${prev_frame}.jpg" -o /dev/null
+[[ -z "${album}" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/${album}/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/${frame_filename}" -o /dev/null
 
 sleep 3 # Delay
 
 # Addons, Random Crop from frame
-random_crop "${frames_location}/frame_${prev_frame}.jpg"
+random_crop "${frames_location}/${frame_filename}"
 
 sleep 3 # Delay
 
@@ -238,7 +250,15 @@ sleep 3 # Delay
 printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://facebook.com/${id}" >> "${log}"
 
 # Lastly, This will increment prev_frame variable and redirect it to file
-next_frame="$((prev_frame+=1))"
+if find ./frames -type f -name "*.jpg" | grep -qE '[0-9]*\.[0-9]\.jpg'; then
+	if [[ "${is_bonus}" == 1 ]]; then
+		next_frame="$((prev_frame+=1))"
+	else
+		next_frame="${next_frame}.1"
+	fi
+else
+	next_frame="$((prev_frame+=1))"
+fi
 incmnt_cnt="$(($(<./counter_n.txt)+1))"
 printf '%s' "${next_frame}" > ./fb/frameiterator
 printf '%s' "${incmnt_cnt}" > ./counter_n.txt
