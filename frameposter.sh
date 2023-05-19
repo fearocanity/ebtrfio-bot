@@ -189,7 +189,7 @@ frame_filename="frame_${prev_frame}.jpg"
 
 # Check if the frame was already posted
 if [[ -e "${log}" ]] && grep -qE "\[√\] Frame: ${prev_frame}, Episode ${episode}" "${log}" 2>/dev/null; then
-	next_frame="$((${prev_frame%.*}+=1))"
+	next_frame="$((${prev_frame%.*}+1))"
 	printf '%s' "${next_frame}" > ./fb/frameiterator
 	exit 0
 fi
