@@ -187,6 +187,13 @@ dep_check bash sed grep curl bc || failed
 prev_frame="$(<./fb/frameiterator)"
 frame_filename="frame_${prev_frame}.jpg"
 
+# Check if the frame was already posted
+if [[ -e "${log}" ]] && grep -qE "\[√\] Frame: ${prev_frame}, Episode ${episode}" "${log}" 2>/dev/null; then
+	next_frame="$((${prev_frame%.*}+=1))"
+	printf '%s' "${next_frame}" > ./fb/frameiterator
+	exit 0
+fi
+
 # added checks for bonuses
 if [[ "${prev_frame}" =~ [0-9]*\.[0-9] ]]; then
 	is_bonus=1
@@ -195,13 +202,6 @@ fi
 
 { [[ -z "${prev_frame}" ]] || [[ "${prev_frame}" -lt 1 ]] ;} && printf '%s' "1" > ./fb/frameiterator
 [[ "${total_frame}" -lt "${prev_frame}" ]] && exit 0
-
-# Check if the frame was already posted
-if [[ -e "${log}" ]] && grep -qE "\[√\] Frame: ${prev_frame}, Episode ${episode}" "${log}"; then
-	next_frame="$((prev_frame+=1))"
-	printf '%s' "${next_frame}" > ./fb/frameiterator
-	exit 0
-fi
 
 # This is where you can change your post captions and own format (that one below is the default)
 if [[ "${is_bonus}" == "1" ]]; then
@@ -251,7 +251,7 @@ printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://faceb
 
 # Lastly, This will increment prev_frame variable and redirect it to file
 if find ./frames -type f -name "*.jpg" | grep -qE '[0-9]*\.[0-9]\.jpg'; then
-	if [[ "${is_bonus}" == 1 ]]; then
+	if [[ "$is_bonus" == 1 ]]; then
 		next_frame="$((prev_frame+=1))"
 	else
 		next_frame="${next_frame}.1"
