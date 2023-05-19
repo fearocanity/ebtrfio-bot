@@ -1,5 +1,9 @@
 #!/bin/bash
 prev_frame="$(<./fb/frameiterator)"
+if [[ "${prev_frame}" =~ [0-9]*\.[0-9] ]]; then
+	prev_frame="${prev_frame%.*}"
+fi
+
 [[ -e ./config.conf ]] && . ./config.conf
 [[ -e status/status.jpg ]] && : > status/status.jpg
 
