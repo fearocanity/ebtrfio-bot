@@ -251,7 +251,7 @@ printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://faceb
 
 # Lastly, This will increment prev_frame variable and redirect it to file
 if find ./frames -type f -name "*.jpg" | grep -qE '[0-9]*\.[0-9]\.jpg'; then
-	if [[ "$is_bonus" == 1 ]]; then
+	if [[ "${is_bonus}" == 1 ]]; then
 		next_frame="$((prev_frame+=1))"
 	else
 		next_frame="${next_frame}.1"
