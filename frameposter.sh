@@ -195,12 +195,14 @@ if [[ -e "${log}" ]] && grep -qE "\[√\] Frame: ${prev_frame}, Episode ${episod
 fi
 
 # added checks for bonuses
-if [[ "${prev_frame}" =~ [0-9]*\.[0-9] ]]; then
+if [[ "${prev_frame}" =~ [0-9]*\.[0-9]* ]]; then
 	is_bonus=1
 	prev_frame="${prev_frame%.*}"
 fi
 
-{ [[ -z "${prev_frame}" ]] || [[ "${prev_frame}" -lt 1 ]] ;} && printf '%s' "1" > ./fb/frameiterator
+if [[ -z "${prev_frame}" ]] || [[ "${prev_frame}" -lt 1 ]]; then
+	printf '%s' "1" > ./fb/frameiterator
+fi
 [[ "${total_frame}" -lt "${prev_frame}" ]] && exit 0
 
 # This is where you can change your post captions and own format (that one below is the default)
