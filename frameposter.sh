@@ -252,7 +252,7 @@ sleep 3 # Delay
 printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://facebook.com/${id}" >> "${log}"
 
 # Lastly, This will increment prev_frame variable and redirect it to file
-if ls ./frames/frame_*.[0-9]*.jpg >/dev/null 2>&1; then
+if ls ./frames/frame_"${prev_frame}".[0-9]*.jpg >/dev/null 2>&1; then
 	if [[ "${is_bonus}" == 1 ]]; then
 		next_frame="$((prev_frame+=1))"
 	else
