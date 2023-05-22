@@ -249,7 +249,11 @@ sleep 3 # Delay
 # [[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt "${gif_prev_framecount}" ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
 
 # This will note that the Post was success, without errors and append it to log file
-printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://facebook.com/${id}" >> "${log}"
+if [[ "${is_bonus}" == "1" ]]; then
+	printf '%s %s\n' "[√] Frame: $(printf '%s' "${frame_filename}" | sed -nE 's_frame\_([0-9\.]*).jpg_\1_p'), Episode ${episode}" "https://facebook.com/${id}" >> "${log}"
+else
+	printf '%s %s\n' "[√] Frame: ${prev_frame}, Episode ${episode}" "https://facebook.com/${id}" >> "${log}"
+fi
 
 # Lastly, This will increment prev_frame variable and redirect it to file
 if ls ./frames/frame_"${prev_frame}".[0-9]*.jpg >/dev/null 2>&1; then
