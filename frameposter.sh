@@ -260,7 +260,7 @@ if ls ./frames/frame_"${prev_frame}".[0-9]*.jpg >/dev/null 2>&1; then
 	if [[ "${is_bonus}" == 1 ]]; then
 		next_frame="$((prev_frame+=1))"
 	else
-		next_frame="${next_frame}.1"
+		next_frame="${prev_frame}.1"
 	fi
 else
 	next_frame="$((prev_frame+=1))"
