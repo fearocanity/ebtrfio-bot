@@ -16,8 +16,8 @@ for ((i=1;i<=fph;i++)); do
     sleep "$((mins * 60))"
 done
 
-lim_frame="$((prev_frame+fph-1))"
-[[ "${lim_frame}" -gt "${total_frame}" ]] && lim_frame="${total_frame}"
+lim_frame="$(<./fb/frameiterator)"
+[[ "${lim_frame%.*}" -gt "${total_frame}" ]] && lim_frame="${total_frame}"
 [[ "${prev_frame}" -gt "${total_frame}" ]] && prev_frame="${total_frame}"
 
 time_ended="$(TZ='Asia/Tokyo' date)"
