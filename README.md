@@ -16,4 +16,4 @@ Our Template Repository is Available [Here!](https://github.com/fearocanity/ebtr
 ![Status Image](status/status.jpg)
 
 ## Page Stats
-![Page Stats](https://raw.githubusercontent.com/fearocanity/fearocanity/master/banner.jpg)
+![Page Stats](https://raw.githubusercontent.com/fearocanity/fearocanity/master/banner.png)
