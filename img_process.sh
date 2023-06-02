@@ -14,6 +14,7 @@ case "${1}" in
 		lim_frame="$((prev_frame+fph-1))"
 		[[ "${lim_frame}" -gt "${total_frame}" ]] && lim_frame="${total_frame}"
 		convert -fill white -background "#a26b03" -gravity center -pointsize 72 -font "trebuc.ttf" label:"\ [~] Frame ${prev_frame}-${lim_frame} was currently posting in progress " -pointsize 25 label:"Time started: ${time_started}" -append -bordercolor "#a26b03" -border 30 status/status.jpg
+		date +"Runs at: "%s > fb/unix_epoch.log
 		;;
 	failed)
 		shift 1
