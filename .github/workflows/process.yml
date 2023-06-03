@@ -18,7 +18,7 @@ jobs:
           response=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/bot_runner.yml/runs")
           status="$(echo "${response}" | jq -r '.workflow_runs[0].status')"
-          if [ "${{ steps.check_status.outputs.status }}" != 'in_progress' ]; then
+          if [ "${status}" == 'in_progress' ]; then
             echo "The bot_runner is still running, The script prevented this workflow to run to avoid conflicts... Cancelling!!"
             exit 1
           fi
