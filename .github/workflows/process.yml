@@ -12,23 +12,16 @@ jobs:
     if: ${{ github.triggering_actor == github.repository_owner }}  
     steps:
     # Start the sequence of preventing to run it when bot_runner.yml was running
-      - name: Get Workflow Run ID
-        id: get_run_id
-        run: |
-          response=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/bot_runner.yml/runs")
-          run_id=$(echo "$response" | jq -r '.workflow_runs[0].id')
       - name: Check Workflow Status
         id: check_status
         run: |
           response=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ steps.get_run_id.outputs.run_id }}")
-          status="$(echo "$response" | jq -r '.status')"
-      - name: Cancel if Running
-        if: ${{ steps.check_status.outputs.status == 'in_progress' }}
-        run: |
-          echo "The bot_runner is still running, The script prevented this workflow to run to avoid conflicts... Cancelling!!"
-          exit 1
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/bot_runner.yml/runs")
+          status="$(echo "${response}" | jq -r '.workflow_runs[0].status')"
+          if [ "${{ steps.check_status.outputs.status }}" != 'in_progress' ]; then
+            echo "The bot_runner is still running, The script prevented this workflow to run to avoid conflicts... Cancelling!!"
+            exit 1
+          fi
    # Start the main script if it was succeed
       - uses: actions/checkout@v3
       - name: Execute
