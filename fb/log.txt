@@ -6009,3 +6009,4 @@
 [√] Frame: 703, Episode 06 https://facebook.com/293626463601673
 [√] Frame: 704, Episode 06 https://facebook.com/293627403601579
 [√] Frame: 705, Episode 06 https://facebook.com/293628620268124
+[X] Frame: 706, Episode 06
