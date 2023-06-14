@@ -6010,3 +6010,18 @@
 [√] Frame: 704, Episode 06 https://facebook.com/293627403601579
 [√] Frame: 705, Episode 06 https://facebook.com/293628620268124
 [X] Frame: 706, Episode 06
+[√] Frame: 706, Episode 06 https://facebook.com/293708920260094
+[√] Frame: 707, Episode 06 https://facebook.com/293709643593355
+[√] Frame: 708, Episode 06 https://facebook.com/293710456926607
+[√] Frame: 709, Episode 06 https://facebook.com/293711120259874
+[√] Frame: 710, Episode 06 https://facebook.com/293711820259804
+[√] Frame: 711, Episode 06 https://facebook.com/293712470259739
+[√] Frame: 712, Episode 06 https://facebook.com/293713326926320
+[√] Frame: 713, Episode 06 https://facebook.com/293714153592904
+[√] Frame: 714, Episode 06 https://facebook.com/293714970259489
+[√] Frame: 715, Episode 06 https://facebook.com/293715760259410
+[√] Frame: 716, Episode 06 https://facebook.com/293716566925996
+[√] Frame: 717, Episode 06 https://facebook.com/293717356925917
+[√] Frame: 718, Episode 06 https://facebook.com/293718080259178
+[√] Frame: 719, Episode 06 https://facebook.com/293718870259099
+[√] Frame: 720, Episode 06 https://facebook.com/293719790259007
