@@ -6490,3 +6490,17 @@
 [√] Frame: 1183, Episode 06 https://facebook.com/295609760070010
 [√] Frame: 1184, Episode 06 https://facebook.com/295611333403186
 [√] Frame: 1185, Episode 06 https://facebook.com/295612483403071
+[√] Frame: 1186, Episode 06 https://facebook.com/295660793398240
+[√] Frame: 1187, Episode 06 https://facebook.com/295662330064753
+[√] Frame: 1188, Episode 06 https://facebook.com/295663563397963
+[√] Frame: 1189, Episode 06 https://facebook.com/295664633397856
+[√] Frame: 1190, Episode 06 https://facebook.com/295665666731086
+[√] Frame: 1191, Episode 06 https://facebook.com/295666856730967
+[√] Frame: 1192, Episode 06 https://facebook.com/295668043397515
+[√] Frame: 1193, Episode 06 https://facebook.com/295669256730727
+[√] Frame: 1194, Episode 06 https://facebook.com/295670473397272
+[√] Frame: 1195, Episode 06 https://facebook.com/295672233397096
+[√] Frame: 1196, Episode 06 https://facebook.com/295673460063640
+[√] Frame: 1197, Episode 06 https://facebook.com/295674800063506
+[√] Frame: 1198, Episode 06 https://facebook.com/295676900063296
+[X] Frame: 1199, Episode 06
