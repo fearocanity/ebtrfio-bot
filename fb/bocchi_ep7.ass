@@ -1,0 +1,549 @@
+﻿[Script Info]
+Title: [Erai-raws] English (US)
+ScaledBorderAndShadow: yes
+
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 640
+PlayResY: 360
+Timer: 0.0000
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,Strikeout,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,0
+Style: DefaultItalics,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,0
+Style: DefaultTop,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,0
+Style: DefaultItalicsTop,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,0
+Style: Flashback,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H00400000,&H00400000,0,0,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: FlashbackItalics,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H00400000,&H00400000,0,-1,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,1
+Style: FlashbackTop,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H00400000,&H00400000,0,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0018,0
+Style: FlashbackItalicsTop,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H00400000,&H00400000,0,-1,0,0,100,100,0,0,1,2,1,8,0010,0010,0018,0
+Style: Signs,Arial,24,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,0030,0030,0010,0
+Style: Box Signs,Arial,24,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,3,0,0,2,0030,0030,0010,0
+Style: Songs_OP,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H007E44CA,&H007E44CA,0,-1,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,0
+Style: Songs_ED2,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H0039515C,&H0039515C,0,-1,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,0
+Style: Songs_ED2b,Trebuchet MS,24,&H00FFFFFF,&H000000FF,&H00636B2A,&H00636B2A,0,-1,0,0,100,100,0,0,1,2,1,2,0010,0010,0018,0
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.00,0:00:02.39,Signs,sign,0000,0000,0000,,{\blur0.3\fs12\c&H1D251A&\frz343\pos(499.5,110.5)\fax0.1}Commuter IC supported here
+Dialogue: 0,0:00:05.46,0:00:07.88,Default,Kita,0000,0000,0000,,So hot!
+Dialogue: 0,0:00:07.88,0:00:10.08,Default,Nijika,0000,0000,0000,,Summer's in full swing, huh?
+Dialogue: 0,0:00:10.08,0:00:11.72,Default,Kita,0000,0000,0000,,Very much so!
+Dialogue: 0,0:00:11.72,0:00:14.91,Default,Kita,0000,0000,0000,,I think we're almost at Gotoh-san's house.
+Dialogue: 0,0:00:14.91,0:00:16.20,Default,Nijika,0000,0000,0000,,Great!
+Dialogue: 0,0:00:16.20,0:00:18.39,Default,Nijika,0000,0000,0000,,Thanks for showing me around, by the way.
+Dialogue: 0,0:00:18.39,0:00:20.43,Default,Kita,0000,0000,0000,,Not at all! I'm really \Nlooking forward to this!
+Dialogue: 0,0:00:20.43,0:00:23.41,Default,Nijika,0000,0000,0000,,Yeah! It'll be such a new experience!
+Dialogue: 0,0:00:23.41,0:00:27.23,Default,Nijika,0000,0000,0000,,I mean, we mainly only get \Ntogether at Starry, right?
+Dialogue: 0,0:00:27.23,0:00:28.58,Default,Kita,0000,0000,0000,,Yes!
+Dialogue: 0,0:00:28.58,0:00:31.71,Default,Kita,0000,0000,0000,,I wonder what Gotoh-san's house is like!
+Dialogue: 0,0:00:32.40,0:00:37.43,Default,Nijika,0000,0000,0000,,She said something about a cramped \Ncardboard box reminding her of home...
+Dialogue: 0,0:00:38.19,0:00:40.18,Default,Kita,0000,0000,0000,,A house like a cardboard box?
+Dialogue: 0,0:00:40.69,0:00:43.79,Default,Nijika,0000,0000,0000,,Bocchi-chan says the funniest things, huh?
+Dialogue: 0,0:00:43.79,0:00:45.32,Default,Nijika,0000,0000,0000,,I can't wait!
+Dialogue: 0,0:00:45.32,0:00:46.88,Default,Kita,0000,0000,0000,,Neither can I!
+Dialogue: 0,0:00:46.88,0:00:49.82,Default,Kita,0000,0000,0000,,I brought some sweets and a movie I like.
+Dialogue: 0,0:00:49.82,0:00:52.50,Default,Nijika,0000,0000,0000,,Hey! You didn't forget why \Nwe're doing this, did you?
+Dialogue: 0,0:00:52.50,0:00:54.30,Default,Kita,0000,0000,0000,,No, I remember!
+Dialogue: 0,0:00:54.30,0:00:57.37,Default,Kita,0000,0000,0000,,We're designing T-shirts \Nfor our concert, right?
+Dialogue: 0,0:00:57.37,0:00:58.39,Default,Nijika,0000,0000,0000,,Yeah!
+Dialogue: 0,0:00:58.39,0:01:00.76,Default,Kita,0000,0000,0000,,I wish Ryo-senpai could've come too...
+Dialogue: 0,0:01:00.76,0:01:02.58,Default,Nijika,0000,0000,0000,,I did invite her, but...
+Dialogue: 0,0:01:03.16,0:01:05.55,Default,Nijika,0000,0000,0000,,She says her grandma\Ntook a turn for the worse.
+Dialogue: 0,0:01:05.55,0:01:07.60,Default,Kita,0000,0000,0000,,Is she all right?!
+Dialogue: 0,0:01:07.60,0:01:09.17,Default,Nijika,0000,0000,0000,,Oh, she's fine.
+Dialogue: 0,0:01:09.17,0:01:12.44,Default,Nijika,0000,0000,0000,,This is like the tenth critical time \Nfor her grandma this year.
+Dialogue: 0,0:01:12.44,0:01:15.28,Default,Ryo,0000,0000,0000,,I love the way the guitar comes in here.
+Dialogue: 0,0:01:15.28,0:01:16.55,Default,Kita,0000,0000,0000,,You mean...
+Dialogue: 0,0:01:16.55,0:01:19.65,Default,Nijika,0000,0000,0000,,I mean, at least her grandma really exists.
+Dialogue: 0,0:01:19.65,0:01:21.06,Default,Nijika,0000,0000,0000,,That's a heckuva low bar.
+Dialogue: 0,0:01:21.06,0:01:22.67,DefaultTop,Mob F/K,0000,0000,0000,,Let's hang out!
+Dialogue: 0,0:01:21.06,0:01:25.28,Default,Nijika,0000,0000,0000,,Once, when some classmates invited \Nher to hang out with them...
+Dialogue: 0,0:01:25.28,0:01:28.60,Default,Ryo,0000,0000,0000,,Sorry, my dog Pe'z has to have surgery.
+Dialogue: 0,0:01:25.56,0:01:29.56,Signs,sign,0000,0000,0000,,{\fad(359,1)\blur0.3\fs16\fnComic Sans MS\b0\c&H593052&\pos(367.5,62)}sob sob sob
+Dialogue: 0,0:01:28.60,0:01:29.56,Default,Mob F/K,0000,0000,0000,,What?!
+Dialogue: 0,0:01:29.56,0:01:32.68,Default,Nijika,0000,0000,0000,,So she said, but she's never even had a dog.
+Dialogue: 0,0:01:32.68,0:01:33.98,Default,Kita,0000,0000,0000,,She hasn't?
+Dialogue: 0,0:01:33.98,0:01:35.26,Default,Nijika,0000,0000,0000,,She hasn't!
+Dialogue: 0,0:01:35.26,0:01:39.04,Default,Nijika,0000,0000,0000,,Then there's "I just got a call from \Nmy twin sister separated at birth,"
+Dialogue: 0,0:01:39.04,0:01:41.72,Default,Nijika,0000,0000,0000,,and "my dad was in a car crash, \Nand now he has amnesia."
+Dialogue: 0,0:01:41.72,0:01:43.70,Default,Nijika,0000,0000,0000,,Just all the silliest excuses...
+Dialogue: 0,0:01:43.70,0:01:47.71,Default,Kita,0000,0000,0000,,I'm impressed by how easily she comes up \Nwith such a wide range of lies.
+Dialogue: 0,0:01:48.40,0:01:49.96,Default,Kita,0000,0000,0000,,Senpai's amazing!
+Dialogue: 0,0:01:49.96,0:01:51.26,Default,Kita,0000,0000,0000,,I love me a bad girl!
+Dialogue: 0,0:01:51.89,0:01:54.06,Default,Nijika,0000,0000,0000,,That's a serious Ryo obsession right there.
+Dialogue: 0,0:01:55.92,0:01:58.06,Default,Kita,0000,0000,0000,,We're here! This is it!
+Dialogue: 0,0:01:58.72,0:02:03.51,Signs,sign,0000,0000,0000,,{\bord3\an8\fnArial Black\c&H565350&\3c&HEEEEEC&}Welcome!  Members of Kessoku Band\N{\fs15}We Hope Your Time Here Heals You in Both Mind and Body
+Dialogue: 0,0:02:07.52,0:02:25.04,Signs,sign,0000,0000,0000,,{\fscx50\fscy50\bord2\an8\fnArial Black\c&H565350&\3c&HEEEEEC&\pos(321.5,95.5)}Welcome!  Members of Kessoku Band\N{\fs15}We Hope Your Time Here Heals You in Both Mind and Body
+Dialogue: 0,0:02:09.41,0:02:11.71,Default,Nijika,0000,0000,0000,,This... is it, isn't it?
+Dialogue: 0,0:02:11.71,0:02:15.05,Default,Nijika,0000,0000,0000,,It... does say "Kessoku Band," right?
+Dialogue: 0,0:02:15.05,0:02:18.08,Default,Kita,0000,0000,0000,,Did she mention her house was a ryokan?
+Dialogue: 0,0:02:18.08,0:02:22.33,Default,Nijika,0000,0000,0000,,I'm not sure. It just looks like \Na normal house to me.
+Dialogue: 0,0:02:22.33,0:02:23.88,Default,Kita,0000,0000,0000,,Yeah.
+Dialogue: 0,0:02:23.88,0:02:25.04,Default,Nijika,0000,0000,0000,,Anyway...
+Dialogue: 0,0:02:27.40,0:02:29.20,Default,Nijika,0000,0000,0000,,We're here, Bocchi-chan!
+Dialogue: 0,0:02:29.20,0:02:30.53,Default,Kita,0000,0000,0000,,Hello!
+Dialogue: 0,0:02:30.53,0:02:33.15,Default,Hitori,0000,0000,0000,,C-Coming!
+Dialogue: 0,0:02:33.92,0:02:36.42,Signs,sign,0000,0000,0000,,{\an8\bord2\fs14\fnTimes New Roman\c&H454133&\3c&HABA19D&\pos(317,213.5)}Sergeant For a Day
+Dialogue: 0,0:02:38.42,0:02:40.99,Default,Hitori,0000,0000,0000,,Y-Yaaaay!
+Dialogue: 0,0:02:40.99,0:02:44.14,Default,Hitori,0000,0000,0000,,W-W-Welcome!
+Dialogue: 0,0:02:58.87,0:03:01.46,Songs_OP,OP,0000,0000,0000,,I liked dark, cramped spaces,
+Dialogue: 0,0:03:01.46,0:03:03.83,Songs_OP,OP,0000,0000,0000,,so I'd bury my face deep in my hood
+Dialogue: 0,0:03:03.83,0:03:06.21,Songs_OP,OP,0000,0000,0000,,My eyes resented the heartless world,
+Dialogue: 0,0:03:06.21,0:03:09.96,Songs_OP,OP,0000,0000,0000,,but yearned for love
+Dialogue: 0,0:03:13.88,0:03:16.60,Songs_OP,OP,0000,0000,0000,,I liked being soaked by the rain,
+Dialogue: 0,0:03:16.60,0:03:18.97,Songs_OP,OP,0000,0000,0000,,because my face looked better clouded over
+Dialogue: 0,0:03:18.97,0:03:21.61,Songs_OP,OP,0000,0000,0000,,I pretended to be afraid of the storm
+Dialogue: 0,0:03:21.61,0:03:24.44,Songs_OP,OP,0000,0000,0000,,while waiting for the sky to burst
+Dialogue: 0,0:03:25.55,0:03:31.40,Songs_OP,OP,0000,0000,0000,,Strum through the light's distortion
+Dialogue: 0,0:03:31.40,0:03:35.82,Songs_OP,OP,0000,0000,0000,,I want to make thunder roar
+Dialogue: 0,0:03:35.82,0:03:41.62,Songs_OP,OP,0000,0000,0000,,Drum beyond the pain
+Dialogue: 0,0:03:41.62,0:03:45.75,Songs_OP,OP,0000,0000,0000,,What can I do? This fierce \Npounding is out of control
+Dialogue: 0,0:03:45.75,0:03:51.81,Songs_OP,OP,0000,0000,0000,,Strum in a harmonizing quartet
+Dialogue: 0,0:03:51.81,0:03:55.80,Songs_OP,OP,0000,0000,0000,,I want to cause a revolution
+Dialogue: 0,0:03:55.80,0:04:01.81,Songs_OP,OP,0000,0000,0000,,Drum in a lamenting forte
+Dialogue: 0,0:04:01.81,0:04:06.56,Songs_OP,OP,0000,0000,0000,,What can I do? My savage \Nnature is beyond wild
+Dialogue: 0,0:04:12.10,0:04:14.86,Signs,sign,0000,0000,0000,,{\fad(485,1)\c&H9756DB&\fnImpact\fs30\pos(238.5,132.5)}BOCCHI THE ROCK!
+Dialogue: 0,0:04:12.10,0:04:14.86,Signs,sign,0000,0000,0000,,{\fad(485,1)\c&H9756DB&\fnComic Sans MS\fs26\b1\pos(415,248)}#07 To Your House
+Dialogue: 0,0:04:24.61,0:04:38.17,Signs,sign,0000,0000,0000,,{\fad(1,184)\an8\bord2\fs14\fnTimes New Roman\c&H454133&\3c&HABA19D&\pos(316.5,80.5)}Sergeant For a Day
+Dialogue: 0,0:04:27.91,0:04:30.21,Default,Nijika,0000,0000,0000,,Are you having fun, Bocchi-chan?
+Dialogue: 0,0:04:30.21,0:04:31.34,Default,Hitori,0000,0000,0000,,Y-Yeah...
+Dialogue: 0,0:04:31.34,0:04:33.25,DefaultItalics,Hitori,0000,0000,0000,,I b-b-bombed...
+Dialogue: 0,0:04:33.25,0:04:35.05,Default,Kita,0000,0000,0000,,Isn't that nice?
+Dialogue: 0,0:04:35.05,0:04:38.03,Default,Kita,0000,0000,0000,,Gotoh-san's made it clear how much \Nshe's been looking forward to this too!
+Dialogue: 0,0:04:38.03,0:04:41.39,DefaultItalics,Hitori,0000,0000,0000,,Kita-san knows the kindest words \Nto soothe my bombed soul.
+Dialogue: 0,0:04:41.39,0:04:43.22,Default,Hitori,0000,0000,0000,,C-Come in.
+Dialogue: 0,0:04:43.22,0:04:44.42,Default,Nijika,0000,0000,0000,,Okay!
+Dialogue: 0,0:04:43.22,0:04:47.85,Signs,sign,0000,0000,0000,,{\fscx50\fscy50\bord2\an8\fnArial Black\c&H565350&\3c&HEEEEEC&\pos(321.5,95.5)}Welcome!  Members of Kessoku Band\N{\fs15}We Hope Your Time Here Heals You in Both Mind and Body
+Dialogue: 0,0:04:44.42,0:04:45.96,Default,Kita,0000,0000,0000,,Coming in!
+Dialogue: 0,0:04:47.85,0:04:50.10,Default,Kita,0000,0000,0000,,Gotoh-san, these are for you.
+Dialogue: 0,0:04:50.10,0:04:51.87,Default,Kita,0000,0000,0000,,Please enjoy them with your family.
+Dialogue: 0,0:04:51.87,0:04:53.20,Default,Hitori,0000,0000,0000,,Wh-What?
+Dialogue: 0,0:04:53.20,0:04:55.36,Default,Hitori,0000,0000,0000,,Th-Thank you...
+Dialogue: 0,0:04:55.85,0:05:00.11,DefaultItalics,Hitori,0000,0000,0000,,Ah, t-trendiness emanates from the bag!
+Dialogue: 0,0:04:56.15,0:05:01.61,Signs,sign,0000,0000,0000,,{\fad(479,1)\blur0.3\fs14\fnComic Sans MS\c&H97E0CC&\3c&HDAFFF1&\b0\frz351.1\pos(311.5,57)}shining
+Dialogue: 0,0:04:56.15,0:05:01.61,Signs,sign,0000,0000,0000,,{\fad(479,1)\blur0.3\fs14\fnComic Sans MS\c&H97E0CC&\3c&HDAFFF1&\b0\frz35.81\pos(37.5,158)}shining
+Dialogue: 0,0:04:56.15,0:05:01.61,Signs,sign,0000,0000,0000,,{\fad(479,1)\blur0.3\bord1.5\fnGeorgia\c&H97E0CC&\3c&HDAFFF1&\frz332.3\pos(391.5,55.5)}Trendy
+Dialogue: 0,0:04:56.15,0:05:01.61,Signs,sign,0000,0000,0000,,{\fad(479,1)\blur0.3\bord1.5\fnGeorgia\c&H97E0CC&\3c&HDAFFF1&\frz32\pos(67,52)}Trendy
+Dialogue: 0,0:04:56.15,0:05:01.61,Signs,sign,0000,0000,0000,,{\fad(479,1)\blur0.3\fs14\fnComic Sans MS\c&H97E0CC&\3c&HDAFFF1&\b0\frz330.5\pos(517,40)}smells so good
+Dialogue: 0,0:05:00.11,0:05:01.61,Default,Kita,0000,0000,0000,,I brought a movie, too!
+Dialogue: 0,0:05:01.61,0:05:05.61,Default,Nijika,0000,0000,0000,,I told you, we have to figure out \Nour T-shirt design for the concert!
+Dialogue: 0,0:05:07.00,0:05:08.78,Default,Nijika,0000,0000,0000,,Rather than just wearing whatever,
+Dialogue: 0,0:05:08.78,0:05:10.35,Default,Nijika,0000,0000,0000,,wouldn't having matching outfits
+Dialogue: 0,0:05:10.35,0:05:11.44,Default,Nijika,0000,0000,0000,,create a sense of one-ness?
+Dialogue: 0,0:05:11.44,0:05:12.58,Default,Nijika,0000,0000,0000,,A sense of band-ness?!
+Dialogue: 0,0:05:12.58,0:05:14.56,Default,Nijika,0000,0000,0000,,Am I wrong here?
+Dialogue: 0,0:05:12.58,0:05:15.62,Signs,sign,0000,0000,0000,,{\fad(441,1)\fnComic Sans MS\fs18\b1\c&H3844BE&\3c&HD1DEE8&\bord1.5\pos(519,178.5)}Ripe Mangos
+Dialogue: 0,0:05:14.56,0:05:15.62,Default,Nijika,0000,0000,0000,,Besides...
+Dialogue: 0,0:05:15.62,0:05:17.59,Default,Seika,0000,0000,0000,,There's nothing tying you guys together.
+Dialogue: 0,0:05:17.59,0:05:19.46,Default,Nijika,0000,0000,0000,,I know that's what {\i1}she'll{\i0} say!
+Dialogue: 0,0:05:19.46,0:05:22.74,Default,Nijika,0000,0000,0000,,You get it? We're not here to play around!
+Dialogue: 0,0:05:20.08,0:05:22.13,Default,Hitori,0000,0000,0000,,Th-This way...
+Dialogue: 0,0:05:28.22,0:05:31.22,Signs,sign,0000,0000,0000,,{\an8\fnTimes New Roman\bord2\c&H000000&\3c&H4A4A4A&}Welcome to Chez Gotoh
+Dialogue: 0,0:05:32.68,0:05:36.16,Default,Hitori,0000,0000,0000,,I-I'm sorry. I'll put it all away.
+Dialogue: 0,0:05:37.44,0:05:39.89,Default,Nijika,0000,0000,0000,,W-Well, we could play around a {\i1}little{\i0}!
+Dialogue: 0,0:05:39.89,0:05:41.27,Default,Kita,0000,0000,0000,,Yes, I'd love that!
+Dialogue: 0,0:05:42.13,0:05:44.35,Default,Hitori,0000,0000,0000,,W-Well then, I'll fetch the drinks.
+Dialogue: 0,0:05:44.35,0:05:46.47,Default,Hitori,0000,0000,0000,,Please make yourselves at home.
+Dialogue: 0,0:05:46.47,0:05:47.86,Default,Nijika,0000,0000,0000,,Thanks!
+Dialogue: 0,0:05:50.86,0:05:53.66,Default,Nijika,0000,0000,0000,,But wow, she really went \Nall-out with the decorations!
+Dialogue: 0,0:05:53.66,0:05:57.22,Default,Kita,0000,0000,0000,,There's nothing here besides the guitar \Nand effects unit, though.
+Dialogue: 0,0:05:57.22,0:05:58.29,Default,Nijika,0000,0000,0000,,Yeah...
+Dialogue: 0,0:05:58.56,0:06:02.17,Default,Kita,0000,0000,0000,,I just assumed her room would have \Na bit more of a rock feel to—
+Dialogue: 0,0:06:04.42,0:06:10.05,Signs,sign,0000,0000,0000,,{\fad(402,1)\bord2\fnTimes New Roman\c&H010301&\3c&H595959&\pos(322.5,304)\fay-0.18}Sealed
+Dialogue: 0,0:06:05.55,0:06:07.67,Default,Kita,0000,0000,0000,,Is this... rock?
+Dialogue: 0,0:06:07.67,0:06:10.05,Default,Nijika,0000,0000,0000,,Yeah, it's pretty rock!
+Dialogue: 0,0:06:10.35,0:06:13.11,Default,Nijika,0000,0000,0000,,I w-wonder if there's \Nanything else rock about i—
+Dialogue: 0,0:06:13.11,0:06:14.10,Default,Nijika,0000,0000,0000,,Ow!
+Dialogue: 0,0:06:15.86,0:06:18.94,Default,Kita,0000,0000,0000,,Huh? Why does she have so \Nmany copies of our ProPho?
+Dialogue: 0,0:06:20.94,0:06:21.69,Signs,sign,0000,0000,0000,,{\an8\bord2\fnTimes New Roman\fs18\c&H010301&\3c&H595959&\frz350\pos(318.5,23.5)}Sealed {\3c&H1E534F&\frz10}Sealed {\3c&H595959&\frz335}Sealed
+Dialogue: 1,0:06:20.94,0:06:21.69,Signs,sign,0000,0000,0000,,{\an8\bord2\fnTimes New Roman\fs18\c&H010301&\3c&H423132&\frz10\pos(322,19.5)}Sealed {\3c&H423132&\frz330}Sealed {\3c&H1E534F&\frz310}Sealed
+Dialogue: 0,0:06:23.72,0:06:28.06,Default,Nijika,0000,0000,0000,,I don't know what's going on, \Nbut it seems pretty darn rock!
+Dialogue: 0,0:06:28.53,0:06:30.45,Default,Futari,0000,0000,0000,,She's got blown-up ones too!
+Dialogue: 0,0:06:30.45,0:06:37.54,Signs,sign,0000,0000,0000,,{\fad(1,342)\an8\fnTimes New Roman\bord2\c&H000000&\3c&H4A4A4A&}Welcome to Chez Gotoh
+Dialogue: 0,0:06:31.67,0:06:34.50,Default,Futari,0000,0000,0000,,She had this picture stuck up \Nall over her room.
+Dialogue: 0,0:06:34.50,0:06:37.30,Default,Futari,0000,0000,0000,,She said she really liked it!
+Dialogue: 0,0:06:37.30,0:06:42.20,Default,Futari,0000,0000,0000,,But Mom told her to take them down\Nbecause they were hurting her eyes.
+Dialogue: 0,0:06:42.20,0:06:47.42,Default,Futari,0000,0000,0000,,And we put those seals up \Nwhen Sis was possessed before!
+Dialogue: 0,0:06:47.78,0:06:49.84,Default,Futari,0000,0000,0000,,That should just about cover it!
+Dialogue: 0,0:06:51.10,0:06:53.80,Default,Kita,0000,0000,0000,,Wait, are you Gotoh-san's sister?
+Dialogue: 0,0:06:53.80,0:06:55.48,Default,Futari,0000,0000,0000,,Yes! A pleasure to meet you.
+Dialogue: 0,0:06:55.48,0:06:57.30,Default,Futari,0000,0000,0000,,I'm Futari Gotoh.
+Dialogue: 0,0:06:57.30,0:06:58.73,Default,Futari,0000,0000,0000,,The dog's Jimihen.
+Dialogue: 0,0:07:03.36,0:07:05.46,DefaultItalics,Hitori,0000,0000,0000,,I hope barley tea's okay.
+Dialogue: 0,0:07:05.46,0:07:08.12,DefaultItalics,Hitori,0000,0000,0000,,Or would they prefer a trendier drink?
+Dialogue: 0,0:07:08.12,0:07:10.57,Default,Nijika/Kita,0000,0000,0000,,So cute!
+Dialogue: 0,0:07:11.75,0:07:13.54,Default,Hitori,0000,0000,0000,,Sorry to keep you guys wa—
+Dialogue: 0,0:07:13.54,0:07:15.95,Default,Futari,0000,0000,0000,,Hey, will you play the \NMunions song on guitar?
+Dialogue: 0,0:07:16.28,0:07:18.80,Default,Kita,0000,0000,0000,,I'll practice so I can do it \Nthe next time I come by.
+Dialogue: 0,0:07:18.80,0:07:21.00,Default,Futari,0000,0000,0000,,You gotta! When's the next time you come by?
+Dialogue: 0,0:07:21.00,0:07:23.29,DefaultItalics,Hitori,0000,0000,0000,,I-Is this...
+Dialogue: 0,0:07:24.25,0:07:26.46,Default,Nijika,0000,0000,0000,,Jimihen's a friendly little guy!
+Dialogue: 0,0:07:26.46,0:07:31.42,DefaultItalics,Hitori,0000,0000,0000,,Th-They're getting along so well, \Nthere's no room left for me...
+Dialogue: 0,0:07:32.27,0:07:33.78,Default,Nijika,0000,0000,0000,,Huh? Bocchi-chan?
+Dialogue: 0,0:07:33.78,0:07:34.80,Default,Kita,0000,0000,0000,,Gotoh-san?
+Dialogue: 0,0:07:35.08,0:07:37.28,DefaultItalics,Hitori,0000,0000,0000,,A five-year-old and a dog \Nhave better social skills than me.
+Dialogue: 0,0:07:37.28,0:07:39.49,Default,Futari,0000,0000,0000,,Sis is frozen up again.
+Dialogue: 0,0:07:39.49,0:07:42.00,Default,Hitori,0000,0000,0000,,F-Futari. Wh-What are you doing here?
+Dialogue: 0,0:07:42.00,0:07:43.25,Default,Hitori,0000,0000,0000,,Wh-Where are Mom and Dad?
+Dialogue: 0,0:07:43.25,0:07:44.45,Default,Futari,0000,0000,0000,,Shopping.
+Dialogue: 0,0:07:44.45,0:07:48.71,Default,Hitori,0000,0000,0000,,I-I-I've got grown-up things to talk about, \Nso please go play with Jimihen.
+Dialogue: 0,0:07:48.71,0:07:51.04,Default,Futari,0000,0000,0000,,Aw, no fun!
+Dialogue: 0,0:07:51.04,0:07:53.56,Default,Kita,0000,0000,0000,,I don't mind having Futari-chan here.
+Dialogue: 0,0:07:53.56,0:07:54.61,Default,Nijika,0000,0000,0000,,Yeah, same!
+Dialogue: 0,0:07:54.61,0:07:56.20,Default,Hitori,0000,0000,0000,,Y-Y-Y-You can't!
+Dialogue: 0,0:07:56.20,0:07:59.40,Default,Hitori,0000,0000,0000,,I c-c-can't whoop it up if my sister's here!
+Dialogue: 0,0:07:59.40,0:08:02.00,Default,Nijika,0000,0000,0000,,Bocchi-chan, you've been \Nwhooping it up with us all this time?
+Dialogue: 0,0:08:02.00,0:08:03.28,Default,Hitori,0000,0000,0000,,I beg of you!
+Dialogue: 0,0:08:03.28,0:08:05.33,Default,Hitori,0000,0000,0000,,Please go play with Jimihen!
+Dialogue: 0,0:08:07.05,0:08:09.14,Default,Hitori,0000,0000,0000,,You can have an ice pop from the freezer.
+Dialogue: 0,0:08:11.65,0:08:13.92,Default,Futari,0000,0000,0000,,Well, it is what it is!
+Dialogue: 0,0:08:14.72,0:08:16.90,Default,Kita,0000,0000,0000,,You've got such a sisterly bond!
+Dialogue: 0,0:08:17.59,0:08:20.52,Default,Nijika,0000,0000,0000,,How did you get that\Nfrom what just happened?
+Dialogue: 0,0:08:22.11,0:08:24.67,Default,Nijika,0000,0000,0000,,Now, let's design those T-shirts!
+Dialogue: 0,0:08:24.67,0:08:26.48,Signs,sign,0000,0000,0000,,{\fad(417,1)\shad2\bord4\fnComic Sans MS\fs28\c&H0B36B5&\3c&HEFF3F5&\4c&H863D5B&\pos(108,81)\frz19.18}L{\c&HC85918&}e{\c&H9784F6&}t{\c&H4FA91A&}'{\c&H6785E8&}s {\c&H1C42BA&}D{\c&HC85918&}r{\c&H9784F6&}a{\c&H4FA91A&}w
+Dialogue: 0,0:08:24.67,0:08:26.48,Default,Nijika,0000,0000,0000,,Feel free to use these!
+Dialogue: 0,0:08:26.70,0:08:27.85,Default,Kita,0000,0000,0000,,Okay!
+Dialogue: 0,0:08:27.85,0:08:28.46,Default,Hitori,0000,0000,0000,,Okay...
+Dialogue: 0,0:08:28.46,0:08:30.56,Default,Nijika,0000,0000,0000,,We could just slap\Nour logo on there,
+Dialogue: 0,0:08:30.56,0:08:33.57,Default,Nijika,0000,0000,0000,,but I'd love to sell the shirts as merch, too!
+Dialogue: 0,0:08:33.57,0:08:36.12,Default,Hitori,0000,0000,0000,,N-Nijika-chan is so hungry for merch!
+Dialogue: 0,0:08:36.12,0:08:39.54,Default,Nijika,0000,0000,0000,,So if you have any other great ideas, \NI might use those as well!
+Dialogue: 0,0:08:39.54,0:08:42.01,Default,Kita,0000,0000,0000,,Okay! Let's do our best, Gotoh-san!
+Dialogue: 0,0:08:42.01,0:08:43.25,Default,Hitori,0000,0000,0000,,R-Right!
+Dialogue: 0,0:08:43.64,0:08:45.89,DefaultItalics,Hitori,0000,0000,0000,,I have to impress the others for once!
+Dialogue: 0,0:08:45.89,0:08:49.42,Default,Nijika,0000,0000,0000,,C'mon, take that stuff off \Nbefore you try to look serious!
+Dialogue: 0,0:08:50.07,0:08:52.16,Default,Naoki,0000,0000,0000,,What? They really came?
+Dialogue: 0,0:08:52.16,0:08:53.47,Default,Michiyo,0000,0000,0000,,Really? For real?
+Dialogue: 0,0:08:54.12,0:08:54.74,Default,Futari,0000,0000,0000,,Yeah!
+Dialogue: 0,0:08:54.74,0:08:56.83,Default,Michiyo,0000,0000,0000,,These friends aren't just the imaginary kind?
+Dialogue: 0,0:08:57.81,0:08:58.64,Default,Futari,0000,0000,0000,,Yeah, yeah!
+Dialogue: 0,0:09:01.56,0:09:05.02,Signs,sign,0000,0000,0000,,{\fs20\an8\fnTimes New Roman\bord2\c&H6C7270&\3c&HE7E9F2&}Welcome to Chez Gotoh
+Dialogue: 0,0:09:02.46,0:09:03.52,Default,Kita,0000,0000,0000,,All done!
+Dialogue: 0,0:09:03.52,0:09:05.02,Default,Nijika,0000,0000,0000,,Let me see!
+Dialogue: 0,0:09:05.27,0:09:11.53,Signs,sign,0000,0000,0000,,{\fad(525,1)\blur0.4\fnComic Sans MS\fs14\c&H1C0E16&\frz18.87\pos(255,93)}Win it
+Dialogue: 0,0:09:05.27,0:09:11.53,Signs,sign,0000,0000,0000,,{\fad(525,1)\blur0.4\fnComic Sans MS\fs14\c&H1C0E16&\pos(264.5,299)}Go for it!
+Dialogue: 0,0:09:05.27,0:09:11.53,Signs,sign,0000,0000,0000,,{\fad(525,1)\blur0.4\fnComic Sans MS\fs24\c&H1C0E16&\pos(329.5,133)}Kessoku\NBand
+Dialogue: 0,0:09:05.27,0:09:11.53,Signs,sign,0000,0000,0000,,{\fad(525,1)\blur0.4\fnComic Sans MS\fs14\c&H1C0E16&\pos(270,220)}Together,\Nlet's seize\Nthe flower\Nof victory!
+Dialogue: 1,0:09:06.40,0:09:09.83,Default,Kita,0000,0000,0000,,The concept is friendship, \Neffort, and victory!
+Dialogue: 1,0:09:09.83,0:09:11.53,Default,Nijika,0000,0000,0000,,It's not a dang sports festival!
+Dialogue: 0,0:09:12.08,0:09:14.30,Default,Kita,0000,0000,0000,,Aw, but I think it's cute!
+Dialogue: 0,0:09:14.30,0:09:16.08,Default,Nijika,0000,0000,0000,,Hang on. What are we winning at?
+Dialogue: 0,0:09:16.08,0:09:17.89,Default,Nijika,0000,0000,0000,,I'm not sure how "victory" \Napplies to a concert...
+Dialogue: 0,0:09:17.89,0:09:19.62,Default,Kita,0000,0000,0000,,Um... vibes!
+Dialogue: 0,0:09:19.62,0:09:20.53,Default,Nijika,0000,0000,0000,,Vibes?
+Dialogue: 0,0:09:20.53,0:09:24.91,Default,Kita,0000,0000,0000,,I just think wearing these would \Nreally get us feeling like a unit!
+Dialogue: 0,0:09:24.91,0:09:26.16,Default,Kita,0000,0000,0000,,Right, Gotoh-sa—
+Dialogue: 0,0:09:27.25,0:09:30.02,Default,Hitori,0000,0000,0000,,C-Class unity...
+Dialogue: 0,0:09:30.02,0:09:30.63,Default,Nijika,0000,0000,0000,,Bocchi-chan!
+Dialogue: 0,0:09:30.63,0:09:32.66,Default,Nijika,0000,0000,0000,,Is the idea of a sports festival \Nthat traumatic for you?!
+Dialogue: 0,0:09:32.38,0:09:41.26,Signs,sign,0000,0000,0000,,{\blur0.2\t(8033,8867,\blur3)\fnTimes New Roman\bord2\fad(1318,1)\3c&H6B1819&\c&H6B1819&\pos(551.5,133)\1a&HFF&\t(1273,1318,\1a&H00&)\t(8879,8924,\1a&HFF&)}Sports Festival
+Dialogue: 1,0:09:32.38,0:09:41.26,Signs,sign,0000,0000,0000,,{\blur0.2\t(8033,8867,\blur3)\fnTimes New Roman\bord0\fad(1318,1)\c&H020300&\3c&H6B1819&\pos(551.5,133)}Sports Festival
+Dialogue: 0,0:09:33.40,0:09:34.79,DefaultItalics,Hitori,0000,0000,0000,,The sports festival:
+Dialogue: 0,0:09:34.79,0:09:38.66,DefaultItalics,Hitori,0000,0000,0000,,the number one-source of \Nschool trauma for introverts.
+Dialogue: 0,0:09:35.84,0:09:41.26,Signs,sign,0000,0000,0000,,{\blur0.2\t(4573,5407,\blur3)\fnGeorgia\c&H64ADCA&\pos(265,42)\shad1\4c&H0F284E&\clip(240,12,271.5,47)\t(26,527,\clip(40,12,471.5,47))}School Trauma Sources for Introverts
+Dialogue: 1,0:09:35.84,0:09:41.26,Signs,sign,0000,0000,0000,,{\blur0.2\t(4573,5407,\blur3)\fnGeorgia\c&HE9FAFC&\pos(265,42)\shad1\4c&H0F284E&\clip(40,15,60,47)\t(569,1570,\clip(470,12,490,47))}School Trauma Sources for Introverts
+Dialogue: 0,0:09:37.76,0:09:41.26,Signs,sign,0000,0000,0000,,{\blur0.2\t(2653,3487,\blur3)\fnArial Black\fs30\fad(234,1)\c&H64ADCA&\shad1\4c&H0F3849&\pos(97.5,126)}1st Place
+Dialogue: 0,0:09:38.66,0:09:41.26,DefaultItalics,Hitori,0000,0000,0000,,Parentheses, based on Japanese Introvert \NSociety poll, close parentheses.
+Dialogue: 0,0:09:38.68,0:09:41.26,Signs,sign,0000,0000,0000,,{\blur0.2\t(1649,2567,\blur3)\fnGeorgia\fs18\fscx90\c&H64ADCA&\shad1\4c&H0F284E&\pos(200.5,142.5)}(Based on Japanese Introvert Society Poll)
+Dialogue: 1,0:09:38.68,0:09:41.26,Signs,sign,0000,0000,0000,,{\blur0.2\t(1649,2567,\blur3)\fnGeorgia\fs18\fscx90\c&HE9FAFC&\shad1\4c&H0F284E&\pos(200.5,142.5)\clip(20,123,40,145.5)\t(73,1733,\clip(360,123,380,145.5))}(Based on Japanese Introvert Society Poll)
+Dialogue: 0,0:09:41.72,0:09:43.92,DefaultItalics,Hitori,0000,0000,0000,,A heinous ritual in which those \Nwith no athletic ability are shunned,
+Dialogue: 0,0:09:43.92,0:09:46.69,DefaultItalics,Hitori,0000,0000,0000,,and even their right to exist \Nis stripped away.
+Dialogue: 0,0:09:46.69,0:09:49.06,DefaultItalics,Hitori,0000,0000,0000,,Not only during school hours, \Nbut afterward too,
+Dialogue: 0,0:09:49.06,0:09:53.13,DefaultItalics,Hitori,0000,0000,0000,,they are forced to perform slave labor, \Ncreating banners and practicing cheers!
+Dialogue: 0,0:09:53.65,0:09:58.41,DefaultTop,Classmates,0000,0000,0000,,One for all! All for one!
+Dialogue: 0,0:09:58.41,0:10:04.12,Signs,sign,0000,0000,0000,,{\fnTimes New Roman\fs30\bord2\an8\c&H00099F&\3c&H0439B5&\pos(323,119)}Class Unity
+Dialogue: 0,0:09:58.92,0:10:03.51,DefaultTop,Classmates,0000,0000,0000,,One for all! All for one!
+Dialogue: 0,0:10:01.17,0:10:06.50,DefaultItalics,Hitori,0000,0000,0000,,An entire month's torturous existence \Nliving for naught but the sports festival!
+Dialogue: 0,0:10:03.85,0:10:08.62,DefaultTop,Classmates,0000,0000,0000,,One for all! All for one!
+Dialogue: 0,0:10:04.12,0:10:05.54,Signs,sign,0000,0000,0000,,{\fnTimes New Roman\fs30\bord2\an8\c&H04009B&\3c&H073BC1&\pos(323,119)}Class Unity
+Dialogue: 0,0:10:05.54,0:10:07.00,Signs,sign,0000,0000,0000,,{\fnTimes New Roman\fs30\bord2\an8\c&H0213BB&\3c&H035BD7&\pos(323,119)}Class Unity
+Dialogue: 0,0:10:07.00,0:10:08.62,Signs,sign,0000,0000,0000,,{\fnTimes New Roman\fs30\bord2\an8\c&H0928F1&\3c&H16A0F3&\pos(323,119)}Class Unity
+Dialogue: 0,0:10:08.62,0:10:16.01,Signs,sign,0000,0000,0000,,{\fs20\an8\fnTimes New Roman\bord2\c&H6C7270&\3c&HF8FFFF&}Welcome to Chez Gotoh
+Dialogue: 0,0:10:10.36,0:10:12.88,Default,Kita,0000,0000,0000,,Looks like Gotoh-san melted.
+Dialogue: 0,0:10:12.88,0:10:14.94,Default,Nijika,0000,0000,0000,,It sure is hot today!
+Dialogue: 0,0:10:20.26,0:10:27.18,Signs,sign,0000,0000,0000,,{\blur0.3\fs12\fnTimes New Roman\c&H171F7B&\pos(412.5,117)}This way to\NSchool Festival
+Dialogue: 0,0:10:23.25,0:10:35.15,DefaultTop,Classmates,0000,0000,0000,,No cooperation, no life!
+Dialogue: 0,0:10:25.23,0:10:30.94,DefaultItalics,Hitori,0000,0000,0000,,But the true terror lurking \Nbehind every sports festival...
+Dialogue: 0,0:10:37.31,0:10:41.28,Default,Nijika,0000,0000,0000,,Wow, this week's Bocchi Time lasted \Nthrough the whole commercial break!
+Dialogue: 0,0:10:41.28,0:10:43.47,Default,Kita,0000,0000,0000,,Did I do something wrong?
+Dialogue: 0,0:10:43.47,0:10:46.32,Default,Nijika,0000,0000,0000,,You've really put your foot\N in it now, Kita-chan!
+Dialogue: 0,0:10:46.32,0:10:49.12,Default,Kita,0000,0000,0000,,What? Come back, Gotoh-san!
+Dialogue: 0,0:10:49.12,0:10:58.59,DefaultTop,Classmates,0000,0000,0000,,No cooperation, no life!
+Dialogue: 0,0:10:49.95,0:10:53.13,DefaultItalics,Hitori,0000,0000,0000,,A place in which introverts \Nare constantly underfoot,
+Dialogue: 0,0:10:53.13,0:10:54.92,DefaultItalics,Hitori,0000,0000,0000,,but if they just sit quietly in a corner,
+Dialogue: 0,0:10:54.92,0:10:58.59,DefaultItalics,Hitori,0000,0000,0000,,they're persecuted for \Nnot being team players!
+Dialogue: 0,0:10:58.59,0:11:01.41,Default,Classmate,0000,0000,0000,,Death to those who bring down \Nthe sports festival mood!
+Dialogue: 0,0:11:06.39,0:11:08.47,Default,Classmates,0000,0000,0000,,No cooperation, no life!
+Dialogue: 0,0:11:08.60,0:11:11.02,Default,Classmates,0000,0000,0000,,No cooperation, no life!
+Dialogue: 0,0:11:11.85,0:11:13.98,Default,Futari,0000,0000,0000,,See? They really exist!
+Dialogue: 0,0:11:15.72,0:11:16.93,Default,Kita,0000,0000,0000,,Hello!
+Dialogue: 0,0:11:16.93,0:11:19.15,Default,Nijika,0000,0000,0000,,Thanks for having us!
+Dialogue: 0,0:11:19.62,0:11:21.62,Default,Naoki,0000,0000,0000,,Isn't it wonderful?
+Dialogue: 0,0:11:21.62,0:11:24.66,Default,Naoki,0000,0000,0000,,I never imagined Hitori \Nwould have real friends over!
+Dialogue: 0,0:11:24.66,0:11:26.48,Default,Michiyo,0000,0000,0000,,Eat your fill, all right?
+Dialogue: 0,0:11:26.48,0:11:27.12,Default,Nijika,0000,0000,0000,,Sure!
+Dialogue: 0,0:11:27.12,0:11:28.66,Default,Kita,0000,0000,0000,,Thanks so much!
+Dialogue: 0,0:11:28.91,0:11:31.15,Default,Naoki,0000,0000,0000,,You let Hitori join your band, right?
+Dialogue: 0,0:11:31.15,0:11:31.75,Default,Kita,0000,0000,0000,,Yes.
+Dialogue: 0,0:11:31.75,0:11:33.35,Default,Nijika,0000,0000,0000,,We didn't exactly "let" her join.
+Dialogue: 0,0:11:33.35,0:11:36.69,Default,Nijika,0000,0000,0000,,I asked her to join, and she \Nwas willing to humor me.
+Dialogue: 0,0:11:36.69,0:11:38.26,Default,Michiyo,0000,0000,0000,,Really?
+Dialogue: 0,0:11:38.26,0:11:41.89,Default,Nijika,0000,0000,0000,,See? Music really brings people together!
+Dialogue: 0,0:11:41.89,0:11:43.06,Default,Nijika,0000,0000,0000,,Right, Jimihen?
+Dialogue: 0,0:11:43.99,0:11:47.76,Default,Michiyo,0000,0000,0000,,She doesn't cause too much trouble with her \Nretreats into her own little world, does she?
+Dialogue: 0,0:11:47.76,0:11:50.77,Default,Kita,0000,0000,0000,,Aw, that's no trouble at all!
+Dialogue: 0,0:11:50.77,0:11:52.89,Default,Nijika,0000,0000,0000,,Yeah! It's fun!
+Dialogue: 0,0:11:53.22,0:11:54.55,Default,Michiyo,0000,0000,0000,,Nice to hear.
+Dialogue: 0,0:11:54.55,0:11:55.68,Default,Naoki,0000,0000,0000,,Here, it's done.
+Dialogue: 0,0:11:56.52,0:11:59.10,DefaultItalics,Hitori,0000,0000,0000,,The fact that I'm still\Nupset about school festivals
+Dialogue: 0,0:11:59.10,0:12:01.79,DefaultItalics,Hitori,0000,0000,0000,,makes me realize I'm a downer even more,\Nwhich made everything worse...
+Dialogue: 0,0:12:01.79,0:12:03.99,Default,Michiyo,0000,0000,0000,,Karaage's done!
+Dialogue: 0,0:12:04.64,0:12:07.17,Default,Nijika/Kita,0000,0000,0000,,Wow, that looks good!
+Dialogue: 0,0:12:07.17,0:12:09.62,Default,Naoki,0000,0000,0000,,That one is soy sauce with garlic,\Nand this one is shio koji.
+Dialogue: 0,0:12:09.62,0:12:11.37,Default,Naoki,0000,0000,0000,,And there's lemon and \Nshichimi spice to taste.
+Dialogue: 0,0:12:11.37,0:12:12.68,Default,Nijika,0000,0000,0000,,Thanks!
+Dialogue: 0,0:12:12.68,0:12:14.15,Default,Futari,0000,0000,0000,,Kita-chan, eat!
+Dialogue: 0,0:12:14.15,0:12:15.17,Default,Kita,0000,0000,0000,,Okay!
+Dialogue: 0,0:12:18.26,0:12:20.29,Default,Michiyo,0000,0000,0000,,When she said she had friends coming,
+Dialogue: 0,0:12:20.29,0:12:22.98,Default,Michiyo,0000,0000,0000,,I assumed they were imaginary \Nor hallucinations,
+Dialogue: 0,0:12:22.98,0:12:24.52,Default,Michiyo,0000,0000,0000,,but then, she did have that picture...
+Dialogue: 0,0:12:24.52,0:12:25.86,Default,Nijika,0000,0000,0000,,Hallucinations?
+Dialogue: 0,0:12:25.86,0:12:29.89,Default,Naoki,0000,0000,0000,,But of course, image editing software \Nis pretty sophisticated these days...
+Dialogue: 0,0:12:29.89,0:12:30.85,Default,Kita,0000,0000,0000,,Software?
+Dialogue: 0,0:12:31.45,0:12:35.00,Default,Naoki,0000,0000,0000,,If I might ask, you're not from \Nsome kind of friend rental servi—
+Dialogue: 0,0:12:35.00,0:12:37.43,Default,Nijika,0000,0000,0000,,We're her bona fide bandmates!
+Dialogue: 0,0:12:37.43,0:12:38.88,Default,Naoki,0000,0000,0000,,Oh, okay.
+Dialogue: 0,0:12:38.88,0:12:41.37,DefaultItalics,Hitori,0000,0000,0000,,I can't say it doesn't sound \Nlike something I'd do...
+Dialogue: 0,0:12:38.88,0:12:42.32,DefaultTop,Naoki,0000,0000,0000,,It's just that Hitori's never \Nbrought a friend home before.{bg}
+Dialogue: 0,0:12:41.37,0:12:44.57,DefaultItalics,Hitori,0000,0000,0000,,but hearing Mom and Dad's \Nideas about me is so...
+Dialogue: 0,0:12:44.57,0:12:47.38,DefaultItalics,Nijika,0000,0000,0000,,So Bocchi's like this even at home.
+Dialogue: 0,0:12:48.20,0:12:51.95,Default,Michiyo,0000,0000,0000,,She's been so restless for days now.
+Dialogue: 0,0:12:51.95,0:12:54.58,Default,Michiyo,0000,0000,0000,,She said something about practicing \Ndecorating her room,
+Dialogue: 0,0:12:54.58,0:12:59.30,Default,Michiyo,0000,0000,0000,,put it all up, took it all down, \Nand put it back up, over and over again.
+Dialogue: 0,0:12:59.71,0:13:04.47,Default,Naoki,0000,0000,0000,,And she played a simulated game of Twister, \Njust in case you played.
+Dialogue: 0,0:13:04.47,0:13:06.43,Default,Hitori,0000,0000,0000,,M-Mom! Dad!
+Dialogue: 0,0:13:06.43,0:13:08.97,Default,Hitori,0000,0000,0000,,You don't have to tell them all that stuff!
+Dialogue: 0,0:13:08.97,0:13:11.68,Default,Michiyo,0000,0000,0000,,I'm glad we went shopping just in case!
+Dialogue: 0,0:13:11.68,0:13:14.54,Default,Naoki,0000,0000,0000,,Okay, this is a day worth remembering!
+Dialogue: 0,0:13:14.54,0:13:15.83,Default,Naoki,0000,0000,0000,,A friend-a-versary!
+Dialogue: 0,0:13:15.83,0:13:17.82,Default,Futari,0000,0000,0000,,Friend-a-versity!
+Dialogue: 0,0:13:17.82,0:13:20.23,Default,Hitori,0000,0000,0000,,C-Cut it out already!
+Dialogue: 0,0:13:20.99,0:13:24.20,Default,Michiyo,0000,0000,0000,,That's right.\NThe job she said she'd gotten...
+Dialogue: 0,0:13:24.20,0:13:26.56,Default,Nijika,0000,0000,0000,,Yeah, it's at my sister's club.
+Dialogue: 0,0:13:26.56,0:13:28.99,Default,Nijika,0000,0000,0000,,Bocchi-chan mainly serves \Ndrinks to customers.
+Dialogue: 0,0:13:28.99,0:13:30.37,Default,Michiyo/Naoki,0000,0000,0000,,T-To customers?!
+Dialogue: 0,0:13:30.37,0:13:31.30,Default,Nijika,0000,0000,0000,,Yeah!
+Dialogue: 0,0:13:30.37,0:13:35.18,DefaultItalicsTop,Hitori,0000,0000,0000,,It does feel pretty weird to \Nhave friends at my house...
+Dialogue: 0,0:13:31.30,0:13:33.38,Default,Michiyo,0000,0000,0000,,Am I dreaming?
+Dialogue: 0,0:13:33.38,0:13:37.69,Default,Naoki,0000,0000,0000,,Amazing. Music really does \Ncause personal growth!
+Dialogue: 0,0:13:37.69,0:13:41.80,Default,Michiyo,0000,0000,0000,,And you were having so much fun \Nwhen we burst in like that!
+Dialogue: 0,0:13:41.80,0:13:42.61,Default,Michiyo,0000,0000,0000,,I'm so sorry.
+Dialogue: 0,0:13:42.61,0:13:43.51,Default,Naoki,0000,0000,0000,,Maybe we should butt out?
+Dialogue: 0,0:13:43.51,0:13:48.93,Signs,sign,0000,0000,0000,,{\fscx50\fscy50\bord2\an8\fnArial Black\c&H565350&\3c&HEEEEEC&\pos(321.5,95.5)}Welcome!  Members of Kessoku Band\N{\fs15}We Hope Your Time Here Heals You in Both Mind and Body
+Dialogue: 0,0:13:53.22,0:13:54.68,Default,Futari,0000,0000,0000,,Hey, hey, Kita-chan!
+Dialogue: 0,0:13:54.68,0:13:55.72,Default,Futari,0000,0000,0000,,What's this?
+Dialogue: 0,0:13:55.72,0:13:59.00,Default,Kita,0000,0000,0000,,That's my favorite heartwarming movie!
+Dialogue: 0,0:13:59.00,0:14:02.11,Default,Nijika,0000,0000,0000,,I've always wanted to watch that one!
+Dialogue: 0,0:14:02.11,0:14:03.62,Default,Michiyo,0000,0000,0000,,Wanna watch it all together?
+Dialogue: 0,0:14:03.62,0:14:05.25,Default,Futari,0000,0000,0000,,Yes, please!
+Dialogue: 0,0:14:05.25,0:14:07.93,Default,Naoki,0000,0000,0000,,Great idea! What fun!
+Dialogue: 0,0:14:07.75,0:14:14.54,DefaultTop,Naoki/Futari,0000,0000,0000,,Yeah! So fun! So fun! Yeah!
+Dialogue: 0,0:14:08.74,0:14:09.16,Signs,sign,0000,0000,0000,,{\fad(274,1)\bord1\fnComic Sans MS\c&HD29C50&\3c&HFADAA1&\frz11.87\pos(534.5,52)}Alienation
+Dialogue: 0,0:14:08.74,0:14:13.67,DefaultItalics,Hitori,0000,0000,0000,,I don't know why, but... it feels \Nkind of hard to go back in now...
+Dialogue: 0,0:14:09.16,0:14:10.87,Signs,sign,0000,0000,0000,,{\bord1\fnComic Sans MS\c&HD29C50&\3c&HFADAA1&\frz11.87\move(534.5,52,603.41,61.91,21,1690)}Alienation
+Dialogue: 0,0:14:10.87,0:14:14.54,Signs,sign,0000,0000,0000,,{\bord1\fnComic Sans MS\c&HD29C50&\3c&HFADAA1&\frz11.87\pos(603.41,61.91)}Alienation
+Dialogue: 0,0:14:14.54,0:14:17.46,Signs,sign,0000,0000,0000,,{\fscx70\fscy70\bord2.5\an8\fnArial Black\c&H565350&\3c&HEEEEEC&}Welcome!  Members of Kessoku Band\N{\fs15}We Hope Your Time Here Heals You in Both Mind and Body
+Dialogue: 0,0:14:17.46,0:14:20.56,DefaultItalics,Weatherman,0000,0000,0000,,The large Typhoon #8 remains on the move,
+Dialogue: 0,0:14:17.46,0:14:22.21,Signs,sign,0000,0000,0000,,{\an7\bord0\p1\c&HCBBFF8&\3c&HF2F7FD&\bord2\alpha&H44&\fscx100\fscy75\pos(136,163)}m 0 0 l 100 0 100 100 0 100
+Dialogue: 1,0:14:17.46,0:14:22.21,Signs,sign,0000,0000,0000,,{\bord1.5\an7\fs9\3c&H8A8A8A&\pos(140,168)}\h\h\h\h\h\h\h\h\h\h\hTyphoon #8\N{\fs8}\h\h\h\h\h\h\h\h\h\h(As of 9th, 4 pm)\NSize: _\NPower: Strong\NDir/Spd: East 120 km/h\NPressure at Eye: 970 hPa\NMax. Wind Speed: 35 m/s\NMax. Gusts: 50 m/s
+Dialogue: 0,0:14:17.46,0:14:22.21,Signs,sign,0000,0000,0000,,{\fs9\c&HF9E9FA&\3c&H8356BE&\bord1\pos(413.5,83)}Upcoming Weather: Typhoon #8 Passes South of Japan
+Dialogue: 0,0:14:20.56,0:14:25.46,DefaultItalics,Weatherman,0000,0000,0000,,and will lose strength while \Npassing to the south of Japan...
+Dialogue: 0,0:14:25.46,0:14:30.39,Signs,sign,0000,0000,0000,,{\bord1.5\fs12\3c&H608C98&\fax0.28\frz27.85\pos(90,78.5)}With new house rules!\NMore exciting than ever!
+Dialogue: 0,0:14:25.46,0:14:30.39,Signs,sign,0000,0000,0000,,{\blur0.8\fs16\3c&HF4FDFE&\bord2.5\fax0.5\c&H877BB9&\frz22.93\pos(226,68)}T{\c&H7D684D&}h{\c&H45698C&}i{\c&H877BB9&}n{\c&H7D684D&}k{\c&H45698C&}i{\c&H877BB9&}n{\c&H7D684D&}g {\c&H45698C&}o{\c&H877BB9&}f {\c&H7D684D&}Y{\c&H45698C&}o{\c&H877BB9&}u\N\h\h{\c&H7D684D&}K{\c&H45698C&}i{\c&H877BB9&}s{\c&H7D684D&}s{\c&H45698C&}e{\c&H877BB9&}s {\c&H7D684D&}O{\c&H45698C&}v{\c&H877BB9&}e{\c&H7D684D&}r {\c&H45698C&}F{\c&H877BB9&}l{\c&H7D684D&}o{\c&H45698C&}w{\c&H877BB9&}e{\c&H7D684D&}r{\c&H45698C&}s
+Dialogue: 0,0:14:25.46,0:14:30.39,Signs,sign,0000,0000,0000,,{\fs12\3c&HB4928A&\bord1.5\frz58.81\fax0.2\pos(539.5,151.5)}At parties!\NWith family! As couples!
+Dialogue: 0,0:14:26.48,0:14:30.39,DefaultItalics,Nijika,0000,0000,0000,,We ended up watching the movie, \Nplaying games, and having nothing but fun.
+Dialogue: 0,0:14:30.39,0:14:33.29,Default,Kita,0000,0000,0000,,Twister and Tycoon were so much fun to play!
+Dialogue: 0,0:14:33.29,0:14:36.07,Default,Nijika,0000,0000,0000,,Yeah! So much fun!
+Dialogue: 0,0:14:36.91,0:14:38.02,Default,Nijika,0000,0000,0000,,And yet...
+Dialogue: 0,0:14:38.02,0:14:42.04,Default,Kita,0000,0000,0000,,That's right! We still need to design \Nour T-shirts for the concert.
+Dialogue: 0,0:14:42.04,0:14:43.15,Default,Kita,0000,0000,0000,,Oh, wait...
+Dialogue: 0,0:14:43.72,0:14:45.98,Default,Kita,0000,0000,0000,,Senpai! Gotoh-san's back to it!
+Dialogue: 0,0:14:46.33,0:14:48.59,Default,Nijika,0000,0000,0000,,Oh, I know why.
+Dialogue: 0,0:14:48.59,0:14:51.99,Default,Nijika,0000,0000,0000,,Watching that heartwarming seishun movie \Nhas her back in a spiral.
+Dialogue: 0,0:14:52.12,0:14:58.50,Signs,sign,0000,0000,0000,,{\blur0.2\fnTimes New Roman\bord2\fad(1318,1)\3c&H6B1819&\c&H6B1819&\1a&HFF&\t(1273,1318,\1a&H00&)\t(8879,8924,\1a&HFF&)\pos(533,203.5)}Heartwarming\NSeishun Movie
+Dialogue: 1,0:14:52.12,0:14:58.50,Signs,sign,0000,0000,0000,,{\blur0.2\fnTimes New Roman\bord0\fad(1318,1)\c&H020300&\3c&H6B1819&\pos(533,203.5)}Heartwarming\NSeishun Movie
+Dialogue: 0,0:14:52.37,0:14:54.50,DefaultItalics,Hitori,0000,0000,0000,,Heartwarming seishun movies:
+Dialogue: 0,0:14:52.37,0:14:54.50,DefaultTop,Kita,0000,0000,0000,,I did it again?!
+Dialogue: 0,0:14:54.50,0:14:56.95,DefaultItalics,Hitori,0000,0000,0000,,the number-one source of movie \Ntrauma for introverts, by genre.
+Dialogue: 0,0:14:55.37,0:14:58.50,Signs,sign,0000,0000,0000,,{\blur0.2\fscx90\fnGeorgia\c&H64ADCA&\pos(238,86)\shad1\4c&H0F284E&\clip(213,56,244.5,91)\t(26,527,\clip(13,56,444.5,91))}Traumatic Movie Genres for Introverts
+Dialogue: 1,0:14:55.37,0:14:58.50,Signs,sign,0000,0000,0000,,{\blur0.2\fscx90\fnGeorgia\c&HE9FAFC&\pos(238,86)\shad1\4c&H0F284E&\clip(18,59,38,91)\t(569,1570,\clip(438,56,458,91))}Traumatic Movie Genres for Introverts
+Dialogue: 0,0:14:56.16,0:14:58.50,Signs,sign,0000,0000,0000,,{\blur0.2\fnArial Black\fs30\fad(569,1)\c&H64ADCA&\shad1\4c&H0F3849&\pos(97.5,126)}1st Place
+Dialogue: 0,0:14:56.87,0:14:58.50,Signs,sign,0000,0000,0000,,{\blur0.2\fnGeorgia\fs18\fscx90\c&H64ADCA&\shad1\4c&H0F284E&\pos(200.5,142.5)}(Based on Japanese Introvert Society Poll)
+Dialogue: 1,0:14:56.87,0:14:58.50,Signs,sign,0000,0000,0000,,{\blur0.2\fnGeorgia\fs18\fscx90\c&HE9FAFC&\shad1\4c&H0F284E&\pos(200.5,142.5)\clip(20,123,40,145.5)\t(73,1733,\clip(360,123,380,145.5))}(Based on Japanese Introvert Society Poll)
+Dialogue: 0,0:14:56.95,0:14:58.50,DefaultItalics,Hitori,0000,0000,0000,,Parentheses, based on Japanese \NIntrovert Society poll, close—
+Dialogue: 0,0:14:58.50,0:15:01.58,Default,Nijika,0000,0000,0000,,Bocchi-chan! We're running \Nout of time! Snap out of it!
+Dialogue: 0,0:15:02.02,0:15:05.21,Default,Hitori,0000,0000,0000,,A-An ordinary girl has two hot \Nguys trying to win her heart...
+Dialogue: 0,0:15:02.93,0:15:04.76,DefaultTop,Kita,0000,0000,0000,,Gotoh-san!
+Dialogue: 0,0:15:05.21,0:15:06.64,DefaultTop,Nijika,0000,0000,0000,,It's hopeless.
+Dialogue: 0,0:15:05.21,0:15:09.10,Default,Hitori,0000,0000,0000,,But if someone that cute is "ordinary," \Nwhat hope is there for me?
+Dialogue: 0,0:15:09.10,0:15:12.31,Default,Nijika,0000,0000,0000,,Ryo sent in a bunch of design ideas!
+Dialogue: 0,0:15:12.31,0:15:14.10,Default,Kita,0000,0000,0000,,Let me see! I want to see!
+Dialogue: 0,0:15:14.10,0:15:16.89,Default,Nijika,0000,0000,0000,,C'mon! Look with us, Bocchi-chan!
+Dialogue: 0,0:15:19.73,0:15:21.64,Default,Nijika,0000,0000,0000,,Wh-What in the world?
+Dialogue: 0,0:15:22.31,0:15:23.44,Default,Kita,0000,0000,0000,,Curry?
+Dialogue: 0,0:15:26.90,0:15:28.74,Default,Kita,0000,0000,0000,,Now sushi...
+Dialogue: 0,0:15:28.74,0:15:30.15,Default,Nijika,0000,0000,0000,,I don't get it.
+Dialogue: 0,0:15:31.53,0:15:34.53,Signs,sign,0000,0000,0000,,{\c&H3218E9&\3c&H3218E9&\bord3.8\pos(320,85.5)\fsp2}Which should I have for dinner?
+Dialogue: 1,0:15:31.53,0:15:34.53,Signs,sign,0000,0000,0000,,{\c&H3218E9&\3c&HFFFFFF&\bord2\pos(320,85.5)\fsp2}Which should I have for dinner?
+Dialogue: 0,0:15:32.25,0:15:34.53,DefaultItalics,Ryo,0000,0000,0000,,Which should I have for dinner?
+Dialogue: 0,0:15:35.78,0:15:39.04,Signs,sign,0000,0000,0000,,{\blur0.3\fs12\c&HA29796&\b0\frz3.47\fax0.15\pos(89,63)}Fried Rice
+Dialogue: 0,0:15:35.78,0:15:39.04,Signs,sign,0000,0000,0000,,{\blur0.3\fs12\c&HA7A8A5&\b0\frz13.75\pos(171,319)}Ramen Set
+Dialogue: 0,0:15:36.20,0:15:37.90,Default,Nijika,0000,0000,0000,,Make your own decisions!
+Dialogue: 0,0:15:39.04,0:15:41.12,Default,Kita,0000,0000,0000,,"I think curry's better!"
+Dialogue: 0,0:15:41.12,0:15:43.25,Default,Nijika,0000,0000,0000,,Kita-chan, don't actually respond!
+Dialogue: 0,0:15:43.25,0:15:44.93,Default,Hitori,0000,0000,0000,,E-Excuse me...
+Dialogue: 0,0:15:45.60,0:15:47.71,Default,Nijika,0000,0000,0000,,Hey, Bocchi-chan's back?
+Dialogue: 0,0:15:47.71,0:15:49.12,Default,Hitori,0000,0000,0000,,Y-Yes...
+Dialogue: 0,0:15:49.12,0:15:52.63,Default,Hitori,0000,0000,0000,,I thought you might like to see my design...
+Dialogue: 0,0:15:52.63,0:15:54.80,Signs,sign,0000,0000,0000,,{\fad(417,1)\shad2\bord4\fnComic Sans MS\fs28\c&H0B36B5&\3c&HEFF3F5&\4c&H863D5B&\frz168.3\pos(217,184.5)}L{\c&HC85918&}e{\c&H9784F6&}t{\c&H4FA91A&}'{\c&H6785E8&}s {\c&H1C42BA&}D{\c&HC85918&}r{\c&H9784F6&}a{\c&H4FA91A&}w
+Dialogue: 0,0:15:59.06,0:16:01.02,Signs,sign,0000,0000,0000,,{\fad(1,728)\shad2\bord4\fnComic Sans MS\fs28\c&H0B36B5&\3c&HEFF3F5&\4c&H863D5B&\frz180\pos(267.5,234.5)}L{\c&HC85918&}e{\c&H9784F6&}t{\c&H4FA91A&}'{\c&H6785E8&}s {\c&H1C42BA&}D{\c&HC85918&}r{\c&H9784F6&}a{\c&H4FA91A&}w
+Dialogue: 0,0:16:11.10,0:16:12.00,Default,Hitori,0000,0000,0000,,What do you think?
+Dialogue: 0,0:16:12.00,0:16:13.94,DefaultItalics,Nijika,0000,0000,0000,,S-So lame!
+Dialogue: 0,0:16:13.94,0:16:15.49,Default,Hitori,0000,0000,0000,,I-Is it too trendy?
+Dialogue: 0,0:16:15.83,0:16:19.16,DefaultItalics,Kita,0000,0000,0000,,It's that mystery font I see on middle \Nschool boys' clothing all the time.
+Dialogue: 0,0:16:19.16,0:16:23.02,Default,Hitori,0000,0000,0000,,I thought it would keep people focused \Non our clothing when we're playing.
+Dialogue: 0,0:16:23.02,0:16:25.13,Default,Nijika,0000,0000,0000,,Yeah, for several reasons.
+Dialogue: 0,0:16:25.13,0:16:28.38,Default,Kita,0000,0000,0000,,What's the point of all \Nthe zippers and chains?
+Dialogue: 0,0:16:28.38,0:16:30.20,Default,Hitori,0000,0000,0000,,I thought I could use \Nthe zippers to hold picks,
+Dialogue: 0,0:16:30.20,0:16:32.30,Default,Hitori,0000,0000,0000,,and the chain could serve \Nas a guitar strap.
+Dialogue: 0,0:16:32.30,0:16:34.51,Default,Nijika,0000,0000,0000,,Weirdly practical!
+Dialogue: 0,0:16:35.80,0:16:38.83,Default,Hitori,0000,0000,0000,,So, can I assume we're all in on this one?
+Dialogue: 0,0:16:38.83,0:16:40.97,Default,Kita,0000,0000,0000,,I'm not sure about that...
+Dialogue: 0,0:16:40.97,0:16:43.79,Default,Nijika,0000,0000,0000,,Is this what you like to wear normally?
+Dialogue: 0,0:16:43.79,0:16:46.88,Default,Hitori,0000,0000,0000,,My mom buys my clothes, so no.
+Dialogue: 0,0:16:46.88,0:16:48.30,Default,Nijika,0000,0000,0000,,Oh, really?
+Dialogue: 0,0:16:48.30,0:16:50.42,Default,Hitori,0000,0000,0000,,I've never worn any of them, though...
+Dialogue: 0,0:16:51.27,0:16:52.82,Default,Hitori,0000,0000,0000,,They're not to my taste.
+Dialogue: 0,0:16:53.89,0:16:55.64,Default,Nijika,0000,0000,0000,,Aw, I wanna see!
+Dialogue: 0,0:16:55.64,0:16:58.45,Default,Kita,0000,0000,0000,,Same! I've never seen you in \Nanything but the tracksuit!
+Dialogue: 0,0:16:58.45,0:17:00.99,Default,Nijika,0000,0000,0000,,C'mon, please! Try one on!
+Dialogue: 0,0:17:01.93,0:17:03.50,Default,Nijika/Kita,0000,0000,0000,,Please! Please!
+Dialogue: 0,0:17:04.56,0:17:07.88,Default,Nijika/Kita,0000,0000,0000,,Please! Please! Please! \NPlease! Please! Please!
+Dialogue: 0,0:17:08.88,0:17:10.85,Default,Hitori,0000,0000,0000,,F-Fine...
+Dialogue: 0,0:17:10.85,0:17:12.74,Default,Nijika/Kita,0000,0000,0000,,Yeah!
+Dialogue: 0,0:17:16.56,0:17:17.95,Default,Nijika/Kita,0000,0000,0000,,She's so...
+Dialogue: 0,0:17:20.63,0:17:24.30,Default,Nijika/Kita,0000,0000,0000,,C-Cute!
+Dialogue: 0,0:17:24.89,0:17:27.30,Default,Kita,0000,0000,0000,,I love it! Look right this way!
+Dialogue: 0,0:17:27.30,0:17:28.94,Default,Hitori,0000,0000,0000,,N-No pictures, please...
+Dialogue: 0,0:17:28.94,0:17:32.40,Default,Nijika,0000,0000,0000,,I knew it! Bocchi-chan's cute!
+Dialogue: 0,0:17:32.40,0:17:35.03,Default,Kita,0000,0000,0000,,It's easy to forget, with how she usually is!
+Dialogue: 0,0:17:35.51,0:17:38.14,Default,Hitori,0000,0000,0000,,U-Um... c-can I take it off now?
+Dialogue: 0,0:17:38.14,0:17:39.44,Default,Nijika,0000,0000,0000,,Wait, hang on!
+Dialogue: 0,0:17:39.44,0:17:40.57,Default,Nijika,0000,0000,0000,,I know!
+Dialogue: 0,0:17:40.57,0:17:41.73,Default,Nijika,0000,0000,0000,,Let's brush back your bangs!
+Dialogue: 0,0:17:41.73,0:17:44.16,Default,Nijika,0000,0000,0000,,That's what you need!
+Dialogue: 0,0:17:44.16,0:17:45.51,Default,Kita,0000,0000,0000,,Are you growing them out?
+Dialogue: 0,0:17:45.51,0:17:48.42,Default,Hitori,0000,0000,0000,,I j-just can't get to the salon, \Nso they grow out...
+Dialogue: 0,0:17:48.42,0:17:50.38,Default,Nijika,0000,0000,0000,,Then I'll do some styling!
+Dialogue: 0,0:17:50.38,0:17:51.97,Default,Hitori,0000,0000,0000,,N-No, thank you!
+Dialogue: 0,0:17:51.97,0:17:53.84,Default,Nijika,0000,0000,0000,,Aw, don't be shy!
+Dialogue: 0,0:18:14.30,0:18:17.24,Default,Nijika,0000,0000,0000,,Bocchi-chan's turning to ash!
+Dialogue: 0,0:18:17.24,0:18:22.20,Default,Kita,0000,0000,0000,,Her body can't keep up with the sudden \Nstress of her face being exposed!
+Dialogue: 0,0:18:32.17,0:18:34.82,Default,Nijika,0000,0000,0000,,Bocchi-chan's... dead.
+Dialogue: 0,0:18:34.82,0:18:37.90,Default,Kita,0000,0000,0000,,We'll have to find a new guitarist.
+Dialogue: 0,0:18:40.11,0:18:41.76,Default,Kita,0000,0000,0000,,Senpai! What's wrong?
+Dialogue: 0,0:18:41.76,0:18:43.50,Default,Nijika,0000,0000,0000,,I'm suddenly so dizzy...
+Dialogue: 0,0:18:44.64,0:18:50.28,Default,Nijika,0000,0000,0000,,The room is so damp all of a sudden, \Nlike all the air's been sucked out of it...
+Dialogue: 0,0:18:51.83,0:18:53.44,Default,Nijika,0000,0000,0000,,I breathed it in!
+Dialogue: 0,0:18:53.44,0:18:55.89,Default,Kita,0000,0000,0000,,S-So did I!
+Dialogue: 0,0:18:56.96,0:19:00.54,Default,Nijika,0000,0000,0000,,I-It's no use. G-Going limp...
+Dialogue: 0,0:19:01.84,0:19:05.45,Default,Kita,0000,0000,0000,,Is this... Gotoh-san's curse?
+Dialogue: 0,0:19:09.91,0:19:11.98,Default,Michiyo,0000,0000,0000,,Would anyone like dessert?
+Dialogue: 0,0:19:11.98,0:19:14.46,Default,Naoki,0000,0000,0000,,We've got the sweets Kita-chan brought—
+Dialogue: 0,0:19:18.65,0:19:22.51,DefaultItalics,Nijika,0000,0000,0000,,I'm sorry for trying to push \Nthrough everything with positivity.
+Dialogue: 0,0:19:22.51,0:19:25.51,DefaultItalics,Kita,0000,0000,0000,,I'm sorry I couldn't get good at guitar.
+Dialogue: 0,0:19:25.51,0:19:27.77,DefaultItalics,Kita,0000,0000,0000,,I'm sorry for being too cute.
+Dialogue: 0,0:19:29.02,0:19:31.02,Default,Futari,0000,0000,0000,,They're all acting like Sis!
+Dialogue: 0,0:19:31.52,0:19:34.00,Default,Michiyo,0000,0000,0000,,Dear, the salt and the seals!
+Dialogue: 0,0:19:34.00,0:19:35.52,Default,Naoki,0000,0000,0000,,Should I call that exorcist?
+Dialogue: 0,0:19:35.82,0:19:37.94,Signs,sign,0000,0000,0000,,{\fad(104,1)\an7\bord2\fs8\c&H000000&\3c&HA2A5A3&\frz348.3\pos(415,129.5)}Nijika\N You'll have to do the concert yourself.
+Dialogue: 0,0:19:38.92,0:19:39.96,Default,Ryo,0000,0000,0000,,Why?
+Dialogue: 0,0:19:41.45,0:19:43.57,Signs,sign,0000,0000,0000,,{\pos(320,290)}Several Days Later
+Dialogue: 0,0:19:42.02,0:19:43.57,Default,Nijika,0000,0000,0000,,And so...
+Dialogue: 0,0:19:43.85,0:19:45.93,Default,Nijika,0000,0000,0000,,Since nobody had any good ideas,
+Dialogue: 0,0:19:45.93,0:19:48.62,Default,Nijika,0000,0000,0000,,we're going with my T-shirt design!
+Dialogue: 0,0:19:48.62,0:19:50.13,Default,Ryo,0000,0000,0000,,Ta-dah.
+Dialogue: 0,0:19:48.70,0:19:50.71,Signs,sign,0000,0000,0000,,{\fad(654,1)\fnImpact\c&HC7CDC7&\pos(316.5,194.5)}Kessoku Band
+Dialogue: 0,0:19:50.71,0:19:51.92,Default,Nijika,0000,0000,0000,,I love it!
+Dialogue: 0,0:19:51.92,0:19:54.11,Default,Nijika,0000,0000,0000,,Did you make this, Ijichi-senpai?!
+Dialogue: 0,0:19:54.11,0:19:56.40,Default,Nijika,0000,0000,0000,,I'm pretty good at the design stuff!
+Dialogue: 0,0:19:56.40,0:19:59.84,DefaultItalics,Hitori,0000,0000,0000,,Then why didn't you just \Ndesign it from the start?
+Dialogue: 0,0:19:59.84,0:20:00.97,Default,Nijika,0000,0000,0000,,Bocchi-chan.
+Dialogue: 0,0:20:02.08,0:20:07.97,Default,Nijika,0000,0000,0000,,You look like you were just thinking,\N"Then why didn't you just design it from the start?"
+Dialogue: 0,0:20:08.29,0:20:10.48,DefaultItalics,Hitori,0000,0000,0000,,Sh-She's psychic!
+Dialogue: 0,0:20:10.48,0:20:17.61,Signs,sign,0000,0000,0000,,{\shad2\bord4\fnComic Sans MS\fs28\c&H0B36B5&\3c&HEFF3F5&\4c&H863D5B&\pos(335.5,86)\frz76.51}L{\c&HC85918&}e{\c&H9784F6&}t{\c&H4FA91A&}'{\c&H6785E8&}s {\c&H1C42BA&}D{\c&HC85918&}r{\c&H9784F6&}a{\c&H4FA91A&}w
+Dialogue: 0,0:20:13.53,0:20:17.61,Default,Nijika,0000,0000,0000,,I'm getting pretty good at\Nguessing what you're thinking lately!
+Dialogue: 0,0:20:18.29,0:20:20.91,Default,Nijika,0000,0000,0000,,Awesome! Our ties feel so much stronger now!
+Dialogue: 0,0:20:20.91,0:20:23.36,Default,Kita,0000,0000,0000,,Yeah, I love it!
+Dialogue: 0,0:20:23.36,0:20:25.46,Default,Ryo,0000,0000,0000,,The quality of the model helps.
+Dialogue: 0,0:20:23.36,0:20:27.37,Signs,sign,0000,0000,0000,,{\fs30\an8\fnImpact\c&HCCCDCA&\frz180\pos(315.5,120)\frx30}Kessoku Band
+Dialogue: 0,0:20:25.46,0:20:26.79,Default,Kita,0000,0000,0000,,Totally!
+Dialogue: 0,0:20:26.79,0:20:29.12,Default,Kita,0000,0000,0000,,Senpai, look right here!
+Dialogue: 0,0:20:29.12,0:20:31.34,DefaultItalics,Hitori,0000,0000,0000,,This is pretty good, though.
+Dialogue: 0,0:20:32.64,0:20:34.67,DefaultItalics,Hitori,0000,0000,0000,,Two days to our concert.
+Dialogue: 0,0:20:34.67,0:20:37.13,DefaultItalics,Hitori,0000,0000,0000,,And we worked hard to make our ties feel...
+Dialogue: 0,0:20:37.13,0:20:39.61,Default,Kita,0000,0000,0000,,Hey, looks like there's a typhoon on the way.
+Dialogue: 0,0:20:40.60,0:20:43.71,Default,Nijika,0000,0000,0000,,No way! This is the first I've heard of it!
+Dialogue: 0,0:20:43.71,0:20:45.67,Default,Ryo,0000,0000,0000,,Summer weather is so fickle.
+Dialogue: 0,0:20:45.67,0:20:47.33,Default,Nijika,0000,0000,0000,,Seriously?
+Dialogue: 0,0:20:47.33,0:20:49.14,Default,Hitori,0000,0000,0000,,B-But what about the concert?
+Dialogue: 0,0:20:52.02,0:20:53.89,Default,Ryo,0000,0000,0000,,Should we make rain charms?
+Dialogue: 0,0:20:53.89,0:20:56.07,Default,Nijika,0000,0000,0000,,Yeah! That's our only choice!
+Dialogue: 0,0:20:56.07,0:20:57.41,Default,Nijika,0000,0000,0000,,Your quota is ten each!
+Dialogue: 0,0:20:57.41,0:20:58.56,Default,Hitori,0000,0000,0000,,R-Right!
+Dialogue: 0,0:20:58.56,0:21:01.25,Default,Kita,0000,0000,0000,,Oh, it looks like it won't\Nhit the Kanto region, though.
+Dialogue: 0,0:21:01.25,0:21:02.78,Default,Nijika,0000,0000,0000,,Oh, really?
+Dialogue: 0,0:21:03.22,0:21:05.20,Default,Nijika,0000,0000,0000,,Whew, that's a relief!
+Dialogue: 0,0:21:05.20,0:21:06.77,Default,Kita,0000,0000,0000,,I can't wait for the show!
+Dialogue: 0,0:21:06.77,0:21:07.39,Default,Ryo,0000,0000,0000,,Yeah.
+Dialogue: 0,0:21:07.39,0:21:10.19,Default,Nijika,0000,0000,0000,,I think the new song's coming \Ntogether pretty well!
+Dialogue: 0,0:21:09.67,0:21:11.36,DefaultTop,Hitori,0000,0000,0000,,U-Um...
+Dialogue: 0,0:21:10.19,0:21:12.54,Default,Kita,0000,0000,0000,,Yeah! We're all sounding awesome!
+Dialogue: 0,0:21:12.54,0:21:16.04,Default,Nijika,0000,0000,0000,,Okay, let's get practicing!
+Dialogue: 0,0:21:16.04,0:21:17.40,Default,Hitori,0000,0000,0000,,Excuse me!
+Dialogue: 0,0:21:18.55,0:21:22.30,Default,Hitori,0000,0000,0000,,Sh-Shouldn't we still make the \Nrain charms? Just to be safe?
+Dialogue: 0,0:21:23.69,0:21:26.01,Default,Nijika,0000,0000,0000,,Yeah, sure! Better safe than sorry, right?
+Dialogue: 0,0:21:26.01,0:21:27.20,Default,Kita,0000,0000,0000,,Totally!
+Dialogue: 0,0:21:27.20,0:21:28.80,Default,Nijika,0000,0000,0000,,I'll bring in what we need to make them.
+Dialogue: 0,0:21:29.22,0:21:30.98,Default,Hitori,0000,0000,0000,,O-Okay!
+Dialogue: 0,0:21:30.98,0:21:34.56,DefaultTop,Kita,0000,0000,0000,,I haven't made rain charms \Nsince elementary school!
+Dialogue: 0,0:21:32.84,0:21:37.86,DefaultItalics,Hitori,0000,0000,0000,,I'm used to being negative, \Nso I always assume the worst, but...
+Dialogue: 0,0:21:34.56,0:21:36.02,DefaultTop,Ryo,0000,0000,0000,,Sorry, the five younger brothers \NI haven't seen since birth—
+Dialogue: 0,0:21:36.02,0:21:38.81,DefaultTop,Nijika,0000,0000,0000,,Stop acting above it! It was your idea!
+Dialogue: 0,0:21:38.81,0:21:40.35,Default,Nijika,0000,0000,0000,,You okay, Bocchi-chan?
+Dialogue: 0,0:21:41.02,0:21:43.03,Default,Hitori,0000,0000,0000,,Y-Y-Y-Y-Yes!
+Dialogue: 0,0:21:41.02,0:21:43.03,Signs,sign,0000,0000,0000,,{\fs30\an8\fnImpact\c&HCCCDCA&\frz180\frx30\pos(315.5,113)}Kessoku Band
+Dialogue: 0,0:21:46.55,0:21:49.35,DefaultItalics,Hitori,0000,0000,0000,,It'll be okay... I think.
+Dialogue: 0,0:21:52.62,0:21:55.87,Signs,sign,0000,0000,0000,,{\an7\bord1.5\fs9\c&H6BFAE8&\3c&H449F90&\pos(358.5,33)}Course Changed to Make Landfall\NLook Out for Strong Winds and Heavy Rain
+Dialogue: 0,0:21:52.62,0:21:55.87,Signs,sign,0000,0000,0000,,{\an7\bord0\blur1\p1\c&H656565&\alpha&H44&\fscx105\fscy77\pos(186,212)}m 0 0 l 100 0 100 100 0 100
+Dialogue: 1,0:21:52.62,0:21:55.87,Signs,sign,0000,0000,0000,,{\an7\fs10\pos(190.5,215.5)}Typhoon #8\N{\fs8}(As of 14th, 8 am)\NSize: _\NPower: Intense\NDir/Spd: Northeast 180 km/h\NPressure at Eye: 930 hPa\NMax. Wind Speed: 60 m/s\NMax. Gusts: 85 m/s
+Dialogue: 0,0:21:52.62,0:21:55.87,DefaultItalics,Weatherman,0000,0000,0000,,Typhoon #8 has taken an unexpected course...
+Dialogue: 0,0:22:02.50,0:22:04.96,Signs,sign,0000,0000,0000,,{\blur0.3\fs40\fnImpact\pos(320,200)\c&H23F9FA&}DAY OF THE CONCERT
+Dialogue: 0,0:22:12.74,0:22:21.42,Songs_ED2,,0000,0000,0000,,I sleep, with big problems \Nweighing down on me
+Dialogue: 0,0:22:22.23,0:22:32.08,Songs_ED2,,0000,0000,0000,,Though you can't beat that feeling \Nof being loved, it's true
+Dialogue: 0,0:22:32.08,0:22:41.76,Songs_ED2,,0000,0000,0000,,When I awaken from cold dreams, \Nmy body feels numb
+Dialogue: 0,0:22:41.76,0:22:50.50,Songs_ED2,,0000,0000,0000,,You shine so brightly, \Nit could make me a shadow
+Dialogue: 0,0:22:51.54,0:22:55.38,Songs_ED2b,,0000,0000,0000,,It's time to take that step
+Dialogue: 0,0:22:55.38,0:23:03.10,Songs_ED2b,,0000,0000,0000,,Though there's nothing certain about it
+Dialogue: 0,0:23:03.10,0:23:10.23,Songs_ED2b,,0000,0000,0000,,It carries my childish heart into tomorrow
+Dialogue: 0,0:23:11.36,0:23:14.60,Songs_ED2b,,0000,0000,0000,,It's time to blast out the thoughts \Nrattling around in my brain
+Dialogue: 0,0:23:14.60,0:23:17.18,Songs_ED2b,,0000,0000,0000,,And live, to its fullest, a life
+Dialogue: 0,0:23:17.18,0:23:22.16,Songs_ED2b,,0000,0000,0000,,I've been taking advances on for so long
+Dialogue: 0,0:23:22.16,0:23:24.67,Songs_ED2b,,0000,0000,0000,,But I also love the days I spend \Nlying around, doing nothing
+Dialogue: 0,0:23:24.67,0:23:27.29,Songs_ED2b,,0000,0000,0000,,So I know I'm going to go see you
+Dialogue: 0,0:23:27.29,0:23:33.09,Songs_ED2b,,0000,0000,0000,,Before it all disappears some day
+Dialogue: 0,0:23:34.97,0:23:39.98,Signs,sign,0000,0000,0000,,{\fad(3572,1)\fnComic Sans MS\c&H41403D&\3c&HFFFFFF&\b1\bord2\shad2\4c&H07C4F3&\pos(309,49.5)}#08 Bocchi the Rock
+Dialogue: 0,0:23:38.61,0:23:39.98,Default,Hitori,0000,0000,0000,,Watch it!
