@@ -153,11 +153,11 @@ Dialogue: 0,0:05:53.66,0:05:57.22,Default,Kita,0000,0000,0000,,There's nothing h
 Dialogue: 0,0:05:57.22,0:05:58.29,Default,Nijika,0000,0000,0000,,Yeah...
 Dialogue: 0,0:05:58.56,0:06:02.17,Default,Kita,0000,0000,0000,,I just assumed her room would have \Na bit more of a rock feel to—
 Dialogue: 0,0:06:04.42,0:06:10.05,Signs,sign,0000,0000,0000,,{\fad(402,1)\bord2\fnTimes New Roman\c&H010301&\3c&H595959&\pos(322.5,304)\fay-0.18}Sealed
-Dialogue: 0,0:06:05.55,0:06:07.67,Default,Kita,0000,0000,0000,,Is this... rock?
+Dialogue: 0,0:06:05.55,0:06:07.67,Default,Kita,0000,0000,0000,,Is this... rock? 🤨
 Dialogue: 0,0:06:07.67,0:06:10.05,Default,Nijika,0000,0000,0000,,Yeah, it's pretty rock!
 Dialogue: 0,0:06:10.35,0:06:13.11,Default,Nijika,0000,0000,0000,,I w-wonder if there's \Nanything else rock about i—
 Dialogue: 0,0:06:13.11,0:06:14.10,Default,Nijika,0000,0000,0000,,Ow!
-Dialogue: 0,0:06:15.86,0:06:18.94,Default,Kita,0000,0000,0000,,Huh? Why does she have so \Nmany copies of our ProPho?
+Dialogue: 0,0:06:15.86,0:06:18.94,Default,Kita,0000,0000,0000,,Bruh? Why does she have so \Nmany copies of our ProPho?
 Dialogue: 0,0:06:20.94,0:06:21.69,Signs,sign,0000,0000,0000,,{\an8\bord2\fnTimes New Roman\fs18\c&H010301&\3c&H595959&\frz350\pos(318.5,23.5)}Sealed {\3c&H1E534F&\frz10}Sealed {\3c&H595959&\frz335}Sealed
 Dialogue: 1,0:06:20.94,0:06:21.69,Signs,sign,0000,0000,0000,,{\an8\bord2\fnTimes New Roman\fs18\c&H010301&\3c&H423132&\frz10\pos(322,19.5)}Sealed {\3c&H423132&\frz330}Sealed {\3c&H1E534F&\frz310}Sealed
 Dialogue: 0,0:06:23.72,0:06:28.06,Default,Nijika,0000,0000,0000,,I don't know what's going on, \Nbut it seems pretty darn rock!
@@ -216,10 +216,10 @@ Dialogue: 0,0:08:42.01,0:08:43.25,Default,Hitori,0000,0000,0000,,R-Right!
 Dialogue: 0,0:08:43.64,0:08:45.89,DefaultItalics,Hitori,0000,0000,0000,,I have to impress the others for once!
 Dialogue: 0,0:08:45.89,0:08:49.42,Default,Nijika,0000,0000,0000,,C'mon, take that stuff off \Nbefore you try to look serious!
 Dialogue: 0,0:08:50.07,0:08:52.16,Default,Naoki,0000,0000,0000,,What? They really came?
-Dialogue: 0,0:08:52.16,0:08:53.47,Default,Michiyo,0000,0000,0000,,Really? For real?
-Dialogue: 0,0:08:54.12,0:08:54.74,Default,Futari,0000,0000,0000,,Yeah!
+Dialogue: 0,0:08:52.16,0:08:53.47,Default,Michiyo,0000,0000,0000,,Really? fr?
+Dialogue: 0,0:08:54.12,0:08:54.74,Default,Futari,0000,0000,0000,,fr!
 Dialogue: 0,0:08:54.74,0:08:56.83,Default,Michiyo,0000,0000,0000,,These friends aren't just the imaginary kind?
-Dialogue: 0,0:08:57.81,0:08:58.64,Default,Futari,0000,0000,0000,,Yeah, yeah!
+Dialogue: 0,0:08:57.81,0:08:58.64,Default,Futari,0000,0000,0000,,fr fr!
 Dialogue: 0,0:09:01.56,0:09:05.02,Signs,sign,0000,0000,0000,,{\fs20\an8\fnTimes New Roman\bord2\c&H6C7270&\3c&HE7E9F2&}Welcome to Chez Gotoh
 Dialogue: 0,0:09:02.46,0:09:03.52,Default,Kita,0000,0000,0000,,All done!
 Dialogue: 0,0:09:03.52,0:09:05.02,Default,Nijika,0000,0000,0000,,Let me see!
@@ -411,9 +411,9 @@ Dialogue: 0,0:15:49.12,0:15:52.63,Default,Hitori,0000,0000,0000,,I thought you m
 Dialogue: 0,0:15:52.63,0:15:54.80,Signs,sign,0000,0000,0000,,{\fad(417,1)\shad2\bord4\fnComic Sans MS\fs28\c&H0B36B5&\3c&HEFF3F5&\4c&H863D5B&\frz168.3\pos(217,184.5)}L{\c&HC85918&}e{\c&H9784F6&}t{\c&H4FA91A&}'{\c&H6785E8&}s {\c&H1C42BA&}D{\c&HC85918&}r{\c&H9784F6&}a{\c&H4FA91A&}w
 Dialogue: 0,0:15:59.06,0:16:01.02,Signs,sign,0000,0000,0000,,{\fad(1,728)\shad2\bord4\fnComic Sans MS\fs28\c&H0B36B5&\3c&HEFF3F5&\4c&H863D5B&\frz180\pos(267.5,234.5)}L{\c&HC85918&}e{\c&H9784F6&}t{\c&H4FA91A&}'{\c&H6785E8&}s {\c&H1C42BA&}D{\c&HC85918&}r{\c&H9784F6&}a{\c&H4FA91A&}w
 Dialogue: 0,0:16:11.10,0:16:12.00,Default,Hitori,0000,0000,0000,,What do you think?
-Dialogue: 0,0:16:12.00,0:16:13.94,DefaultItalics,Nijika,0000,0000,0000,,S-So lame!
+Dialogue: 0,0:16:12.00,0:16:13.94,DefaultItalics,Nijika,0000,0000,0000,,S-So cringe!
 Dialogue: 0,0:16:13.94,0:16:15.49,Default,Hitori,0000,0000,0000,,I-Is it too trendy?
-Dialogue: 0,0:16:15.83,0:16:19.16,DefaultItalics,Kita,0000,0000,0000,,It's that mystery font I see on middle \Nschool boys' clothing all the time.
+Dialogue: 0,0:16:15.83,0:16:19.16,DefaultItalics,Kita,0000,0000,0000,,It's that mystery font I see on bottom text memes all the time.
 Dialogue: 0,0:16:19.16,0:16:23.02,Default,Hitori,0000,0000,0000,,I thought it would keep people focused \Non our clothing when we're playing.
 Dialogue: 0,0:16:23.02,0:16:25.13,Default,Nijika,0000,0000,0000,,Yeah, for several reasons.
 Dialogue: 0,0:16:25.13,0:16:28.38,Default,Kita,0000,0000,0000,,What's the point of all \Nthe zippers and chains?
@@ -438,7 +438,7 @@ Dialogue: 0,0:17:16.56,0:17:17.95,Default,Nijika/Kita,0000,0000,0000,,She's so..
 Dialogue: 0,0:17:20.63,0:17:24.30,Default,Nijika/Kita,0000,0000,0000,,C-Cute!
 Dialogue: 0,0:17:24.89,0:17:27.30,Default,Kita,0000,0000,0000,,I love it! Look right this way!
 Dialogue: 0,0:17:27.30,0:17:28.94,Default,Hitori,0000,0000,0000,,N-No pictures, please...
-Dialogue: 0,0:17:28.94,0:17:32.40,Default,Nijika,0000,0000,0000,,I knew it! Bocchi-chan's cute!
+Dialogue: 0,0:17:28.94,0:17:32.40,Default,Nijika,0000,0000,0000,,I knew it! Bocchi-chan is drippin'!
 Dialogue: 0,0:17:32.40,0:17:35.03,Default,Kita,0000,0000,0000,,It's easy to forget, with how she usually is!
 Dialogue: 0,0:17:35.51,0:17:38.14,Default,Hitori,0000,0000,0000,,U-Um... c-can I take it off now?
 Dialogue: 0,0:17:38.14,0:17:39.44,Default,Nijika,0000,0000,0000,,Wait, hang on!
@@ -450,7 +450,7 @@ Dialogue: 0,0:17:45.51,0:17:48.42,Default,Hitori,0000,0000,0000,,I j-just can't 
 Dialogue: 0,0:17:48.42,0:17:50.38,Default,Nijika,0000,0000,0000,,Then I'll do some styling!
 Dialogue: 0,0:17:50.38,0:17:51.97,Default,Hitori,0000,0000,0000,,N-No, thank you!
 Dialogue: 0,0:17:51.97,0:17:53.84,Default,Nijika,0000,0000,0000,,Aw, don't be shy!
-Dialogue: 0,0:18:14.30,0:18:17.24,Default,Nijika,0000,0000,0000,,Bocchi-chan's turning to ash!
+Dialogue: 0,0:18:14.30,0:18:17.24,Default,Nijika,0000,0000,0000,,Bocchi-chan's turning into Hiroshima!
 Dialogue: 0,0:18:17.24,0:18:22.20,Default,Kita,0000,0000,0000,,Her body can't keep up with the sudden \Nstress of her face being exposed!
 Dialogue: 0,0:18:32.17,0:18:34.82,Default,Nijika,0000,0000,0000,,Bocchi-chan's... dead.
 Dialogue: 0,0:18:34.82,0:18:37.90,Default,Kita,0000,0000,0000,,We'll have to find a new guitarist.
