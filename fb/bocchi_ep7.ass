@@ -262,12 +262,12 @@ Dialogue: 0,0:10:04.12,0:10:05.54,Signs,sign,0000,0000,0000,,{\fnTimes New Roman
 Dialogue: 0,0:10:05.54,0:10:07.00,Signs,sign,0000,0000,0000,,{\fnTimes New Roman\fs30\bord2\an8\c&H0213BB&\3c&H035BD7&\pos(323,119)}Class Unity
 Dialogue: 0,0:10:07.00,0:10:08.62,Signs,sign,0000,0000,0000,,{\fnTimes New Roman\fs30\bord2\an8\c&H0928F1&\3c&H16A0F3&\pos(323,119)}Class Unity
 Dialogue: 0,0:10:08.62,0:10:16.01,Signs,sign,0000,0000,0000,,{\fs20\an8\fnTimes New Roman\bord2\c&H6C7270&\3c&HF8FFFF&}Welcome to Chez Gotoh
-Dialogue: 0,0:10:10.36,0:10:12.88,Default,Kita,0000,0000,0000,,Looks like Gotoh-san melted.
-Dialogue: 0,0:10:12.88,0:10:14.94,Default,Nijika,0000,0000,0000,,It sure is hot today!
+Dialogue: 0,0:10:10.36,0:10:12.88,Default,Kita,0000,0000,0000,,Looks like this Pink creature melted like butter.
+Dialogue: 0,0:10:12.88,0:10:14.94,Default,Nijika,0000,0000,0000,,Man, it's really hot today!
 Dialogue: 0,0:10:20.26,0:10:27.18,Signs,sign,0000,0000,0000,,{\blur0.3\fs12\fnTimes New Roman\c&H171F7B&\pos(412.5,117)}This way to\NSchool Festival
 Dialogue: 0,0:10:23.25,0:10:35.15,DefaultTop,Classmates,0000,0000,0000,,No cooperation, no life!
 Dialogue: 0,0:10:25.23,0:10:30.94,DefaultItalics,Hitori,0000,0000,0000,,But the true terror lurking \Nbehind every sports festival...
-Dialogue: 0,0:10:37.31,0:10:41.28,Default,Nijika,0000,0000,0000,,Wow, this week's Bocchi Time lasted \Nthrough the whole commercial break!
+Dialogue: 0,0:10:37.31,0:10:41.28,Default,Nijika,0000,0000,0000,,Lmao, this week's Bocchi Time lasted \Nthrough the whole commercial break!
 Dialogue: 0,0:10:41.28,0:10:43.47,Default,Kita,0000,0000,0000,,Did I do something wrong?
 Dialogue: 0,0:10:43.47,0:10:46.32,Default,Nijika,0000,0000,0000,,You've really put your foot\N in it now, Kita-chan!
 Dialogue: 0,0:10:46.32,0:10:49.12,Default,Kita,0000,0000,0000,,What? Come back, Gotoh-san!
@@ -278,7 +278,7 @@ Dialogue: 0,0:10:54.92,0:10:58.59,DefaultItalics,Hitori,0000,0000,0000,,they're 
 Dialogue: 0,0:10:58.59,0:11:01.41,Default,Classmate,0000,0000,0000,,Death to those who bring down \Nthe sports festival mood!
 Dialogue: 0,0:11:06.39,0:11:08.47,Default,Classmates,0000,0000,0000,,No cooperation, no life!
 Dialogue: 0,0:11:08.60,0:11:11.02,Default,Classmates,0000,0000,0000,,No cooperation, no life!
-Dialogue: 0,0:11:11.85,0:11:13.98,Default,Futari,0000,0000,0000,,See? They really exist!
+Dialogue: 0,0:11:11.85,0:11:13.98,Default,Futari,0000,0000,0000,,See? Those "imaginary-things" really exist!
 Dialogue: 0,0:11:15.72,0:11:16.93,Default,Kita,0000,0000,0000,,Hello!
 Dialogue: 0,0:11:16.93,0:11:19.15,Default,Nijika,0000,0000,0000,,Thanks for having us!
 Dialogue: 0,0:11:19.62,0:11:21.62,Default,Naoki,0000,0000,0000,,Isn't it wonderful?
@@ -292,7 +292,7 @@ Dialogue: 0,0:11:31.75,0:11:33.35,Default,Nijika,0000,0000,0000,,We didn't exact
 Dialogue: 0,0:11:33.35,0:11:36.69,Default,Nijika,0000,0000,0000,,I asked her to join, and she \Nwas willing to humor me.
 Dialogue: 0,0:11:36.69,0:11:38.26,Default,Michiyo,0000,0000,0000,,Really?
 Dialogue: 0,0:11:38.26,0:11:41.89,Default,Nijika,0000,0000,0000,,See? Music really brings people together!
-Dialogue: 0,0:11:41.89,0:11:43.06,Default,Nijika,0000,0000,0000,,Right, Jimihen?
+Dialogue: 0,0:11:41.89,0:11:43.06,Default,Nijika,0000,0000,0000,,Right, Jimihen? (Arf arf)
 Dialogue: 0,0:11:43.99,0:11:47.76,Default,Michiyo,0000,0000,0000,,She doesn't cause too much trouble with her \Nretreats into her own little world, does she?
 Dialogue: 0,0:11:47.76,0:11:50.77,Default,Kita,0000,0000,0000,,Aw, that's no trouble at all!
 Dialogue: 0,0:11:50.77,0:11:52.89,Default,Nijika,0000,0000,0000,,Yeah! It's fun!
@@ -311,10 +311,10 @@ Dialogue: 0,0:12:18.26,0:12:20.29,Default,Michiyo,0000,0000,0000,,When she said 
 Dialogue: 0,0:12:20.29,0:12:22.98,Default,Michiyo,0000,0000,0000,,I assumed they were imaginary \Nor hallucinations,
 Dialogue: 0,0:12:22.98,0:12:24.52,Default,Michiyo,0000,0000,0000,,but then, she did have that picture...
 Dialogue: 0,0:12:24.52,0:12:25.86,Default,Nijika,0000,0000,0000,,Hallucinations?
-Dialogue: 0,0:12:25.86,0:12:29.89,Default,Naoki,0000,0000,0000,,But of course, image editing software \Nis pretty sophisticated these days...
+Dialogue: 0,0:12:25.86,0:12:29.89,Default,Naoki,0000,0000,0000,,But of course, Photoshop AI Generative fill \Nis pretty sophisticated these days...
 Dialogue: 0,0:12:29.89,0:12:30.85,Default,Kita,0000,0000,0000,,Software?
 Dialogue: 0,0:12:31.45,0:12:35.00,Default,Naoki,0000,0000,0000,,If I might ask, you're not from \Nsome kind of friend rental servi—
-Dialogue: 0,0:12:35.00,0:12:37.43,Default,Nijika,0000,0000,0000,,We're her bona fide bandmates!
+Dialogue: 0,0:12:35.00,0:12:37.43,Default,Nijika,0000,0000,0000,,We're her 100% reyal-chadded-frienny bandmates!
 Dialogue: 0,0:12:37.43,0:12:38.88,Default,Naoki,0000,0000,0000,,Oh, okay.
 Dialogue: 0,0:12:38.88,0:12:41.37,DefaultItalics,Hitori,0000,0000,0000,,I can't say it doesn't sound \Nlike something I'd do...
 Dialogue: 0,0:12:38.88,0:12:42.32,DefaultTop,Naoki,0000,0000,0000,,It's just that Hitori's never \Nbrought a friend home before.{bg}
@@ -528,7 +528,7 @@ Dialogue: 0,0:21:41.02,0:21:43.03,Default,Hitori,0000,0000,0000,,Y-Y-Y-Y-Yes!
 Dialogue: 0,0:21:41.02,0:21:43.03,Signs,sign,0000,0000,0000,,{\fs30\an8\fnImpact\c&HCCCDCA&\frz180\frx30\pos(315.5,113)}Kessoku Band
 Dialogue: 0,0:21:46.55,0:21:49.35,DefaultItalics,Hitori,0000,0000,0000,,It'll be okay... I think.
 Dialogue: 0,0:21:52.62,0:21:55.87,Signs,sign,0000,0000,0000,,{\an7\bord1.5\fs9\c&H6BFAE8&\3c&H449F90&\pos(358.5,33)}Course Changed to Make Landfall\NLook Out for Strong Winds and Heavy Rain
-Dialogue: 0,0:21:52.62,0:21:55.87,Signs,sign,0000,0000,0000,,{\an7\bord0\blur1\p1\c&H656565&\alpha&H44&\fscx105\fscy77\pos(186,212)}m 0 0 l 100 0 100 100 0 100
+Dialogue: 0,0:21:52.62,0:21:55.87,Signs,sign,0000,0000,0000,,{\an7\bord0\blur1\p1\c&H656565&\alpha&H44&\fscx105\fscy77\pos(186,212)}
 Dialogue: 1,0:21:52.62,0:21:55.87,Signs,sign,0000,0000,0000,,{\an7\fs10\pos(190.5,215.5)}Typhoon #8\N{\fs8}(As of 14th, 8 am)\NSize: _\NPower: Intense\NDir/Spd: Northeast 180 km/h\NPressure at Eye: 930 hPa\NMax. Wind Speed: 60 m/s\NMax. Gusts: 85 m/s
 Dialogue: 0,0:21:52.62,0:21:55.87,DefaultItalics,Weatherman,0000,0000,0000,,Typhoon #8 has taken an unexpected course...
 Dialogue: 0,0:22:02.50,0:22:04.96,Signs,sign,0000,0000,0000,,{\blur0.3\fs40\fnImpact\pos(320,200)\c&H23F9FA&}DAY OF THE CONCERT
@@ -546,4 +546,4 @@ Dialogue: 0,0:23:22.16,0:23:24.67,Songs_ED2b,,0000,0000,0000,,But I also love th
 Dialogue: 0,0:23:24.67,0:23:27.29,Songs_ED2b,,0000,0000,0000,,So I know I'm going to go see you
 Dialogue: 0,0:23:27.29,0:23:33.09,Songs_ED2b,,0000,0000,0000,,Before it all disappears some day
 Dialogue: 0,0:23:34.97,0:23:39.98,Signs,sign,0000,0000,0000,,{\fad(3572,1)\fnComic Sans MS\c&H41403D&\3c&HFFFFFF&\b1\bord2\shad2\4c&H07C4F3&\pos(309,49.5)}#08 Bocchi the Rock
-Dialogue: 0,0:23:38.61,0:23:39.98,Default,Hitori,0000,0000,0000,,Watch it!
+Dialogue: 0,0:23:38.61,0:23:39.98,Default,Hitori,0000,0000,0000,,Wash'it!
