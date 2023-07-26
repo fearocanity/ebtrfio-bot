@@ -13,7 +13,7 @@ This is where we run our Bots
 Our Template Repository is Available [Here!](https://github.com/fearocanity/ebtrfio-template)
 
 ## Status
-![Status Image](status/status.jpg)
+![Status Image](status/status.png)
 
 ## Page Stats
 ![Page Stats](https://raw.githubusercontent.com/fearocanity/fearocanity/master/banner.gif)
