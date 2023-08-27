@@ -206,8 +206,8 @@ fi
 [[ "${total_frame}" -lt "${prev_frame}" ]] && exit 0
 
 # optional message
-[[ "${prev_frame}" == "1076" ]] message+="[Guitar, Solitude and the Blue Planet Band Performance v2]"$'\n'
-[[ "${prev_frame}" == "1514" ]] message+="[That Band - Band Performance]"$'\n'
+[[ "${prev_frame}" == "1076" ]] && message+="[Guitar, Solitude and the Blue Planet Band Performance v2]"$'\n'
+[[ "${prev_frame}" == "1514" ]] && message+="[That Band - Band Performance]"$'\n'
 
 # This is where you can change your post captions and own format (that one below is the default)
 if [[ "${is_bonus}" == "1" ]]; then
