@@ -205,11 +205,15 @@ if [[ -z "${prev_frame}" ]] || [[ "${prev_frame}" -lt 1 ]]; then
 fi
 [[ "${total_frame}" -lt "${prev_frame}" ]] && exit 0
 
+# optional message
+[[ "${prev_frame}" == "1076" ]] message+="[Guitar, Solitude and the Blue Planet Band Performance v2]"$'\n'
+[[ "${prev_frame}" == "1514" ]] message+="[That Band - Band Performance]"$'\n'
+
 # This is where you can change your post captions and own format (that one below is the default)
 if [[ "${is_bonus}" == "1" ]]; then
-	message="Season ${season}, Episode ${episode}, Frame ${prev_frame}.1 out of ${total_frame}"
+	message+="Season ${season}, Episode ${episode}, Frame ${prev_frame}.1 out of ${total_frame}"
 else
-	message="Season ${season}, Episode ${episode}, Frame ${prev_frame} out of ${total_frame}"
+	message+="Season ${season}, Episode ${episode}, Frame ${prev_frame} out of ${total_frame}"
 fi
 
 # Call the Scraper of Subs
