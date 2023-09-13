@@ -19466,3 +19466,5 @@
 [√] Frame: 3136, Episode 08 https://facebook.com/351488807815438
 [√] Frame: 3137, Episode 08 https://facebook.com/351489894481996
 [√] Frame: 3138, Episode 08 https://facebook.com/351491307815188
+[√] Frame: 3139, Episode 08 https://facebook.com/351547624476223
+[X] Frame: 3140, Episode 08
