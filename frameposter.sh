@@ -36,7 +36,7 @@ rc_location=./fb/tmprc.jpg
 : "${vid_totalfrm:=}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
-locationsub=./fb/bocchi_ep8.ass
+locationsub=./fb/bocchi_ep9.ass
 
 # Temp Variables
 is_empty="1"
@@ -113,7 +113,7 @@ nth(){
 	# New Formula: {current_frame} * ({vid_totalframe} / {total_frame}) / {frame_rate} = {total_secs}
 	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; (${t:-1} - 2) * 6.84872259103 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * 6.84872259103 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
 	# sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * (${vid_totalfrm} / ${total_frame}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
@@ -206,8 +206,8 @@ fi
 [[ "${total_frame}" -lt "${prev_frame}" ]] && exit 0
 
 # optional message
-[[ "${prev_frame}" == "1076" ]] && message+="[Guitar, Solitude and the Blue Planet Band Performance v2]"$'\n'
-[[ "${prev_frame}" == "1514" ]] && message+="[That Band - Band Performance]"$'\n'
+# [[ "${prev_frame}" == "1076" ]] && message+="[Guitar, Solitude and the Blue Planet Band Performance v2]"$'\n'
+# [[ "${prev_frame}" == "1514" ]] && message+="[That Band - Band Performance]"$'\n'
 
 # This is where you can change your post captions and own format (that one below is the default)
 if [[ "${is_bonus}" == "1" ]]; then
