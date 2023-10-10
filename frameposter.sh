@@ -250,7 +250,7 @@ sleep 3 # Delay
 [[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null
 
 # Addons, you can comment this line if you don't want to comment the GIF created on previous 10 frames
-# [[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt "${gif_prev_framecount}" ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
+[[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt "${gif_prev_framecount}" ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
 
 # This will note that the Post was success, without errors and append it to log file
 if [[ "${is_bonus}" == "1" ]]; then
