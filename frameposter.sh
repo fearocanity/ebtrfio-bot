@@ -219,7 +219,7 @@ else
 fi
 
 if [[ "${is_timestamp}" = "1" ]]; then
-	message+=$'\n'"Timestamp: approx. $(nth "${prev_frame}" "timestamp")"
+	message+=$'\n'"Timestamp: $(nth "${prev_frame}" "timestamp")"
  fi
 
 # Call the Scraper of Subs
