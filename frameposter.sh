@@ -113,7 +113,9 @@ nth(){
 	# New Formula: {current_frame} * ({vid_totalframe} / {total_frame}) / {frame_rate} = {total_secs}
 	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * 6.84872259103 / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
+	sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * 6.84872259103 / ${vid_fps}")"
+ 	[[ "${2}" = "timestamp" ]] && sec="$(bc -l <<< "scale=2; ${t:-1} * 6.84872259103 / ${vid_fps}")"
+  	secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
 	# sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * (${vid_totalfrm} / ${total_frame}) / ${vid_fps}")" secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
@@ -215,6 +217,10 @@ if [[ "${is_bonus}" == "1" ]]; then
 else
 	message+="Season ${season}, Episode ${episode}, Frame ${prev_frame} out of ${total_frame}"
 fi
+
+if [[ "${is_timestamp}" = "1" ]]; then
+	message+=$'\n'"Timestamp: $(nth "${prev_frame}" "timestamp")"
+ fi
 
 # Call the Scraper of Subs
 scrv3 "$(nth "${prev_frame}")"
