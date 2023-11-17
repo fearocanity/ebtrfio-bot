@@ -223,13 +223,12 @@ Dialogue: 0,0:07:13.60,0:07:16.70,Default,Ryo,0000,0000,0000,,I'd like to play m
 Dialogue: 0,0:07:16.70,0:07:20.12,Default,Nijika,0000,0000,0000,,Plus, it's a great chance \Nto advertise ourselves!
 Dialogue: 0,0:07:20.12,0:07:20.91,Default,Hitori,0000,0000,0000,,But...
 Dialogue: 0,0:07:20.91,0:07:22.52,Default,Hitori,0000,0000,0000,,Don't you get expelled for playing
-Dialogue: 0,0:07:20.91,0:07:26.84,Signs,sign,0000,0000,0000,,{\alpha&H33&\an7\bord0\blur1\p1\fscx167\fscy127\pos(441,22)}m 0 0 l 100 0 100 100 0 100
 Dialogue: 1,0:07:20.91,0:07:26.84,Signs,sign,0000,0000,0000,,{\fs20\fnTimes New Roman\an8\c&H282A31&\pos(523.5,30.5)}Disciplinary Notice\N{\fs16}Class 1-2\N{\fs20}Hitori Gotoh \N\N{\fs12}Reason for Reprimand\N{\fs8}For singing a song with extremely depressing lyrics\Nat a culture festival intended to hype people up,\Nthe aforementioned is officially expelled\Nunder article 50 of the school code.
 Dialogue: 0,0:07:22.52,0:07:25.11,Default,Hitori,0000,0000,0000,,something other than seishun rock \Nat a high school culture festival?
 Dialogue: 0,0:07:25.11,0:07:26.84,Default,Nijika,0000,0000,0000,,Of course not!
 Dialogue: 0,0:07:27.88,0:07:31.30,Default,Ryo,0000,0000,0000,,I get why Bocchi's scared, though.
 Dialogue: 0,0:07:31.73,0:07:36.99,Default,Ryo,0000,0000,0000,,There's a chance—a likelihood, rather—that \Nyou'll be playing in front of a large crowd.
-Dialogue: 0,0:07:37.68,0:07:40.49,Default,Ryo,0000,0000,0000,,So you don't have to rush to a decision.
+Dialogue: 0,0:07:37.68,0:07:40.49,Default,Ryo,0000,0000,0000,,So you don't have to rush your butt.
 Dialogue: 0,0:07:41.49,0:07:42.60,Default,Hitori,0000,0000,0000,,Ryo-san...
 Dialogue: 0,0:07:42.96,0:07:47.22,Default,Ryo,0000,0000,0000,,To be honest, I still have nightmares\Nabout that concert I bombed.
 Dialogue: 0,0:07:47.22,0:07:48.86,Default,Seika,0000,0000,0000,,So you were just acting strong earlier?
@@ -281,7 +280,7 @@ Dialogue: 0,0:09:45.82,0:09:48.02,DefaultTop,PA,0000,0000,0000,,She seemed very 
 Dialogue: 0,0:09:47.31,0:09:48.91,Default,Kita,0000,0000,0000,,Wh-What do I do?
 Dialogue: 0,0:09:47.31,0:10:01.95,Signs,sign,0000,0000,0000,,{\blur0.2\b0\fs18\fnComic Sans MS\c&H05161D&\pos(193,260)}I am a criminal.
 Dialogue: 0,0:09:48.02,0:09:48.91,DefaultTop,Seika,0000,0000,0000,,Right?
-Dialogue: 0,0:09:48.91,0:09:51.37,Default,Kita,0000,0000,0000,,They're going to label me a murderer!
+Dialogue: 0,0:09:48.91,0:09:51.37,Default,Kita,0000,0000,0000,,The feds are on me now!
 Dialogue: 0,0:09:51.37,0:09:54.00,Default,Ryo,0000,0000,0000,,It's not too late to back out, is it?
 Dialogue: 0,0:09:54.00,0:09:57.32,Default,Kita,0000,0000,0000,,They said you can't take it back \Nonce you've applied...
 Dialogue: 0,0:09:57.97,0:10:00.14,Default,Kita,0000,0000,0000,,But I'll talk to them tomorrow.
@@ -317,7 +316,7 @@ Dialogue: 0,0:11:06.00,0:11:09.51,Default,Kikuri,0000,0000,0000,,H-Hang on, do y
 Dialogue: 0,0:11:09.51,0:11:11.95,Default,Kikuri,0000,0000,0000,,who's gotta hustle money from teenage girls?
 Dialogue: 0,0:11:11.95,0:11:13.52,Default,Nijika,0000,0000,0000,,You mean you're not?
 Dialogue: 0,0:11:13.52,0:11:16.68,Default,Kikuri,0000,0000,0000,,Damn it! Senpai, one bottle of shochu!
-Dialogue: 0,0:11:16.68,0:11:17.69,Default,Seika,0000,0000,0000,,Like hell, dumbass.
+Dialogue: 0,0:11:16.68,0:11:17.69,Default,Seika,0000,0000,0000,,Like hell, you sussy baka.
 Dialogue: 0,0:11:17.69,0:11:21.26,Default,Kikuri,0000,0000,0000,,Anyhoo, it's fine!
 Dialogue: 0,0:11:21.26,0:11:26.16,Default,Kikuri,0000,0000,0000,,I might not look it, but our band's \Npretty popular on the indies circuit!
 Dialogue: 0,0:11:26.16,0:11:26.75,Default,Kikuri,0000,0000,0000,,Right?
@@ -365,7 +364,7 @@ Dialogue: 0,0:13:14.48,0:13:16.74,DefaultItalics,Hitori,0000,0000,0000,,It {\i0}
 Dialogue: 0,0:13:16.74,0:13:18.36,DefaultItalics,Hitori,0000,0000,0000,,but I feel strangely confident.
 Dialogue: 0,0:13:18.99,0:13:21.23,DefaultItalics,Hitori,0000,0000,0000,,Clubs are the same wherever you—
 Dialogue: 0,0:13:22.23,0:13:25.03,Default,Hitori,0000,0000,0000,,Th-Thank you for the wonderful concert!
-Dialogue: 0,0:13:25.03,0:13:27.11,Default,Nijika,0000,0000,0000,,Seriously, it hasn't started yet!
+Dialogue: 0,0:13:25.03,0:13:27.11,Default,Nijika,0000,0000,0000,,Bruh, it hasn't started yet!
 Dialogue: 0,0:13:27.11,0:13:30.99,DefaultItalics,Hitori,0000,0000,0000,,I w-was a fool to think \NI'd grown as a person...
 Dialogue: 0,0:13:27.53,0:13:30.99,DefaultTop,Nijika,0000,0000,0000,,I'm sure they're nice people \Nif you talk to them!
 Dialogue: 0,0:13:30.99,0:13:33.33,Default,Kikuri,0000,0000,0000,,Gin-chan! Mornin'!
