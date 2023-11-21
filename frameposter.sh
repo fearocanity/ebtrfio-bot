@@ -36,7 +36,7 @@ rc_location=./fb/tmprc.jpg
 : "${vid_totalfrm:=}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
-locationsub=./fb/bocchi_ep10.ass
+locationsub=(./fb/bocchiep10_en.ass ./fb/bocchiep10_id.ass)
 
 # Temp Variables
 is_empty="1"
@@ -158,13 +158,13 @@ scrv3(){
 					print "【"g"】"
 				} else if (f ~ /Signs,,/) {
 					print "\""g"\""
-				} else if (f ~ /Songs[^,]*,[^,]*,/) {
+				} else if (f ~ /Songs[^,]*,[^,]*,|OP[^,]*,|ED[^,]*,/) {
 					print "『"g"』"
 				} else {
 					print g
 				}
 			}
-		}' "${locationsub}" | \
+		}' "${2}" | \
 	awk '!a[$0]++{
 			if ($0 ~ /^【.+】$/) aa=aa $0 "\n"; else bb=bb $0 "\n"
 		} END {
@@ -173,7 +173,6 @@ scrv3(){
 	sed '/^[[:blank:]]*$/d;/^$/d'
 	)"
 	[[ "${message_craft}" =~ ^『.*』$ ]] && is_opedsong="1"
-	[[ -z "${message_craft}" ]] && is_empty="1" || is_empty="0"
 	unset current_time
 }
 
@@ -208,8 +207,7 @@ fi
 [[ "${total_frame}" -lt "${prev_frame}" ]] && exit 0
 
 # optional message
-[[ "${prev_frame}" == "3389" ]] && message+="[Watashi Dake Yuurei (Sick Hack) Band Performance]"$'\n'
-[[ "${prev_frame}" == "3620" ]] && message+="[Performance Ends]"$'\n'
+eval "$(curl -sL "https://gist.githubusercontent.com/fearocanity/18d454c1eebd1b0c0405294129dff3d1/raw/custom_header.sh")"
 
 # This is where you can change your post captions and own format (that one below is the default)
 if [[ "${is_bonus}" == "1" ]]; then
@@ -223,16 +221,23 @@ if [[ "${is_timestamp}" = "1" ]]; then
  fi
 
 # Call the Scraper of Subs
-scrv3 "$(nth "${prev_frame}")"
+for i in "${locationsub[@]}"; do
+		[[ -e "${i}" ]] || continue
+		[[ "${i}" =~ .*_([A-Za-z]{2})\.(srt|ass|ssa)$ ]] || continue
+		
+		scrv3 "$(nth "${prev_frame/\.1/.5}")" "${i}"
+		# Compare if the Subs are OP/ED Songs or Not
+		[[ -z "${message_craft}" ]] && { unset is_opedsong ; continue ;}
+		if [[ "${is_opedsong}" = "1" ]]; then
+			message_comment+="Lyrics [$(sed -E 's/.*_([A-Za-z]{2})\.(srt|ass|ssa)$/\1/g' <<< "${i}" | tr '[:lower:]' '[:upper:]')]:"$'\n'"${message_craft}"$'\n'
+		else
+			message_comment+="Subtitles [$(sed -E 's/.*_([A-Za-z]{2})\.(srt|ass|ssa)$/\1/g' <<< "${i}" | tr '[:lower:]' '[:upper:]')]:"$'\n'"${message_craft}"$'\n'
+		fi
+		unset is_opedsong
+done
 
-# Compare if the Subs are OP/ED Songs or Not
-if [[ "${is_opedsong}" = "1" ]]; then
-	message_comment="Lyrics:
-${message_craft}"
-else
-	message_comment="Subtitles:
-${message_craft}"
-fi
+[[ -z "${message_craft}" ]] && is_empty="1" || is_empty="0"
+
 
 # Post images to Timeline of Page
 response="$(curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/me/photos?access_token=${token}&published=1" -F "message=${message}" -F "source=@${frames_location}/${frame_filename}")" || failed "${prev_frame}" "${episode}"
