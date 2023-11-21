@@ -236,7 +236,7 @@ for i in "${locationsub[@]}"; do
 		unset is_opedsong
 done
 
-[[ -z "${message_craft}" ]] && is_empty="1" || is_empty="0"
+[[ -z "${message_comment}" ]] && is_empty="1" || is_empty="0"
 
 
 # Post images to Timeline of Page
