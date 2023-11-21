@@ -231,7 +231,7 @@ for i in "${locationsub[@]}"; do
 		if [[ "${is_opedsong}" = "1" ]]; then
 			message_comment+="Lyrics:"$'\n'"${message_craft}"$'\n'
 		else
-			message_comment+="Subtitles"$'\n'"${message_craft}"$'\n'
+			message_comment+="Subtitles:"$'\n'"${message_craft}"$'\n'
 		fi
 		unset is_opedsong
 done
