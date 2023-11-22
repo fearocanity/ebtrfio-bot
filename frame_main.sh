@@ -22,6 +22,6 @@ lim_frame="$(<./fb/frameiterator)"
 
 time_ended="$(TZ='Asia/Tokyo' date)"
 ovr_all="$(sed -E ':L;s=\b([0-9]+)([0-9]{3})\b=\1,\2=g;t L' counter_n.txt)"
-abt_txt="$(printf '%s\n%s\n%s' "3.5 FPS｜15 frames / 2 hrs" "※ ${ovr_all} frames was successfully posted ※" "WIKI: https://t.ly/btrframes_wiki")"
+abt_txt="$(printf '%s\n%s\n%s' "3.5 FPS｜15 frames / 2 hrs" "→ ${ovr_all} frames was successfully posted" "WIKI: https://bit.ly/btrframes_wiki")"
 bash img_process.sh "success" "${prev_frame}" "${lim_frame}" "${time_started}" "${time_ended}"
 curl -sLk -X POST "https://graph.facebook.com/me/?access_token=${1}" --data-urlencode "about=${abt_txt}" -o /dev/null || true
