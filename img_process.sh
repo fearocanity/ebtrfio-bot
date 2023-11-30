@@ -13,8 +13,8 @@ temp_cleanup(){
 
 create_image(){
 	theme="${4}"
-	percentage="$((${1} * 100 / ${3}))"
-	percentage_end="$((${2} * 100 / ${3}))"
+	percentage="$((${1%.*} * 100 / ${3}))"
+	percentage_end="$((${2%.*} * 100 / ${3}))"
 	width=350
 	progress_width="$(((width * percentage / 100) - 10))"
 	progress_width_end="$(((width * percentage_end / 100) - 10))"
