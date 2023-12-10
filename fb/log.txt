@@ -31472,3 +31472,16 @@
 [√] Frame: 4960, Episode 10 https://facebook.com/405683725729279
 [√] Frame: 4961, Episode 10 https://facebook.com/405684599062525
 [√] Frame: 4962, Episode 10 https://facebook.com/405685382395780
+[√] Frame: 4963, Episode 10 https://facebook.com/405689345728717
+[√] Frame: 4964, Episode 10 https://facebook.com/405690255728626
+[√] Frame: 4965, Episode 10 https://facebook.com/405691172395201
+[√] Frame: 4966, Episode 10 https://facebook.com/405692059061779
+[√] Frame: 4967, Episode 10 https://facebook.com/405693075728344
+[√] Frame: 4968, Episode 10 https://facebook.com/405694219061563
+[√] Frame: 4969, Episode 10 https://facebook.com/405695219061463
+[√] Frame: 4970, Episode 10 https://facebook.com/405695979061387
+[√] Frame: 4971, Episode 10 https://facebook.com/405696875727964
+[√] Frame: 4972, Episode 10 https://facebook.com/405698052394513
+[√] Frame: 4973, Episode 10 https://facebook.com/405698875727764
+[√] Frame: 4974, Episode 10 https://facebook.com/405699922394326
+[√] Frame: 4975, Episode 10 https://facebook.com/405701339060851
