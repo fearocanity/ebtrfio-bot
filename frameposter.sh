@@ -36,7 +36,7 @@ rc_location=./fb/tmprc.jpg
 : "${vid_totalfrm:=}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
-locationsub=(./fb/bocchiep10_en.ass)
+locationsub=(./fb/bocchiep11_en.ass)
 
 # Temp Variables
 is_empty="1"
@@ -83,7 +83,7 @@ create_gif(){
 	# This line below can be uncommented if you don't have GIPHY Token
 	# url_gif="$(curl -sLfX POST -F "expires=1" -F "file=@${vidgif_location}" "https://0x0.st")"
 
-	curl -sfLX POST "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" -d "message=GIF created from last 10 frames (${1}-${2})" -d "attachment_share_url=${url_gif}" -o /dev/null
+	curl -sfLX POST "${graph_url_main}/v18.0/${id}/comments?access_token=${token}" -d "message=GIF created from last 10 frames (${1}-${2})" -d "attachment_share_url=${url_gif}" -o /dev/null
 }
 
 rand_func(){ od -vAn -N2 -tu2 < /dev/urandom | tr -dc '0-9' ;}
@@ -99,7 +99,7 @@ random_crop(){
 	crop_y="$(($(rand_func) % (image_height - crop_height)))"
 	convert "${1}" -crop "${crop_width}x${crop_height}+${crop_x}+${crop_y}" "${rc_location}"
 	msg_rc="Random Crop. [${crop_width}x${crop_height} ~ X: ${crop_x}, Y: ${crop_y}]"
-	curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" -F "message=${msg_rc}" -F "source=@${rc_location}" -o /dev/null
+	curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v18.0/${id}/comments?access_token=${token}" -F "message=${msg_rc}" -F "source=@${rc_location}" -o /dev/null
 }
 
 nth(){
@@ -113,7 +113,7 @@ nth(){
 	# New Formula: {current_frame} * ({vid_totalframe} / {total_frame}) / {frame_rate} = {total_secs}
 	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; (${t:-1} - 2) * 6.8571428571428571429 / ${vid_fps}")"
+	sec="$(bc -l <<< "scale=2; ${t:-1} * 6.8571428571428571429 / ${vid_fps}")"
  	[[ "${2}" = "timestamp" ]] && sec="$(bc -l <<< "scale=2; ${t:-1} * 6.8571428571428571429 / ${vid_fps}")"
   	secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 
@@ -258,7 +258,7 @@ random_crop "${frames_location}/${frame_filename}"
 sleep 3 # Delay
 
 # Comment the Subtitles on a post created on timeline
-[[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v16.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null
+[[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v18.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null
 
 # Addons, you can comment this line if you don't want to comment the GIF created on previous 10 frames
 # [[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt "${gif_prev_framecount}" ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
