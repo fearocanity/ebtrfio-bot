@@ -36,7 +36,7 @@ rc_location=./fb/tmprc.jpg
 : "${vid_totalfrm:=}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
-locationsub=(./fb/bocchiep11_en.ass)
+locationsub=(./fb/bocchiep12_en.ass)
 
 # Temp Variables
 is_empty="1"
