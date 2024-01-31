@@ -36361,3 +36361,13 @@
 [√] Frame: 4866, Episode 11 https://facebook.com/437199935910991
 [√] Frame: 4867, Episode 11 https://facebook.com/437201159244202
 [√] Frame: 4868, Episode 11 https://facebook.com/437202352577416
+[√] Frame: 1, Episode 12 https://facebook.com/440174962280155
+[√] Frame: 1.1, Episode 12 https://facebook.com/440177295613255
+[√] Frame: 2, Episode 12 https://facebook.com/440179642279687
+[√] Frame: 2.1, Episode 12 https://facebook.com/440181775612807
+[√] Frame: 3, Episode 12 https://facebook.com/440184018945916
+[√] Frame: 3.1, Episode 12 https://facebook.com/440186228945695
+[√] Frame: 4, Episode 12 https://facebook.com/440188288945489
+[√] Frame: 4.1, Episode 12 https://facebook.com/440190778945240
+[√] Frame: 5, Episode 12 https://facebook.com/440192948945023
+[√] Frame: 5.1, Episode 12 https://facebook.com/440195148944803
