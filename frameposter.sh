@@ -36,7 +36,7 @@ rc_location=./fb/tmprc.jpg
 : "${vid_totalfrm:=}"
 
 # Hardcoded Scrapings only Supported on ass subs by Erai Raws
-locationsub=(./fb/bocchiep11_en.ass)
+locationsub=(./fb/bocchiep12_en.ass)
 
 # Temp Variables
 is_empty="1"
@@ -113,7 +113,7 @@ nth(){
 	# New Formula: {current_frame} * ({vid_totalframe} / {total_frame}) / {frame_rate} = {total_secs}
 	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; ${t:-1} * 7 / ${vid_fps}")"
+	sec="$(bc -l <<< "scale=2; ${t:-1} * 6.8571428571428571429 / ${vid_fps}")"
  	[[ "${2}" = "timestamp" ]] && sec="$(bc -l <<< "scale=2; ${t:-1} * 7 / ${vid_fps}")"
   	secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 
