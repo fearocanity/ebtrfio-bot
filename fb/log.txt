@@ -36441,3 +36441,13 @@
 [√] Frame: 39.1, Episode 12 https://facebook.com/440913142206337
 [√] Frame: 40, Episode 12 https://facebook.com/440915165539468
 [√] Frame: 40.1, Episode 12 https://facebook.com/440917325539252
+[√] Frame: 41, Episode 12 https://facebook.com/440995932198058
+[√] Frame: 41.1, Episode 12 https://facebook.com/440997555531229
+[√] Frame: 42, Episode 12 https://facebook.com/440999278864390
+[√] Frame: 42.1, Episode 12 https://facebook.com/441000978864220
+[√] Frame: 43, Episode 12 https://facebook.com/441003218863996
+[√] Frame: 43.1, Episode 12 https://facebook.com/441004702197181
+[√] Frame: 44, Episode 12 https://facebook.com/441006415530343
+[√] Frame: 44.1, Episode 12 https://facebook.com/441008002196851
+[√] Frame: 45, Episode 12 https://facebook.com/441009398863378
+[√] Frame: 45.1, Episode 12 https://facebook.com/441011102196541
