@@ -36461,3 +36461,13 @@
 [√] Frame: 49.1, Episode 12 https://facebook.com/441108348853483
 [√] Frame: 50, Episode 12 https://facebook.com/441110305519954
 [√] Frame: 50.1, Episode 12 https://facebook.com/441112265519758
+[√] Frame: 51, Episode 12 https://facebook.com/441183262179325
+[√] Frame: 51.1, Episode 12 https://facebook.com/441185015512483
+[√] Frame: 52, Episode 12 https://facebook.com/441186818845636
+[√] Frame: 52.1, Episode 12 https://facebook.com/441188482178803
+[√] Frame: 53, Episode 12 https://facebook.com/441190528845265
+[√] Frame: 53.1, Episode 12 https://facebook.com/441192328845085
+[√] Frame: 54, Episode 12 https://facebook.com/441193982178253
+[√] Frame: 54.1, Episode 12 https://facebook.com/441195798844738
+[√] Frame: 55, Episode 12 https://facebook.com/441197755511209
+[√] Frame: 55.1, Episode 12 https://facebook.com/441199868844331
