@@ -36551,3 +36551,13 @@
 [√] Frame: 94.1, Episode 12 https://facebook.com/442106675420317
 [√] Frame: 95, Episode 12 https://facebook.com/442109312086720
 [√] Frame: 95.1, Episode 12 https://facebook.com/442111872086464
+[√] Frame: 96, Episode 12 https://facebook.com/442232298741088
+[√] Frame: 96.1, Episode 12 https://facebook.com/442234742074177
+[√] Frame: 97, Episode 12 https://facebook.com/442237335407251
+[√] Frame: 97.1, Episode 12 https://facebook.com/442240045406980
+[√] Frame: 98, Episode 12 https://facebook.com/442242322073419
+[√] Frame: 98.1, Episode 12 https://facebook.com/442244462073205
+[√] Frame: 99, Episode 12 https://facebook.com/442246725406312
+[√] Frame: 99.1, Episode 12 https://facebook.com/442248948739423
+[√] Frame: 100, Episode 12 https://facebook.com/442251315405853
+[√] Frame: 100.1, Episode 12 https://facebook.com/442253672072284
