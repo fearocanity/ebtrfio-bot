@@ -36511,3 +36511,13 @@
 [√] Frame: 74.1, Episode 12 https://facebook.com/441672498797068
 [√] Frame: 75, Episode 12 https://facebook.com/441674165463568
 [√] Frame: 75.1, Episode 12 https://facebook.com/441675922130059
+[√] Frame: 76, Episode 12 https://facebook.com/441770162120635
+[√] Frame: 76.1, Episode 12 https://facebook.com/441772105453774
+[√] Frame: 77, Episode 12 https://facebook.com/441773745453610
+[√] Frame: 77.1, Episode 12 https://facebook.com/441775478786770
+[√] Frame: 78, Episode 12 https://facebook.com/441777328786585
+[√] Frame: 78.1, Episode 12 https://facebook.com/441779188786399
+[√] Frame: 79, Episode 12 https://facebook.com/441780838786234
+[√] Frame: 79.1, Episode 12 https://facebook.com/441782458786072
+[√] Frame: 80, Episode 12 https://facebook.com/441784715452513
+[√] Frame: 80.1, Episode 12 https://facebook.com/441786795452305
