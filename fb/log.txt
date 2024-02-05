@@ -36661,3 +36661,13 @@
 [√] Frame: 149.1, Episode 12 https://facebook.com/443349641962687
 [√] Frame: 150, Episode 12 https://facebook.com/443351508629167
 [√] Frame: 150.1, Episode 12 https://facebook.com/443353498628968
+[√] Frame: 151, Episode 12 https://facebook.com/443458051951846
+[√] Frame: 151.1, Episode 12 https://facebook.com/443460191951632
+[√] Frame: 152, Episode 12 https://facebook.com/443462568618061
+[√] Frame: 152.1, Episode 12 https://facebook.com/443465155284469
+[√] Frame: 153, Episode 12 https://facebook.com/443467495284235
+[√] Frame: 153.1, Episode 12 https://facebook.com/443469831950668
+[√] Frame: 154, Episode 12 https://facebook.com/443472791950372
+[√] Frame: 154.1, Episode 12 https://facebook.com/443475105283474
+[√] Frame: 155, Episode 12 https://facebook.com/443477598616558
+[√] Frame: 155.1, Episode 12 https://facebook.com/443479928616325
