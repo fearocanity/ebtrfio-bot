@@ -36721,3 +36721,13 @@
 [√] Frame: 179.1, Episode 12 https://facebook.com/444032868561031
 [√] Frame: 180, Episode 12 https://facebook.com/444034798560838
 [√] Frame: 180.1, Episode 12 https://facebook.com/444036911893960
+[√] Frame: 181, Episode 12 https://facebook.com/444137608550557
+[√] Frame: 181.1, Episode 12 https://facebook.com/444139798550338
+[√] Frame: 182, Episode 12 https://facebook.com/444142665216718
+[√] Frame: 182.1, Episode 12 https://facebook.com/444145191883132
+[√] Frame: 183, Episode 12 https://facebook.com/444147861882865
+[√] Frame: 183.1, Episode 12 https://facebook.com/444150221882629
+[√] Frame: 184, Episode 12 https://facebook.com/444152948549023
+[√] Frame: 184.1, Episode 12 https://facebook.com/444155408548777
+[√] Frame: 185, Episode 12 https://facebook.com/444157915215193
+[√] Frame: 185.1, Episode 12 https://facebook.com/444160215214963
