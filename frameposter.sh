@@ -113,7 +113,7 @@ nth(){
 	# New Formula: {current_frame} * ({vid_totalframe} / {total_frame}) / {frame_rate} = {total_secs}
 	# Ex: (1532 - 1) * 7.98475609756 / 23.93 = 511.49
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
-	sec="$(bc -l <<< "scale=2; ${t:-1} * 6.8571428571428571429 / ${vid_fps}")"
+	sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * 6.8571428571428571429 / ${vid_fps}")"
  	[[ "${2}" = "timestamp" ]] && sec="$(bc -l <<< "scale=2; ${t:-1} * 6.8571428571428571429 / ${vid_fps}")"
  	[[ "${bonus}" = "1" ]] && sec="$(bc -l <<< "scale=2; ${sec} + 0.29")"
   	secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
