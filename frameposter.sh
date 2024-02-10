@@ -115,7 +115,7 @@ nth(){
 	# Note: this code below is tweaked, inshort its adjusted to become synced to frames
 	sec="$(bc -l <<< "scale=2; (${t:-1} - 1) * 6.8571428571428571429 / ${vid_fps}")"
  	[[ "${2}" = "timestamp" ]] && sec="$(bc -l <<< "scale=2; ${t:-1} * 6.8571428571428571429 / ${vid_fps}")"
- 	[[ "${bonus}" = "1" ]] && sec="$(bc -l <<< "scale=2; ${sec} + 0.29")"
+ 	[[ "${is_bonus}" = "1" ]] && sec="$(bc -l <<< "scale=2; ${sec} + 0.29")"
   	secfloat="${sec#*.}" sec="${sec%.*}" sec="${sec:-0}"
 
 	# This code below is standard, without tweaks. uncomment if the subtitles we're synced.
