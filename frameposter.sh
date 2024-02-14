@@ -230,9 +230,9 @@ for i in "${locationsub[@]}"; do
 		# Compare if the Subs are OP/ED Songs or Not
 		[[ -z "${message_craft}" ]] && { unset is_opedsong ; continue ;}
 		if [[ "${is_opedsong}" = "1" ]]; then
-			message_comment+="Lyrics:"$'\n'"${message_craft}"$'\n'
+			message_comment+="Lyrics [$(sed -E 's/.*_([A-Za-z]{2})\.(srt|ass|ssa)$/\1/g' <<< "${i}" | tr '[:lower:]' '[:upper:]')]:"$'\n'"${message_craft}"$'\n'
 		else
-			message_comment+="Subtitles:"$'\n'"${message_craft}"$'\n'
+			message_comment+="Subtitles [$(sed -E 's/.*_([A-Za-z]{2})\.(srt|ass|ssa)$/\1/g' <<< "${i}" | tr '[:lower:]' '[:upper:]')]:"$'\n'"${message_craft}"$'\n'
 		fi
 		unset is_opedsong
 done
