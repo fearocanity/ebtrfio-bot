@@ -37401,3 +37401,13 @@
 [√] Frame: 531, Episode 12 https://facebook.com/451776771119974
 [√] Frame: 532, Episode 12 https://facebook.com/451778374453147
 [√] Frame: 533, Episode 12 https://facebook.com/451780104452974
+[√] Frame: 534, Episode 12 https://facebook.com/451860137778304
+[√] Frame: 535, Episode 12 https://facebook.com/451861654444819
+[√] Frame: 536, Episode 12 https://facebook.com/451863174444667
+[√] Frame: 537, Episode 12 https://facebook.com/451864834444501
+[√] Frame: 538, Episode 12 https://facebook.com/451866624444322
+[√] Frame: 539, Episode 12 https://facebook.com/451868431110808
+[√] Frame: 540, Episode 12 https://facebook.com/451870301110621
+[√] Frame: 541, Episode 12 https://facebook.com/451872147777103
+[√] Frame: 542, Episode 12 https://facebook.com/451873827776935
+[√] Frame: 543, Episode 12 https://facebook.com/451875441110107
