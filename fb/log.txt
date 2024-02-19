@@ -37491,3 +37491,13 @@
 [√] Frame: 621, Episode 12 https://facebook.com/452684214362563
 [√] Frame: 622, Episode 12 https://facebook.com/452686071029044
 [√] Frame: 623, Episode 12 https://facebook.com/452687737695544
+[√] Frame: 624, Episode 12 https://facebook.com/452773797686938
+[√] Frame: 625, Episode 12 https://facebook.com/452775857686732
+[√] Frame: 626, Episode 12 https://facebook.com/452778154353169
+[√] Frame: 627, Episode 12 https://facebook.com/452780497686268
+[√] Frame: 628, Episode 12 https://facebook.com/452782724352712
+[√] Frame: 629, Episode 12 https://facebook.com/452785027685815
+[√] Frame: 630, Episode 12 https://facebook.com/452787187685599
+[√] Frame: 631, Episode 12 https://facebook.com/452789221018729
+[√] Frame: 632, Episode 12 https://facebook.com/452791811018470
+[√] Frame: 633, Episode 12 https://facebook.com/452794247684893
