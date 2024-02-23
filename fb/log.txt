@@ -37751,3 +37751,13 @@
 [√] Frame: 823, Episode 12 https://facebook.com/455313214099663
 [√] Frame: 823.1, Episode 12 https://facebook.com/455315627432755
 [√] Frame: 824, Episode 12 https://facebook.com/455317787432539
+[√] Frame: 824.1, Episode 12 https://facebook.com/455415180756133
+[√] Frame: 825, Episode 12 https://facebook.com/455417194089265
+[√] Frame: 825.1, Episode 12 https://facebook.com/455418854089099
+[√] Frame: 826, Episode 12 https://facebook.com/455420500755601
+[√] Frame: 826.1, Episode 12 https://facebook.com/455422367422081
+[√] Frame: 827, Episode 12 https://facebook.com/455424000755251
+[√] Frame: 827.1, Episode 12 https://facebook.com/455426070755044
+[√] Frame: 828, Episode 12 https://facebook.com/455429147421403
+[√] Frame: 828.1, Episode 12 https://facebook.com/455432150754436
+[√] Frame: 829, Episode 12 https://facebook.com/455433837420934
