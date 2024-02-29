@@ -38101,3 +38101,13 @@
 [√] Frame: 998, Episode 12 https://facebook.com/458910677073250
 [√] Frame: 998.1, Episode 12 https://facebook.com/458914627072855
 [√] Frame: 999, Episode 12 https://facebook.com/458916790405972
+[√] Frame: 999.1, Episode 12 https://facebook.com/459025717061746
+[√] Frame: 1000, Episode 12 https://facebook.com/459027760394875
+[√] Frame: 1000.1, Episode 12 https://facebook.com/459030213727963
+[√] Frame: 1001, Episode 12 https://facebook.com/459032480394403
+[√] Frame: 1001.1, Episode 12 https://facebook.com/459037603727224
+[√] Frame: 1002, Episode 12 https://facebook.com/459039663727018
+[√] Frame: 1002.1, Episode 12 https://facebook.com/459041750393476
+[√] Frame: 1003, Episode 12 https://facebook.com/459043957059922
+[√] Frame: 1003.1, Episode 12 https://facebook.com/459047540392897
+[√] Frame: 1004, Episode 12 https://facebook.com/459049640392687
