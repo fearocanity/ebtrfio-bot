@@ -39081,3 +39081,13 @@
 [√] Frame: 1556, Episode 12 https://facebook.com/469202699377381
 [√] Frame: 1557, Episode 12 https://facebook.com/469204629377188
 [√] Frame: 1558, Episode 12 https://facebook.com/469207316043586
+[√] Frame: 1559, Episode 12 https://facebook.com/469278212703163
+[√] Frame: 1560, Episode 12 https://facebook.com/469280086036309
+[√] Frame: 1561, Episode 12 https://facebook.com/469282146036103
+[√] Frame: 1562, Episode 12 https://facebook.com/469284156035902
+[√] Frame: 1563, Episode 12 https://facebook.com/469286062702378
+[√] Frame: 1564, Episode 12 https://facebook.com/469288272702157
+[√] Frame: 1565, Episode 12 https://facebook.com/469290696035248
+[√] Frame: 1566, Episode 12 https://facebook.com/469292866035031
+[√] Frame: 1567, Episode 12 https://facebook.com/469294846034833
+[√] Frame: 1568, Episode 12 https://facebook.com/469296769367974
