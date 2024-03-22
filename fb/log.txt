@@ -39361,3 +39361,13 @@
 [√] Frame: 1836, Episode 12 https://facebook.com/472446002386384
 [√] Frame: 1837, Episode 12 https://facebook.com/472447892386195
 [√] Frame: 1838, Episode 12 https://facebook.com/472449835719334
+[√] Frame: 1839, Episode 12 https://facebook.com/472543432376641
+[√] Frame: 1840, Episode 12 https://facebook.com/472545712376413
+[√] Frame: 1841, Episode 12 https://facebook.com/472547865709531
+[√] Frame: 1842, Episode 12 https://facebook.com/472550745709243
+[√] Frame: 1843, Episode 12 https://facebook.com/472553675708950
+[√] Frame: 1844, Episode 12 https://facebook.com/472556242375360
+[√] Frame: 1845, Episode 12 https://facebook.com/472558545708463
+[√] Frame: 1846, Episode 12 https://facebook.com/472560869041564
+[√] Frame: 1847, Episode 12 https://facebook.com/472563272374657
+[√] Frame: 1848, Episode 12 https://facebook.com/472565549041096
