@@ -39411,3 +39411,13 @@
 [√] Frame: 1886, Episode 12 https://facebook.com/473037812327203
 [√] Frame: 1887, Episode 12 https://facebook.com/473040282326956
 [√] Frame: 1888, Episode 12 https://facebook.com/473042315660086
+[√] Frame: 1889, Episode 12 https://facebook.com/473126235651694
+[√] Frame: 1890, Episode 12 https://facebook.com/473128045651513
+[√] Frame: 1891, Episode 12 https://facebook.com/473129868984664
+[√] Frame: 1892, Episode 12 https://facebook.com/473131682317816
+[√] Frame: 1893, Episode 12 https://facebook.com/473133422317642
+[√] Frame: 1894, Episode 12 https://facebook.com/473135855650732
+[√] Frame: 1895, Episode 12 https://facebook.com/473137622317222
+[√] Frame: 1896, Episode 12 https://facebook.com/473139732317011
+[√] Frame: 1897, Episode 12 https://facebook.com/473141808983470
+[√] Frame: 1898, Episode 12 https://facebook.com/473143778983273
