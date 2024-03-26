@@ -39581,3 +39581,13 @@
 [√] Frame: 2056, Episode 12 https://facebook.com/474955395468778
 [√] Frame: 2057, Episode 12 https://facebook.com/474957572135227
 [√] Frame: 2058, Episode 12 https://facebook.com/474959745468343
+[√] Frame: 2059, Episode 12 https://facebook.com/475030165461301
+[√] Frame: 2060, Episode 12 https://facebook.com/475032258794425
+[√] Frame: 2061, Episode 12 https://facebook.com/475034038794247
+[√] Frame: 2062, Episode 12 https://facebook.com/475036102127374
+[√] Frame: 2063, Episode 12 https://facebook.com/475038525460465
+[√] Frame: 2064, Episode 12 https://facebook.com/475040438793607
+[√] Frame: 2065, Episode 12 https://facebook.com/475042472126737
+[√] Frame: 2066, Episode 12 https://facebook.com/475044298793221
+[√] Frame: 2067, Episode 12 https://facebook.com/475046042126380
+[√] Frame: 2068, Episode 12 https://facebook.com/475047848792866
