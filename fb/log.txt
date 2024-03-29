@@ -39781,3 +39781,13 @@
 [√] Frame: 2256, Episode 12 https://facebook.com/477126728584978
 [√] Frame: 2257, Episode 12 https://facebook.com/477128711918113
 [√] Frame: 2258, Episode 12 https://facebook.com/477130638584587
+[√] Frame: 2259, Episode 12 https://facebook.com/477223791908605
+[√] Frame: 2260, Episode 12 https://facebook.com/477226098575041
+[√] Frame: 2261, Episode 12 https://facebook.com/477228401908144
+[√] Frame: 2262, Episode 12 https://facebook.com/477231751907809
+[√] Frame: 2263, Episode 12 https://facebook.com/477234038574247
+[√] Frame: 2264, Episode 12 https://facebook.com/477236268574024
+[√] Frame: 2265, Episode 12 https://facebook.com/477238311907153
+[√] Frame: 2266, Episode 12 https://facebook.com/477240668573584
+[√] Frame: 2267, Episode 12 https://facebook.com/477242928573358
+[√] Frame: 2268, Episode 12 https://facebook.com/477245441906440
