@@ -39931,3 +39931,13 @@
 [√] Frame: 2406, Episode 12 https://facebook.com/478884841742500
 [√] Frame: 2407, Episode 12 https://facebook.com/478887031742281
 [√] Frame: 2408, Episode 12 https://facebook.com/478889058408745
+[√] Frame: 2409, Episode 12 https://facebook.com/479001201730864
+[√] Frame: 2410, Episode 12 https://facebook.com/479003481730636
+[√] Frame: 2411, Episode 12 https://facebook.com/479005815063736
+[√] Frame: 2412, Episode 12 https://facebook.com/479008021730182
+[√] Frame: 2413, Episode 12 https://facebook.com/479010158396635
+[√] Frame: 2414, Episode 12 https://facebook.com/479012435063074
+[√] Frame: 2415, Episode 12 https://facebook.com/479014381729546
+[√] Frame: 2416, Episode 12 https://facebook.com/479016831729301
+[√] Frame: 2417, Episode 12 https://facebook.com/479019078395743
+[√] Frame: 2418, Episode 12 https://facebook.com/479021598395491
