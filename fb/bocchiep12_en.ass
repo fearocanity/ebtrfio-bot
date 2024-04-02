@@ -218,7 +218,7 @@ Dialogue: 0,0:11:53.10,0:11:54.44,Default,Naoki,0000,0000,0000,,No worries!
 Dialogue: 0,0:11:54.44,0:11:55.73,Default,Naoki,0000,0000,0000,,You've got money!
 Dialogue: 0,0:11:57.77,0:12:00.28,Default,Hitori,0000,0000,0000,,Wh-Where'd it all come from?
 Dialogue: 0,0:12:00.28,0:12:02.32,Default,Hitori,0000,0000,0000,,Dad, are you involved \Nin some crack dealings?!
-Dialogue: 0,0:12:02.32,0:12:05.16,Default,Hitori,0000,0000,0000,,I c-can't accept your m*th milked money!
+Dialogue: 0,0:12:02.32,0:12:05.16,Default,Hitori,0000,0000,0000,,I c-can't accept your money!
 Dialogue: 0,0:12:05.16,0:12:07.20,Default,Naoki,0000,0000,0000,,We're not {\i1}that{\i0} badly off!
 Dialogue: 0,0:12:07.83,0:12:12.71,Default,Michiyo,0000,0000,0000,,That's money you earned from \Nadvertisements on your videos.
 Dialogue: 0,0:12:13.83,0:12:17.04,Default,Naoki,0000,0000,0000,,See, if a video gets enough views, \Nthey pay you.
@@ -236,7 +236,13 @@ Dialogue: 0,0:12:48.70,0:12:49.37,Default,Michiyo,0000,0000,0000,,Yes.
 Dialogue: 0,0:12:50.04,0:12:52.95,Default,Michiyo,0000,0000,0000,,I don't know much about music,
 Dialogue: 0,0:12:52.95,0:12:55.00,Default,Michiyo,0000,0000,0000,,but I do think you're amazing at it!
 Dialogue: 0,0:12:55.87,0:12:58.46,Default,Hitori,0000,0000,0000,,Dad... Mom...
-Dialogue: 1,0:12:58.46,0:13:03.88,Signs,sign,0000,0000,0000,,{\bord2\an7\c&H242628&\fs16\pos(421.5,19)\3c&HFDFFFD&\t(67,3487,\3c&H242628&\c&HFDFFFD&)}guitarhero\N\N{\fs12}This song's been a big hit \Nwith all my friends lately!\N\NI sing this all the time at karaoke!\N The chorus gets everyone sooo hype!\N o(^v^)o\N\NMy boyfriend loves this song!
+Dialogue: 1,0:12:58.46,0:13:03.88,Signs,sign,0000,0000,0000,,guitarhero
+Dialogue: 1,0:12:58.46,0:13:03.88,Signs,sign,0000,0000,0000,,This song's been a big hit
+Dialogue: 1,0:12:58.46,0:13:03.88,Signs,sign,0000,0000,0000,,with all my friends lately!
+Dialogue: 1,0:12:58.46,0:13:03.88,Signs,sign,0000,0000,0000,,I sing this all the time at karaoke!
+Dialogue: 1,0:12:58.46,0:13:03.88,Signs,sign,0000,0000,0000,,The chorus gets everyone sooo hype!
+Dialogue: 1,0:12:58.46,0:13:03.88,Signs,sign,0000,0000,0000,,o(^v^)o
+Dialogue: 1,0:12:58.46,0:13:03.88,Signs,sign,0000,0000,0000,,My boyfriend loves this song!
 Dialogue: 0,0:12:58.84,0:13:00.51,Default,Naoki,0000,0000,0000,,Of course, it's balanced out
 Dialogue: 0,0:13:00.51,0:13:03.92,Default,Naoki,0000,0000,0000,,by my sadness at seeing you \Nget better and better at lying...
 Dialogue: 0,0:13:03.92,0:13:05.22,DefaultItalics,Hitori,0000,0000,0000,,Barf!
@@ -287,7 +293,7 @@ Dialogue: 0,0:15:03.38,0:15:05.25,Default,Ryo,0000,0000,0000,,Well, you see...
 Dialogue: 0,0:15:05.25,0:15:07.83,Default,Ryo,0000,0000,0000,,The music business flourished here \Ndue to it playing host in the Meiji Period
 Dialogue: 0,0:15:07.83,0:15:10.87,Default,Ryo,0000,0000,0000,,to Japan's oldest professional orchestra, \Nleading to the formation
 Dialogue: 0,0:15:10.87,0:15:13.92,Default,Ryo,0000,0000,0000,,of now-legacy stores in Ochanomizu \Nlike Shimokura Music,
-Dialogue: 0,0:15:13.92,0:15:17.56,Default,Ryo,0000,0000,0000,,Ishibashi Music, and etc etc, \Nblah blah, yada yada...
+Dialogue: 0,0:15:13.92,0:15:17.56,Default,Ryo,0000,0000,0000,,Ishibashi Music, and etc etc, lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ipsum ac elit eleifend, eu maximus erat ultrices. Etiam pellentesque eu ante quis ultricies. In fringilla lacus ipsum, ut viverra ex vestibulum at. Nunc lectus lacus, vestibulum et aliquam nec, rutrum at ante. Sed mattis erat eget vulputate ornare. Morbi venenatis nisl eget nisl sagittis, sed mollis lacus faucibus. Proin imperdiet, leo at lobortis tristique, ex nisl fermentum leo, ac viverra lorem lorem nec augue. Aenean tincidunt orci at odio dapibus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas....
 Dialogue: 0,0:15:15.35,0:15:17.56,DefaultTop,Nijika,0000,0000,0000,,I bet we'll be seeing a lot of this today.
 Dialogue: 0,0:15:18.18,0:15:20.73,Default,Nijika,0000,0000,0000,,Let's go in here! It's got a great selection!
 Dialogue: 0,0:15:20.73,0:15:23.31,DefaultItalics,Hitori,0000,0000,0000,,I'd really rather not.
@@ -324,10 +330,10 @@ Dialogue: 0,0:16:37.85,0:16:40.27,Default,Ryo,0000,0000,0000,,I just like how it
 Dialogue: 0,0:16:41.06,0:16:43.23,Default,Ryo,0000,0000,0000,,Ah, is slapping okay?
 Dialogue: 0,0:16:43.23,0:16:44.48,Default,Employee,0000,0000,0000,,Yes, that's fine.
 Dialogue: 0,0:16:45.06,0:16:45.98,Default,Ryo,0000,0000,0000,,Like this.
-Dialogue: 0,0:16:45.98,0:16:47.23,Default,Nijika,0000,0000,0000,,Is she going to do {\i1}that{\i0}?
+Dialogue: 0,0:16:45.98,0:16:47.23,Default,Nijika,0000,0000,0000,,Is she going to be the next Davie504?
 Dialogue: 0,0:16:54.36,0:16:56.11,Default,Ryo,0000,0000,0000,,Amazing.
 Dialogue: 0,0:16:56.11,0:16:59.08,Default,Ryo,0000,0000,0000,,I didn't even go that hard.
-Dialogue: 0,0:16:59.08,0:17:00.87,Default,Ryo,0000,0000,0000,,What a great bass!
+Dialogue: 0,0:16:59.08,0:17:00.87,Default,Ryo,0000,0000,0000,,What a great bASS!
 Dialogue: 0,0:17:01.29,0:17:03.75,Default,Nijika,0000,0000,0000,,When you go all-out but act smug about it!
 Dialogue: 0,0:17:03.75,0:17:05.25,Default,Nijika,0000,0000,0000,,Not that I mind.
 Dialogue: 0,0:17:07.38,0:17:08.75,Default,Ryo,0000,0000,0000,,What is it, Ikuyo?
@@ -412,4 +418,4 @@ Dialogue: 0,0:20:45.13,0:20:46.64,Signs,sign,0000,0000,0000,,{\fs16\an8\fnArial 
 Dialogue: 0,0:23:31.86,0:23:33.61,DefaultItalics,Hitori,0000,0000,0000,,Another day at the job.
 Dialogue: 0,0:23:34.97,0:23:39.98,Signs,sign,0000,0000,0000,,{\fnComic Sans MS\an4\c&HFFFFFF&\fs12\pos(66,319)\4c&H3A91B8&\shad1.2}Illustration by Aki Hamaji
 Dialogue: 0,0:23:34.97,0:23:39.98,Signs,sign,0000,0000,0000,,{\an4\fnComic Sans MS\fs22\c&H8B2ED1&\3c&HF4FDF7&\bord2.4\frz15.93\pos(363.885,267.574)}Thanks for watching!
-Dialogue: 0,0:23:36.96,0:23:38.01,Default,Hitori,0000,0000,0000,,Thank you!
+Dialogue: 0,0:23:36.96,0:23:38.01,Default,Hitori,0000,0000,0000,,Thank you! The Season 2 will be on...
