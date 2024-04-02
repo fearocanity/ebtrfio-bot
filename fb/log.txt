@@ -40041,3 +40041,13 @@
 [√] Frame: 2516, Episode 12 https://facebook.com/480187114945606
 [√] Frame: 2517, Episode 12 https://facebook.com/480189171612067
 [√] Frame: 2518, Episode 12 https://facebook.com/480191508278500
+[√] Frame: 2519, Episode 12 https://facebook.com/480290584935259
+[√] Frame: 2520, Episode 12 https://facebook.com/480292564935061
+[√] Frame: 2521, Episode 12 https://facebook.com/480294698268181
+[√] Frame: 2522, Episode 12 https://facebook.com/480296521601332
+[√] Frame: 2523, Episode 12 https://facebook.com/480298388267812
+[√] Frame: 2524, Episode 12 https://facebook.com/480300188267632
+[√] Frame: 2525, Episode 12 https://facebook.com/480301994934118
+[√] Frame: 2526, Episode 12 https://facebook.com/480303861600598
+[√] Frame: 2527, Episode 12 https://facebook.com/480305991600385
+[√] Frame: 2528, Episode 12 https://facebook.com/480307784933539
