@@ -40081,3 +40081,13 @@
 [√] Frame: 2556, Episode 12 https://facebook.com/480625898235061
 [√] Frame: 2557, Episode 12 https://facebook.com/480627904901527
 [√] Frame: 2558, Episode 12 https://facebook.com/480629721568012
+[√] Frame: 2559, Episode 12 https://facebook.com/480730921557892
+[√] Frame: 2560, Episode 12 https://facebook.com/480733144891003
+[√] Frame: 2561, Episode 12 https://facebook.com/480735351557449
+[√] Frame: 2562, Episode 12 https://facebook.com/480737478223903
+[√] Frame: 2563, Episode 12 https://facebook.com/480739811557003
+[√] Frame: 2564, Episode 12 https://facebook.com/480742181556766
+[√] Frame: 2565, Episode 12 https://facebook.com/480744528223198
+[√] Frame: 2566, Episode 12 https://facebook.com/480746794889638
+[√] Frame: 2567, Episode 12 https://facebook.com/480750344889283
+[√] Frame: 2568, Episode 12 https://facebook.com/480752651555719
