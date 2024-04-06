@@ -40281,3 +40281,13 @@
 [√] Frame: 2756, Episode 12 https://facebook.com/482822598015391
 [√] Frame: 2757, Episode 12 https://facebook.com/482825228015128
 [√] Frame: 2758, Episode 12 https://facebook.com/482827444681573
+[√] Frame: 2759, Episode 12 https://facebook.com/482918044672513
+[√] Frame: 2760, Episode 12 https://facebook.com/482919618005689
+[√] Frame: 2761, Episode 12 https://facebook.com/482921221338862
+[√] Frame: 2762, Episode 12 https://facebook.com/482923014672016
+[√] Frame: 2763, Episode 12 https://facebook.com/482924808005170
+[√] Frame: 2764, Episode 12 https://facebook.com/482926408005010
+[√] Frame: 2765, Episode 12 https://facebook.com/482928328004818
+[√] Frame: 2766, Episode 12 https://facebook.com/482930191337965
+[√] Frame: 2767, Episode 12 https://facebook.com/482931964671121
+[√] Frame: 2768, Episode 12 https://facebook.com/482933611337623
