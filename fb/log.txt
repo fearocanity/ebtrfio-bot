@@ -40541,3 +40541,13 @@
 [√] Frame: 3016, Episode 12 https://facebook.com/485765297721121
 [√] Frame: 3017, Episode 12 https://facebook.com/485767341054250
 [√] Frame: 3018, Episode 12 https://facebook.com/485769201054064
+[√] Frame: 3019, Episode 12 https://facebook.com/485832047714446
+[√] Frame: 3020, Episode 12 https://facebook.com/485833941047590
+[√] Frame: 3021, Episode 12 https://facebook.com/485836427714008
+[√] Frame: 3022, Episode 12 https://facebook.com/485838507713800
+[√] Frame: 3023, Episode 12 https://facebook.com/485840831046901
+[√] Frame: 3024, Episode 12 https://facebook.com/485842791046705
+[√] Frame: 3025, Episode 12 https://facebook.com/485845134379804
+[√] Frame: 3026, Episode 12 https://facebook.com/485847187712932
+[√] Frame: 3027, Episode 12 https://facebook.com/485849201046064
+[√] Frame: 3028, Episode 12 https://facebook.com/485851257712525
