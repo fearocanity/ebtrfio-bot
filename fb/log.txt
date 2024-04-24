@@ -41301,3 +41301,13 @@
 [√] Frame: 3776, Episode 12 https://facebook.com/494680216829629
 [√] Frame: 3777, Episode 12 https://facebook.com/494682616829389
 [√] Frame: 3778, Episode 12 https://facebook.com/494687473495570
+[√] Frame: 3779, Episode 12 https://facebook.com/494786853485632
+[√] Frame: 3780, Episode 12 https://facebook.com/494789323485385
+[√] Frame: 3781, Episode 12 https://facebook.com/494791590151825
+[√] Frame: 3782, Episode 12 https://facebook.com/494793800151604
+[√] Frame: 3783, Episode 12 https://facebook.com/494796293484688
+[√] Frame: 3784, Episode 12 https://facebook.com/494798740151110
+[√] Frame: 3785, Episode 12 https://facebook.com/494801063484211
+[√] Frame: 3786, Episode 12 https://facebook.com/494803920150592
+[√] Frame: 3787, Episode 12 https://facebook.com/494806313483686
+[√] Frame: 3788, Episode 12 https://facebook.com/494808963483421
