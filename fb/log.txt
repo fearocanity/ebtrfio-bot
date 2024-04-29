@@ -41601,3 +41601,13 @@
 [√] Frame: 4076, Episode 12 https://facebook.com/498088803155437
 [√] Frame: 4077, Episode 12 https://facebook.com/498091769821807
 [√] Frame: 4078, Episode 12 https://facebook.com/498096089821375
+[√] Frame: 4079, Episode 12 https://facebook.com/498208403143477
+[√] Frame: 4080, Episode 12 https://facebook.com/498210456476605
+[√] Frame: 4081, Episode 12 https://facebook.com/498213043143013
+[√] Frame: 4082, Episode 12 https://facebook.com/498216116476039
+[√] Frame: 4083, Episode 12 https://facebook.com/498218249809159
+[√] Frame: 4084, Episode 12 https://facebook.com/498220583142259
+[√] Frame: 4085, Episode 12 https://facebook.com/498223353141982
+[√] Frame: 4086, Episode 12 https://facebook.com/498225899808394
+[√] Frame: 4087, Episode 12 https://facebook.com/498228399808144
+[√] Frame: 4088, Episode 12 https://facebook.com/498230746474576
