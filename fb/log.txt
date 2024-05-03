@@ -41841,3 +41841,13 @@
 [√] Frame: 4326, Episode 12 https://facebook.com/501023146195336
 [√] Frame: 4327, Episode 12 https://facebook.com/501026869528297
 [√] Frame: 4328, Episode 12 https://facebook.com/501029736194677
+[√] Frame: 4329, Episode 12 https://facebook.com/501125549518429
+[√] Frame: 4330, Episode 12 https://facebook.com/501127262851591
+[√] Frame: 4331, Episode 12 https://facebook.com/501129162851401
+[√] Frame: 4332, Episode 12 https://facebook.com/501130942851223
+[√] Frame: 4333, Episode 12 https://facebook.com/501132552851062
+[√] Frame: 4334, Episode 12 https://facebook.com/501134376184213
+[√] Frame: 4335, Episode 12 https://facebook.com/501136086184042
+[√] Frame: 4336, Episode 12 https://facebook.com/501137669517217
+[√] Frame: 4337, Episode 12 https://facebook.com/501139382850379
+[√] Frame: 4338, Episode 12 https://facebook.com/501140992850218
