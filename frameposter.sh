@@ -261,6 +261,11 @@ sleep 3 # Delay
 # Comment the Subtitles on a post created on timeline
 [[ "${is_empty}" = "1" ]] || curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v18.0/${id}/comments?access_token=${token}" --data-urlencode "message=${message_comment}" -o /dev/null
 
+# Count Down.
+frame_left="$(bc -l <<< "${total_frame} - ${prev_frame}")"
+frame_left_message="${frame_left} Frames left."
+curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v18.0/${id}/comments?access_token=${token}" --data-urlencode "message=${frame_left_message}" -o /dev/null
+
 # Addons, you can comment this line if you don't want to comment the GIF created on previous 10 frames
 # [[ -n "${giphy_token}" ]] && [[ "${prev_frame}" -gt "${gif_prev_framecount}" ]] && create_gif "$((prev_frame - gif_prev_framecount))" "${prev_frame}"
 
