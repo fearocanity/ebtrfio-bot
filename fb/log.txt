@@ -42111,3 +42111,13 @@
 [√] Frame: 4596, Episode 12 https://facebook.com/504001589230825
 [√] Frame: 4597, Episode 12 https://facebook.com/504003879230596
 [√] Frame: 4598, Episode 12 https://facebook.com/504005969230387
+[√] Frame: 4599, Episode 12 https://facebook.com/504097839221200
+[√] Frame: 4600, Episode 12 https://facebook.com/504100535887597
+[√] Frame: 4601, Episode 12 https://facebook.com/504102505887400
+[√] Frame: 4602, Episode 12 https://facebook.com/504104585887192
+[√] Frame: 4603, Episode 12 https://facebook.com/504106455887005
+[√] Frame: 4604, Episode 12 https://facebook.com/504108215886829
+[√] Frame: 4605, Episode 12 https://facebook.com/504110085886642
+[√] Frame: 4606, Episode 12 https://facebook.com/504111892553128
+[√] Frame: 4607, Episode 12 https://facebook.com/504114012552916
+[√] Frame: 4608, Episode 12 https://facebook.com/504115882552729
