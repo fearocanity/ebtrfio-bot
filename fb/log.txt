@@ -42321,3 +42321,13 @@
 [√] Frame: 4806, Episode 12 https://facebook.com/506431638987820
 [√] Frame: 4807, Episode 12 https://facebook.com/506433958987588
 [√] Frame: 4808, Episode 12 https://facebook.com/506436378987346
+[√] Frame: 4809, Episode 12 https://facebook.com/506529378978046
+[√] Frame: 4810, Episode 12 https://facebook.com/506531158977868
+[√] Frame: 4811, Episode 12 https://facebook.com/506532962311021
+[√] Frame: 4812, Episode 12 https://facebook.com/506534742310843
+[√] Frame: 4813, Episode 12 https://facebook.com/506536482310669
+[√] Frame: 4814, Episode 12 https://facebook.com/506538485643802
+[√] Frame: 4815, Episode 12 https://facebook.com/506540455643605
+[√] Frame: 4816, Episode 12 https://facebook.com/506542212310096
+[√] Frame: 4817, Episode 12 https://facebook.com/506543932309924
+[√] Frame: 4818, Episode 12 https://facebook.com/506545628976421
