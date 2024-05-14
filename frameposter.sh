@@ -263,9 +263,9 @@ sleep 3 # Delay
 
 # Count Down.
 frame_left="$(bc -l <<< "${total_frame} - ${prev_frame}")"
-if [ "${prev_frame}" = "4974" ]; then
+if [[ "${prev_frame}" = "4974" ]]; then
     frame_left_message='One more frame left!'
-elif [ "${prev_frame}" = "4975" ]; then
+elif [[ "${prev_frame}" = "4975" ]]; then
     frame_left_message='[END OF SEASON 1]'
 else
     frame_left_message="${frame_left} Frames left."
