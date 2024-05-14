@@ -263,7 +263,13 @@ sleep 3 # Delay
 
 # Count Down.
 frame_left="$(bc -l <<< "${total_frame} - ${prev_frame}")"
-frame_left_message="${frame_left} Frames left."
+if [ "${prev_frame}" = "4974" ]; then
+    frame_left_message='One more frame left!'
+elif [ "${prev_frame}" = "4975" ]; then
+    frame_left_message='[END OF SEASON 1]'
+else
+    frame_left_message="${frame_left} Frames left."
+fi
 curl -sfLX POST --retry 2 --retry-connrefused --retry-delay 7 "${graph_url_main}/v18.0/${id}/comments?access_token=${token}" --data-urlencode "message=${frame_left_message}" -o /dev/null
 
 # Addons, you can comment this line if you don't want to comment the GIF created on previous 10 frames
