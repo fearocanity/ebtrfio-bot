@@ -420,4 +420,5 @@ Dialogue: 0,0:20:45.13,0:20:46.64,Signs,sign,0000,0000,0000,,{\fs16\an8\fnArial 
 Dialogue: 0,0:23:31.86,0:23:33.61,DefaultItalics,Hitori,0000,0000,0000,,Another day at the job.
 Dialogue: 0,0:23:34.97,0:23:39.98,Signs,sign,0000,0000,0000,,{\fnComic Sans MS\an4\c&HFFFFFF&\fs12\pos(66,319)\4c&H3A91B8&\shad1.2}Illustration by Aki Hamaji
 Dialogue: 0,0:23:34.97,0:23:39.98,Signs,sign,0000,0000,0000,,{\an4\fnComic Sans MS\fs22\c&H8B2ED1&\3c&HF4FDF7&\bord2.4\frz15.93\pos(363.885,267.574)}Thanks for watching!
-Dialogue: 0,0:23:36.96,0:23:38.01,Default,Hitori,0000,0000,0000,,Thank you! The Season 2 will be on...
+Dialogue: 0,0:23:36.96,0:23:38.01,Default,Hitori,0000,0000,0000,,Thank you!
+Dialogue: 0,0:23:38.01,0:23:41.01,Default,Hitori,0000,0000,0000,,The Season 2 will be on...
