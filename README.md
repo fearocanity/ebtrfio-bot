@@ -1,7 +1,11 @@
+# WE DID IT!!!!!!!!!
+> Then when do we do now?...🥲
+
 # Every Bocchi the Rock Frame in Order
 This is where we run our Bots
 
-> **Note**: Don't fork this repository, because it is bloated. Instead, use our Template Repository
+> [!NOTE]
+> Don't fork this repository, because it is bloated. Instead, use our Template Repository
 
 # Table of Contents
 - [Tutorial](#tutorial)
